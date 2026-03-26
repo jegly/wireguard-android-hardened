@@ -54,6 +54,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import android.view.WindowManager
 import java.io.File
 
 class TvMainActivity : AppCompatActivity() {
@@ -122,6 +123,8 @@ class TvMainActivity : AppCompatActivity() {
             }
         }
         super.onCreate(savedInstanceState)
+        // Prevent screenshots and screen casting of the tunnel list
+        window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
         binding = TvActivityBinding.inflate(layoutInflater)
         lifecycleScope.launch {
             binding.tunnels = Application.getTunnelManager().getTunnels()
