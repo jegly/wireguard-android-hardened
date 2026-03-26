@@ -6,6 +6,23 @@ A privacy-focused, hardened fork of the official [WireGuard Android](https://git
 
 ---
 
+## At a glance — vs upstream WireGuard Android
+
+| Feature | Upstream | This fork |
+|---|---|---|
+| Config storage | Plaintext `.conf` files | AES-256-GCM encrypted via Android Keystore |
+| Biometric auth | `BIOMETRIC_WEAK` (face unlock, no attestation) | `BIOMETRIC_STRONG` with hardware-attested `CryptoObject` |
+| Self-updater | Present, phones home with device fingerprint | Completely stripped |
+| Device identifiers sent over network | SDK, ABI, board, manufacturer, model, fingerprint, package name | None |
+| Screen protection | Only when private key is revealed | Entire tunnel editor from the moment it opens |
+| Clipboard | No sensitivity flag | Marked `EXTRA_IS_SENSITIVE` on API 33+ |
+| Remote control intents | Exported receiver, `dangerous` permission | Completely removed |
+| ProGuard obfuscation | Disabled (`-dontobfuscate`) | Enabled |
+| Network security | No config (cleartext permitted on API <28) | Cleartext forbidden, user CAs rejected |
+| `golang.org/x/crypto` | `0.38.0` (2 unpatched CVEs) | `0.45.0` (patched) |
+| Target SDK | 35 | 36 (no install warning on Android 16+) |
+| Settings | Version, Donate, Remote control shown | Cleaned up — identifier leaks removed |
+
 ## What makes this different
 
 The upstream WireGuard Android app is well-written but makes deliberate usability tradeoffs that reduce security. This fork addresses every one of them.
@@ -83,7 +100,7 @@ This app requests only what it needs:
 
 Download the latest APK from the [Releases](https://github.com/jegly/wireguard-android-hardened/releases) page.
 
-sha256:d1ada40549546b148604ec003d9ad562b7a89d2ce4daa64b7dc0e28a1e90b5d2
+sha256:b3ebcd3538ff45be60af4871704800dcafd3037df1aedd0970c618fdd72d5250
 
 1. On your Android device go to **Settings → Apps → Special app access → Install unknown apps**
 2. Enable installs for your browser or file manager
