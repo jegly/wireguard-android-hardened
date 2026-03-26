@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.wireguard.android.ui-mergeDebugResources-50:/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "/home/user/wireguard-android-hardened/ui/src/main/res/values-v27/styles.xml",
+                    "from": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "226",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "608"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "437"
+                    }
+                }
+            ]
+        }
+    ]
+}

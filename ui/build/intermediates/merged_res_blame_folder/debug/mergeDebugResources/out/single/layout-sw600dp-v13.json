@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.wireguard.android.ui-mergeDebugResources-51:/layout-sw600dp-v13/main_activity.xml",
+        "source": "com.wireguard.android.ui-main-54:/layout-sw600dp/main_activity.xml"
+    }
+]

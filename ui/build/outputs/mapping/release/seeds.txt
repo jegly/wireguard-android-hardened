@@ -1,0 +1,1170 @@
+androidx.core.graphics.drawable.IconCompatParcelizer
+androidx.preference.MultiSelectListPreferenceDialogFragmentCompat
+com.google.android.material.behavior.SwipeDismissBehavior
+com.wireguard.android.preference.VersionPreference
+androidx.preference.SwitchPreference
+androidx.annotation.Keep
+androidx.preference.PreferenceDialogFragmentCompat
+androidx.constraintlayout.widget.ConstraintLayout
+com.google.android.material.transformation.FabTransformationScrimBehavior
+androidx.appcompat.app.AlertController$RecycleListView
+androidx.appcompat.widget.AppCompatImageButton
+com.wireguard.android.fragment.AddTunnelsSheet
+androidx.versionedparcelable.CustomVersionedParcelable
+androidx.appcompat.widget.ActionBarOverlayLayout
+androidx.appcompat.widget.ButtonBarLayout
+com.journeyapps.barcodescanner.ViewfinderView
+androidx.appcompat.widget.FitWindowsFrameLayout
+androidx.appcompat.widget.ActionBarContextView
+com.wireguard.android.backend.GoBackend
+androidx.appcompat.widget.ActivityChooserView$InnerLayout
+com.google.android.material.theme.MaterialComponentsViewInflater
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+com.wireguard.android.activity.TunnelCreatorActivity
+com.wireguard.android.preference.KernelModuleEnablerPreference
+com.wireguard.android.Application
+com.google.android.material.transformation.ExpandableBehavior
+androidx.preference.DialogPreference
+androidx.constraintlayout.widget.Barrier
+com.google.android.material.internal.ClippableRoundedCornerLayout
+com.wireguard.android.backend.GoBackend$VpnService
+com.google.android.material.tabs.TabLayout
+com.google.android.material.internal.BaselineLayout
+com.wireguard.android.QuickTileService
+androidx.appcompat.widget.AlertDialogLayout
+com.wireguard.android.fragment.TunnelDetailFragment
+androidx.transition.FragmentTransitionSupport
+androidx.biometric.BiometricFragment
+androidx.fragment.app.FragmentContainerView
+androidx.loader.app.LoaderManagerImpl$LoaderViewModel
+com.journeyapps.barcodescanner.BarcodeView
+com.wireguard.android.activity.LogViewerActivity$ExportedLogContentProvider
+com.google.android.material.bottomsheet.BottomSheetBehavior
+androidx.appcompat.widget.AppCompatImageView
+com.google.android.material.behavior.HideViewOnScrollBehavior
+com.wireguard.android.BootShutdownReceiver
+androidx.core.app.CoreComponentFactory
+androidx.databinding.library.baseAdapters.DataBinderMapperImpl
+com.google.android.material.behavior.HideBottomViewOnScrollBehavior
+androidx.core.app.RemoteActionCompat
+com.google.android.material.bottomsheet.BottomSheetDialogFragment
+com.wireguard.android.widget.TvCardView
+androidx.appcompat.view.menu.ActionMenuItemView
+androidx.appcompat.widget.ContentFrameLayout
+com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior
+com.wireguard.android.DataBinderMapperImpl
+androidx.lifecycle.SavedStateHandlesVM
+androidx.fragment.app.DialogFragment
+androidx.recyclerview.widget.StaggeredGridLayoutManager
+com.wireguard.android.preference.ToolsInstallerPreference
+com.google.android.material.transformation.ExpandableTransformationBehavior
+com.google.android.material.internal.NavigationMenuItemView
+androidx.lifecycle.ProcessLifecycleInitializer
+android.support.v4.graphics.drawable.IconCompatParcelizer
+com.google.android.material.appbar.AppBarLayout$Behavior
+androidx.biometric.BiometricViewModel
+com.journeyapps.barcodescanner.CaptureActivity
+com.google.android.material.datepicker.MaterialCalendarGridView
+androidx.preference.ListPreference
+com.wireguard.android.activity.TvMainActivity
+com.google.android.material.tabs.TabItem
+androidx.databinding.MergedDataBinderMapper
+androidx.constraintlayout.helper.widget.Flow
+androidx.appcompat.view.menu.ListMenuItemView
+com.google.android.material.card.MaterialCardView
+androidx.appcompat.view.menu.ExpandedMenuView
+androidx.appcompat.widget.FitWindowsLinearLayout
+com.google.android.material.button.MaterialButtonToggleGroup
+androidx.preference.UnPressableLinearLayout
+com.wireguard.android.widget.ToggleSwitch
+androidx.preference.internal.PreferenceImageView
+androidx.preference.DropDownPreference
+com.google.android.material.internal.NavigationMenuView
+androidx.preference.PreferenceScreen
+com.google.android.material.textfield.TextInputLayout
+androidx.recyclerview.widget.RecyclerView
+androidx.profileinstaller.ProfileInstallReceiver
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback
+com.google.android.material.timepicker.ChipTextInputComboView
+androidx.recyclerview.widget.LinearLayoutManager
+com.google.android.material.transformation.FabTransformationBehavior
+com.google.android.material.search.SearchView$Behavior
+androidx.preference.EditTextPreferenceDialogFragmentCompat
+androidx.recyclerview.widget.GridLayoutManager
+androidx.versionedparcelable.ParcelImpl
+com.wireguard.android.activity.TunnelToggleActivity
+com.google.android.material.appbar.AppBarLayout$BaseBehavior
+com.google.android.material.datepicker.MaterialCalendar
+com.google.android.material.button.MaterialButton
+androidx.preference.PreferenceCategory
+com.google.android.material.internal.CheckableImageButton
+com.google.android.material.timepicker.ClockHandView
+com.google.android.material.divider.MaterialDivider
+com.google.android.material.datepicker.MaterialDatePicker
+com.wireguard.android.fragment.ConfigNamingDialogFragment
+androidx.core.widget.NestedScrollView
+com.google.android.material.search.SearchBar$ScrollingViewBehavior
+androidx.preference.Preference
+com.google.android.material.timepicker.TimePickerView
+androidx.appcompat.widget.ViewStubCompat
+com.wireguard.android.activity.SettingsActivity
+kotlinx.coroutines.android.AndroidDispatcherFactory
+androidx.preference.TwoStatePreference
+com.wireguard.android.fragment.TunnelListFragment
+androidx.startup.InitializationProvider
+com.wireguard.android.activity.LogViewerActivity
+com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+kotlinx.coroutines.internal.StackTraceRecoveryKt
+com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior
+androidx.preference.MultiSelectListPreference
+androidx.preference.SeekBarPreference
+com.google.android.material.sidesheet.SideSheetBehavior
+com.wireguard.android.fragment.TunnelEditorFragment
+com.google.android.material.floatingactionbutton.FloatingActionButton
+com.google.android.material.datepicker.MaterialTextInputPicker
+androidx.core.app.RemoteActionCompatParcelizer
+androidx.preference.CheckBoxPreference
+androidx.appcompat.widget.ActionBarContainer
+com.journeyapps.barcodescanner.DecoratedBarcodeView
+com.wireguard.android.widget.MultiselectableRelativeLayout
+androidx.appcompat.app.AppCompatDialogFragment
+com.google.android.material.transformation.FabTransformationSheetBehavior
+com.google.android.material.textview.MaterialTextView
+android.support.v4.app.RemoteActionCompatParcelizer
+com.google.android.material.timepicker.ClockFaceView
+androidx.appcompat.widget.SwitchCompat
+androidx.lifecycle.ReportFragment
+androidx.preference.EditTextPreference
+com.wireguard.android.activity.SettingsActivity$SettingsFragment
+com.wireguard.android.preference.QuickTilePreference
+com.google.android.material.snackbar.BaseTransientBottomBar$Behavior
+androidx.appcompat.widget.ActionMenuView
+com.google.android.material.snackbar.Snackbar$SnackbarLayout
+com.google.android.material.appbar.MaterialToolbar
+androidx.lifecycle.ProcessLifecycleOwner$attach$1
+androidx.preference.ListPreferenceDialogFragmentCompat
+com.wireguard.android.fragment.AppListDialogFragment
+androidx.biometric.FingerprintDialogFragment
+com.google.android.material.carousel.CarouselLayoutManager
+androidx.appcompat.widget.SearchView$SearchAutoComplete
+androidx.lifecycle.ReportFragment$LifecycleCallbacks
+com.wireguard.android.preference.ZipExporterPreference
+com.google.android.material.chip.Chip
+androidx.databinding.DataBinderMapperImpl
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation
+com.google.android.material.textfield.TextInputEditText
+com.wireguard.android.fragment.BaseFragment
+androidx.profileinstaller.ProfileInstallerInitializer
+com.google.android.material.snackbar.SnackbarContentLayout
+com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior
+androidx.preference.PreferenceGroup
+com.google.android.material.bottomappbar.BottomAppBar$Behavior
+androidx.appcompat.widget.Toolbar
+androidx.preference.PreferenceFragmentCompat
+androidx.core.graphics.drawable.IconCompat
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1
+com.wireguard.android.activity.MainActivity
+androidx.coordinatorlayout.widget.CoordinatorLayout
+androidx.appcompat.widget.DialogTitle
+androidx.preference.SwitchPreferenceCompat
+com.google.android.material.internal.TouchObserverFrameLayout
+androidx.emoji2.text.EmojiCompatInitializer
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int hkdfHashType_
+kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
+com.google.crypto.tink.proto.Keyset: int PRIMARY_KEY_ID_FIELD_NUMBER
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: int UNINITIALIZED_HASH_CODE
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: int VERSION_FIELD_NUMBER
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int outputPrefixType_
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state$volatile
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue$volatile
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: int KEY_VALUE_FIELD_NUMBER
+kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle$volatile
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next$volatile
+com.google.crypto.tink.proto.KeyTypeEntry: java.lang.String primitiveName_
+kotlinx.coroutines.CompletedExceptionally: int _handled$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: int VERSION_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyData: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+androidx.recyclerview.widget.RecyclerView$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.CancelledContinuation: int _resumed$volatile
+com.google.crypto.tink.proto.KeyTypeEntry: java.lang.String catalogueName_
+com.google.crypto.tink.proto.Keyset$Key: int KEY_DATA_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTemplate: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.KeyData: int KEY_MATERIAL_TYPE_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: com.google.crypto.tink.proto.AesGcmHkdfStreamingParams params_
+com.google.crypto.tink.proto.Keyset$Key: com.google.crypto.tink.proto.KeyData keyData_
+kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner$volatile
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: int UNINITIALIZED_SERIALIZED_SIZE
+com.google.crypto.tink.proto.Keyset: int KEY_FIELD_NUMBER
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object head$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat DEFAULT_INSTANCE
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int MEMOIZED_SERIALIZED_SIZE_MASK
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.KeysetInfo: com.google.crypto.tink.proto.KeysetInfo DEFAULT_INSTANCE
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: java.lang.String typeUrl_
+androidx.fragment.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause$volatile
+com.google.android.material.stateful.ExtendableSavedState: android.os.Parcelable$Creator CREATOR
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
+androidx.fragment.app.BackStackState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.Keyset: int primaryKeyId_
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: int version_
+com.google.crypto.tink.proto.HmacParams: int tagSize_
+androidx.datastore.preferences.protobuf.AbstractMessageLite: int memoizedHashCode
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: int KEY_SIZE_FIELD_NUMBER
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int status_
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int STATUS_FIELD_NUMBER
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int KEY_ID_FIELD_NUMBER
+androidx.datastore.preferences.PreferencesProto$Value: int DOUBLE_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: int derivedKeySize_
+kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: int version_
+com.google.crypto.tink.proto.KeyData: java.lang.String typeUrl_
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object tail$volatile
+kotlinx.coroutines.channels.BufferedChannel: long receivers$volatile
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state$volatile
+kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int HKDF_HASH_TYPE_FIELD_NUMBER
+com.wireguard.android.viewmodel.ConfigProxy: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: int CIPHERTEXT_SEGMENT_SIZE_FIELD_NUMBER
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder$volatile
+androidx.datastore.preferences.PreferencesProto$Value: int STRING_SET_FIELD_NUMBER
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState$volatile
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: int MEMOIZED_SERIALIZED_SIZE_MASK
+kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex$volatile
+com.google.android.material.sidesheet.SideSheetBehavior$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: com.google.crypto.tink.proto.AesGcmHkdfStreamingParams params_
+com.google.crypto.tink.proto.KeyTemplate: int VALUE_FIELD_NUMBER
+com.google.crypto.tink.proto.KeysetInfo: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.EncryptedKeyset: int ENCRYPTED_KEYSET_FIELD_NUMBER
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.KeyData: com.google.crypto.tink.proto.KeyData DEFAULT_INSTANCE
+kotlinx.coroutines.DispatchedCoroutine: int _decision$volatile
+com.google.crypto.tink.proto.HmacParams: int HASH_FIELD_NUMBER
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: com.google.crypto.tink.proto.AesCtrHmacStreamingParams params_
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
+com.wireguard.android.viewmodel.InterfaceProxy: android.os.Parcelable$Creator CREATOR
+androidx.preference.PreferenceGroup$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.PreferencesProto$Value: int LONG_FIELD_NUMBER
+androidx.datastore.preferences.PreferencesProto$Value: java.lang.Object value_
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Internal$ProtobufList strings_
+kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
+androidx.datastore.preferences.PreferencesProto$Value: int INTEGER_FIELD_NUMBER
+com.google.crypto.tink.proto.KeysetInfo: int PRIMARY_KEY_ID_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTypeEntry: com.google.crypto.tink.proto.KeyTypeEntry DEFAULT_INSTANCE
+com.google.crypto.tink.proto.KeysetInfo: com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList keyInfo_
+androidx.datastore.preferences.PreferencesProto$Value: int BOOLEAN_FIELD_NUMBER
+com.google.crypto.tink.proto.RegistryConfig: com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList entry_
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation$volatile
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: int DERIVED_KEY_SIZE_FIELD_NUMBER
+com.google.android.material.internal.CheckableImageButton$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack$volatile
+com.google.android.material.datepicker.Month: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int OUTPUT_PREFIX_TYPE_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTypeEntry: int PRIMITIVE_NAME_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTypeEntry: int KEY_MANAGER_VERSION_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated$volatile
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause$volatile
+com.google.crypto.tink.proto.KeysetInfo: int KEY_INFO_FIELD_NUMBER
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long enqIdx$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+com.google.crypto.tink.proto.HmacParams: int TAG_SIZE_FIELD_NUMBER
+com.google.crypto.tink.proto.RegistryConfig: java.lang.String configName_
+com.google.android.material.checkbox.MaterialCheckBox$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: com.google.crypto.tink.proto.KeysetInfo$KeyInfo DEFAULT_INSTANCE
+com.google.crypto.tink.proto.EncryptedKeyset: com.google.crypto.tink.proto.EncryptedKeyset DEFAULT_INSTANCE
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: androidx.concurrent.futures.AbstractResolvableFuture$Waiter next
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: com.google.crypto.tink.proto.AesCtrHmacStreamingParams params_
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int keyId_
+com.google.crypto.tink.proto.KeyData: int TYPE_URL_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: int keySize_
+kotlinx.coroutines.AwaitAll$AwaitAllNode: java.lang.Object _disposer$volatile
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: int TYPE_URL_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: int VERSION_FIELD_NUMBER
+kotlinx.coroutines.AwaitAll: int notCompletedCount$volatile
+androidx.preference.ListPreference$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.fragment.app.FragmentState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.EncryptedKeyset: com.google.crypto.tink.shaded.protobuf.ByteString encryptedKeyset_
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: int _availablePermits$volatile
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+com.google.android.material.appbar.AppBarLayout$BaseBehavior$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.preference.Preference$BaseSavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: int memoizedSerializedSize
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat DEFAULT_INSTANCE
+androidx.appcompat.widget.Toolbar$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask$volatile
+kotlinx.coroutines.InvokeOnCancelling: int _invoked$volatile
+androidx.appcompat.widget.AppCompatSpinner$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: int PARAMS_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.Keyset$Key: int STATUS_FIELD_NUMBER
+androidx.preference.MultiSelectListPreference$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: com.google.crypto.tink.shaded.protobuf.ByteString keyValue_
+com.google.crypto.tink.proto.EncryptedKeyset: com.google.crypto.tink.proto.KeysetInfo keysetInfo_
+com.google.crypto.tink.proto.Keyset$Key: int keyId_
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment$volatile
+com.google.crypto.tink.proto.KeyTemplate: java.lang.String typeUrl_
+com.google.crypto.tink.proto.KeyTemplate: int outputPrefixType_
+com.google.crypto.tink.proto.KeyTypeEntry: int TYPE_URL_FIELD_NUMBER
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.KeyData: int keyMaterialType_
+androidx.transition.ChangeBounds$6: androidx.transition.ChangeBounds$ViewBounds mViewBounds
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Parser PARSER
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: com.google.crypto.tink.shaded.protobuf.ByteString keyValue_
+kotlinx.coroutines.JobSupport: java.lang.Object _state$volatile
+com.google.crypto.tink.proto.KeyTemplate: int OUTPUT_PREFIX_TYPE_FIELD_NUMBER
+com.google.crypto.tink.shaded.protobuf.AbstractMessageLite: int memoizedHashCode
+androidx.recyclerview.widget.LinearLayoutManager$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: int hkdfHashType_
+com.google.crypto.tink.proto.KeyTypeEntry: java.lang.String typeUrl_
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int ciphertextSegmentSize_
+androidx.datastore.preferences.PreferencesProto$StringSet: int STRINGS_FIELD_NUMBER
+androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: long bufferEnd$volatile
+androidx.core.widget.NestedScrollView$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.material.bottomsheet.BottomSheetBehavior$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int UNINITIALIZED_SERIALIZED_SIZE
+com.google.crypto.tink.proto.Keyset: com.google.crypto.tink.proto.Keyset DEFAULT_INSTANCE
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: int VERSION_FIELD_NUMBER
+com.google.crypto.tink.proto.HmacParams: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.PreferencesProto$Value DEFAULT_INSTANCE
+kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
+com.google.crypto.tink.proto.KeysetInfo: int primaryKeyId_
+com.google.android.material.textfield.TextInputLayout$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int MUTABLE_FLAG_MASK
+com.google.crypto.tink.proto.Keyset$Key: int status_
+com.google.crypto.tink.proto.RegistryConfig: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.KeyTemplate: com.google.crypto.tink.proto.KeyTemplate DEFAULT_INSTANCE
+com.google.crypto.tink.proto.Keyset$Key: int KEY_ID_FIELD_NUMBER
+com.google.crypto.tink.proto.RegistryConfig: int ENTRY_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTemplate: int TYPE_URL_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTypeEntry: int CATALOGUE_NAME_FIELD_NUMBER
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: com.google.crypto.tink.proto.AesCtrHmacStreamingKey DEFAULT_INSTANCE
+com.google.crypto.tink.proto.KeyTypeEntry: int NEW_KEY_ALLOWED_FIELD_NUMBER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: int PARAMS_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTypeEntry: int keyManagerVersion_
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur$volatile
+com.google.crypto.tink.proto.KeyData: com.google.crypto.tink.shaded.protobuf.ByteString value_
+com.google.crypto.tink.proto.Keyset$Key: com.google.crypto.tink.proto.Keyset$Key DEFAULT_INSTANCE
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
+com.google.crypto.tink.proto.EncryptedKeyset: int KEYSET_INFO_FIELD_NUMBER
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object receiveSegment$volatile
+androidx.fragment.app.BackStackRecordState: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.PreferencesProto$Value: int valueCase_
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int HMAC_PARAMS_FIELD_NUMBER
+androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
+kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus$volatile
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size$volatile
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.RegistryConfig: com.google.crypto.tink.proto.RegistryConfig DEFAULT_INSTANCE
+androidx.preference.SeekBarPreference$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
+com.google.crypto.tink.proto.HmacParams: int hash_
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: java.util.Map defaultInstanceMap
+androidx.datastore.preferences.PreferencesProto$Value: int STRING_FIELD_NUMBER
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int UNINITIALIZED_HASH_CODE
+com.google.crypto.tink.proto.EncryptedKeyset: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: int MUTABLE_FLAG_MASK
+com.google.crypto.tink.proto.KeyData: int VALUE_FIELD_NUMBER
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: int PREFERENCES_FIELD_NUMBER
+androidx.preference.TwoStatePreference$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+com.google.crypto.tink.proto.KeysetInfo$KeyInfo: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+androidx.preference.EditTextPreference$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.activity.result.IntentSenderRequest: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.Parser PARSER
+com.google.crypto.tink.proto.KeyTypeEntry: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.android.material.button.MaterialButton$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler$volatile
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex$volatile
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next$volatile
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: int KEY_SIZE_FIELD_NUMBER
+com.google.crypto.tink.proto.HmacParams: com.google.crypto.tink.proto.HmacParams DEFAULT_INSTANCE
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: com.google.crypto.tink.proto.HmacParams hmacParams_
+com.google.crypto.tink.proto.Keyset$Key: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int memoizedSerializedSize
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.MapFieldLite preferences_
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _parentHandle$volatile
+androidx.customview.view.AbsSavedState: android.os.Parcelable$Creator CREATOR
+androidx.databinding.ObservableBoolean: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int derivedKeySize_
+com.google.android.material.datepicker.DateValidatorPointForward: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object bufferEndSegment$volatile
+androidx.lifecycle.Lifecycle$Event: kotlin.enums.EnumEntries $ENTRIES
+com.google.android.material.timepicker.TimeModel: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: com.google.crypto.tink.proto.AesGcmHkdfStreamingKey DEFAULT_INSTANCE
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: int version_
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: com.google.crypto.tink.proto.AesCtrHmacStreamingParams DEFAULT_INSTANCE
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKey: int KEY_VALUE_FIELD_NUMBER
+androidx.datastore.preferences.PreferencesProto$Value: int FLOAT_FIELD_NUMBER
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: java.util.Map defaultInstanceMap
+kotlinx.coroutines.internal.Segment: int cleanedAndPointers$volatile
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.PreferencesProto$StringSet DEFAULT_INSTANCE
+com.google.crypto.tink.proto.Keyset$Key: int outputPrefixType_
+com.google.crypto.tink.proto.KeyTemplate: com.google.crypto.tink.shaded.protobuf.ByteString value_
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting$volatile
+androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.protobuf.Parser PARSER
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: com.google.crypto.tink.proto.AesGcmHkdfStreamingParams DEFAULT_INSTANCE
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed$volatile
+com.google.crypto.tink.proto.RegistryConfig: int CONFIG_NAME_FIELD_NUMBER
+kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state$volatile
+com.google.crypto.tink.proto.Keyset: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int CIPHERTEXT_SEGMENT_SIZE_FIELD_NUMBER
+androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: int ciphertextSegmentSize_
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: androidx.datastore.preferences.protobuf.UnknownFieldSetLite unknownFields
+com.google.crypto.tink.proto.AesGcmHkdfStreamingParams: int HKDF_HASH_TYPE_FIELD_NUMBER
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef$volatile
+com.wireguard.android.viewmodel.PeerProxy: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesCtrHmacStreamingKey: int version_
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next$volatile
+com.google.crypto.tink.proto.Keyset: com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList key_
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: com.google.crypto.tink.shaded.protobuf.Parser PARSER
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: int keySize_
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev$volatile
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted$volatile
+com.google.android.material.datepicker.CalendarConstraints: android.os.Parcelable$Creator CREATOR
+com.google.crypto.tink.proto.AesGcmHkdfStreamingKeyFormat: int PARAMS_FIELD_NUMBER
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long deqIdx$volatile
+com.google.crypto.tink.proto.AesCtrHmacStreamingKeyFormat: int PARAMS_FIELD_NUMBER
+com.google.crypto.tink.proto.KeyTypeEntry: boolean newKeyAllowed_
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.PreferencesProto$PreferenceMap DEFAULT_INSTANCE
+androidx.datastore.preferences.PreferencesProto$Value: int BYTES_FIELD_NUMBER
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite: com.google.crypto.tink.shaded.protobuf.UnknownFieldSetLite unknownFields
+com.google.crypto.tink.proto.Keyset$Key: int OUTPUT_PREFIX_TYPE_FIELD_NUMBER
+com.google.crypto.tink.proto.AesCtrHmacStreamingParams: int DERIVED_KEY_SIZE_FIELD_NUMBER
+androidx.biometric.FingerprintDialogFragment$Api21Impl: void startAnimation(android.graphics.drawable.Drawable)
+androidx.appcompat.app.AppCompatDelegateImpl$Api21Impl: boolean isPowerSaveMode(android.os.PowerManager)
+androidx.biometric.CryptoObjectUtils$Api28Impl: javax.crypto.Mac getMac(android.hardware.biometrics.BiometricPrompt$CryptoObject)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.transition.ViewUtilsApi22$Api29Impl: void setLeftTopRightBottom(android.view.View,int,int,int,int)
+com.google.crypto.tink.shaded.protobuf.FieldType$Collection: com.google.crypto.tink.shaded.protobuf.FieldType$Collection valueOf(java.lang.String)
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.core.view.WindowInsetsCompat$Impl: void setTypeMaxBoundingRectsMap(android.graphics.Rect[][])
+androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType: androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+com.wireguard.config.BadConfigException$Section: com.wireguard.config.BadConfigException$Section valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathEnd(float)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+androidx.core.view.WindowInsetsCompat$Impl20: java.util.List getBoundingRectsIgnoringVisibility(int)
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+com.google.crypto.tink.proto.OutputPrefixType: com.google.crypto.tink.proto.OutputPrefixType[] values()
+com.google.android.material.bottomappbar.BottomAppBar$Behavior: BottomAppBar$Behavior()
+androidx.biometric.CryptoObjectUtils$Api23Impl: android.security.keystore.KeyGenParameterSpec buildKeyGenParameterSpec(android.security.keystore.KeyGenParameterSpec$Builder)
+androidx.biometric.BiometricFragment: BiometricFragment()
+androidx.appcompat.widget.Toolbar$Api33Impl: android.window.OnBackInvokedCallback newOnBackInvokedCallback(java.lang.Runnable)
+androidx.preference.internal.PreferenceImageView: PreferenceImageView(android.content.Context,android.util.AttributeSet)
+com.google.android.material.transformation.ExpandableTransformationBehavior: ExpandableTransformationBehavior()
+androidx.biometric.CryptoObjectUtils$Api28Impl: android.hardware.biometrics.BiometricPrompt$CryptoObject create(javax.crypto.Cipher)
+androidx.transition.Transition$Impl26: void setCurrentPlayTime(android.animation.Animator,long)
+com.google.crypto.tink.proto.OutputPrefixType: com.google.crypto.tink.proto.OutputPrefixType valueOf(java.lang.String)
+androidx.biometric.CryptoObjectUtils$Api28Impl: android.hardware.biometrics.BiometricPrompt$CryptoObject create(javax.crypto.Mac)
+androidx.transition.ViewUtilsApi19$Api29Impl: float getTransitionAlpha(android.view.View)
+com.google.crypto.tink.shaded.protobuf.FieldType: com.google.crypto.tink.shaded.protobuf.FieldType valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api26Impl: void setImportantForAutofill(android.view.View,int)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+com.wireguard.crypto.Key$Format: com.wireguard.crypto.Key$Format valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathStart(float)
+androidx.biometric.BiometricManager$Api29Impl: java.lang.reflect.Method getCanAuthenticateWithCryptoMethod()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.core.view.WindowInsetsCompat$Impl34: WindowInsetsCompat$Impl34(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl34)
+com.google.zxing.qrcode.decoder.DataMask: com.google.zxing.qrcode.decoder.DataMask valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+com.wireguard.crypto.Key$Format: com.wireguard.crypto.Key$Format[] values()
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+com.google.zxing.common.CharacterSetECI: com.google.zxing.common.CharacterSetECI[] values()
+com.google.crypto.tink.shaded.protobuf.JavaType: com.google.crypto.tink.shaded.protobuf.JavaType[] values()
+androidx.biometric.BiometricViewModel: BiometricViewModel()
+androidx.biometric.CryptoObjectUtils$Api23Impl: void initKeyGenerator(javax.crypto.KeyGenerator,android.security.keystore.KeyGenParameterSpec)
+com.google.android.material.theme.MaterialComponentsViewInflater: MaterialComponentsViewInflater()
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser$Mode: com.google.zxing.pdf417.decoder.DecodedBitStreamParser$Mode[] values()
+com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior: ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.AppCompatImageButton: AppCompatImageButton(android.content.Context,android.util.AttributeSet)
+com.google.android.material.snackbar.Snackbar$SnackbarLayout: Snackbar$SnackbarLayout(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.widget.ConstraintAttribute$AttributeType: androidx.constraintlayout.widget.ConstraintAttribute$AttributeType[] values()
+androidx.appcompat.resources.Compatibility$Api21Impl: int getChangingConfigurations(android.content.res.TypedArray)
+com.wireguard.android.backend.GoBackend: int wgGetSocketV4(int)
+com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior: AppBarLayout$ScrollingViewBehavior(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getStrokeAlpha()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+com.google.zxing.qrcode.decoder.DataMask: com.google.zxing.qrcode.decoder.DataMask[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+androidx.biometric.CryptoObjectUtils$Api28Impl: java.security.Signature getSignature(android.hardware.biometrics.BiometricPrompt$CryptoObject)
+androidx.preference.DialogPreference: DialogPreference(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.ViewUtils$Api29Impl: void computeFitSystemWindows(android.view.View,android.graphics.Rect,android.graphics.Rect)
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.biometric.BiometricFragment$Api28Impl: void setTitle(android.hardware.biometrics.BiometricPrompt$Builder,java.lang.CharSequence)
+androidx.preference.ListPreference: ListPreference(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.SearchView$Api29Impl: void setInputMethodMode(androidx.appcompat.widget.SearchView$SearchAutoComplete,int)
+androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder[] values()
+com.google.zxing.ResultMetadataType: com.google.zxing.ResultMetadataType valueOf(java.lang.String)
+com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior: FloatingActionButton$Behavior(android.content.Context,android.util.AttributeSet)
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$MethodToInvoke: com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$MethodToInvoke valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl34: WindowInsetsCompat$BuilderImpl34()
+com.google.android.material.card.MaterialCardView: MaterialCardView(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.AppCompatTextHelper$Api26Impl: void setAutoSizeTextTypeUniformWithPresetSizes(android.widget.TextView,int[],int)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
+androidx.appcompat.widget.MenuPopupWindow$Api23Impl: void setExitTransition(android.widget.PopupWindow,android.transition.Transition)
+androidx.core.view.WindowInsetsCompat$BuilderImpl31: WindowInsetsCompat$BuilderImpl31(androidx.core.view.WindowInsetsCompat)
+com.google.android.material.chip.Chip: Chip(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api24Impl: void setPointerIcon(android.view.View,android.view.PointerIcon)
+com.google.crypto.tink.KeyTemplate$OutputPrefixType: com.google.crypto.tink.KeyTemplate$OutputPrefixType[] values()
+com.wireguard.android.widget.MultiselectableRelativeLayout: MultiselectableRelativeLayout(android.content.Context,android.util.AttributeSet)
+androidx.fragment.app.DialogFragment: DialogFragment()
+androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.biometric.BiometricFragment$Api28Impl: void setSubtitle(android.hardware.biometrics.BiometricPrompt$Builder,java.lang.CharSequence)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl: AppCompatTextViewAutoSizeHelper$Impl()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getPivotY()
+androidx.biometric.BiometricFragment$Api28Impl: android.hardware.biometrics.BiometricPrompt$Builder createPromptBuilder(android.content.Context)
+androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+com.google.android.material.search.SearchBar$ScrollingViewBehavior: SearchBar$ScrollingViewBehavior()
+androidx.core.view.WindowInsetsCompat$Impl31: WindowInsetsCompat$Impl31(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl35: void setInsets(int,androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.appcompat.app.AppCompatDelegateImpl$Api24Impl: void setLocales(android.content.res.Configuration,androidx.core.os.LocaleListCompat)
+androidx.core.view.ViewCompat$Api30Impl: void setStateDescription(android.view.View,java.lang.CharSequence)
+androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType valueOf(java.lang.String)
+androidx.preference.PreferenceScreen: PreferenceScreen(android.content.Context,android.util.AttributeSet)
+com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior: FloatingActionButton$Behavior()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+com.google.zxing.DecodeHintType: com.google.zxing.DecodeHintType[] values()
+androidx.databinding.library.baseAdapters.DataBinderMapperImpl: DataBinderMapperImpl()
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+com.google.android.material.shape.StateListSizeChange$SizeChangeType: com.google.android.material.shape.StateListSizeChange$SizeChangeType valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api31Impl: java.lang.String[] getReceiveContentMimeTypes(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.appcompat.widget.ListPopupWindow$Api29Impl: void setIsClippedToScreen(android.widget.PopupWindow,boolean)
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+androidx.appcompat.widget.SearchView$Api29Impl: void refreshAutoCompleteResults(android.widget.AutoCompleteTextView)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+com.wireguard.config.BadConfigException$Reason: com.wireguard.config.BadConfigException$Reason valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityHeading(android.view.View,boolean)
+androidx.appcompat.app.AppCompatDelegate$Api33Impl: android.os.LocaleList localeManagerGetApplicationLocales(java.lang.Object)
+com.google.crypto.tink.shaded.protobuf.FieldType: com.google.crypto.tink.shaded.protobuf.FieldType[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+androidx.fragment.app.DefaultSpecialEffectsController$Api24Impl: long totalDuration(android.animation.AnimatorSet)
+androidx.core.view.WindowInsetsCompat$Impl35: void initTypeBoundingRectsMaps()
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+com.wireguard.android.util.RootShell$RootShellException$Reason: com.wireguard.android.util.RootShell$RootShellException$Reason valueOf(java.lang.String)
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl$1: void onAuthenticationHelp(int,java.lang.CharSequence)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityPaneTitle(android.view.View,java.lang.CharSequence)
+com.google.crypto.tink.proto.HashType: com.google.crypto.tink.proto.HashType valueOf(java.lang.String)
+com.wireguard.android.preference.KernelModuleEnablerPreference: KernelModuleEnablerPreference(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setRotation(float)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23: void computeAndSetTextDirection(android.text.StaticLayout$Builder,android.widget.TextView)
+androidx.biometric.CryptoObjectUtils$Api30Impl: android.security.identity.IdentityCredential getIdentityCredential(android.hardware.biometrics.BiometricPrompt$CryptoObject)
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+com.google.android.material.textfield.TextInputLayout: TextInputLayout(android.content.Context,android.util.AttributeSet)
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl: void computeAndSetTextDirection(android.text.StaticLayout$Builder,android.widget.TextView)
+androidx.appcompat.app.AppCompatDelegateImpl$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+androidx.biometric.BiometricFragment$Api29Impl: void setDeviceCredentialAllowed(android.hardware.biometrics.BiometricPrompt$Builder,boolean)
+androidx.core.view.WindowInsetsCompat$BuilderImpl34: void setInsets(int,androidx.core.graphics.Insets)
+com.google.android.material.shape.StateListSizeChange$SizeChangeType: com.google.android.material.shape.StateListSizeChange$SizeChangeType[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: void setAlpha(float)
+com.google.android.material.color.utilities.TonePolarity: com.google.android.material.color.utilities.TonePolarity[] values()
+com.google.crypto.tink.proto.KeyData$KeyMaterialType: com.google.crypto.tink.proto.KeyData$KeyMaterialType valueOf(java.lang.String)
+com.google.crypto.tink.shaded.protobuf.FieldType$Collection: com.google.crypto.tink.shaded.protobuf.FieldType$Collection[] values()
+com.google.android.material.tabs.TabItem: TabItem(android.content.Context,android.util.AttributeSet)
+com.google.android.material.carousel.CarouselStrategy$StrategyType: com.google.android.material.carousel.CarouselStrategy$StrategyType[] values()
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel: com.google.zxing.qrcode.decoder.ErrorCorrectionLevel valueOf(java.lang.String)
+androidx.appcompat.widget.SearchView$SearchAutoComplete: SearchView$SearchAutoComplete(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.biometric.BiometricManager$Api30Impl: int canAuthenticate(android.hardware.biometrics.BiometricManager,int)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathOffset()
+com.google.crypto.tink.proto.KeyStatusType: com.google.crypto.tink.proto.KeyStatusType[] values()
+androidx.recyclerview.widget.GridLayoutManager: GridLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+com.wireguard.android.fragment.TunnelListFragment: TunnelListFragment()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.appcompat.widget.DropDownListView$Api33Impl: boolean isSelectedChildViewEnabled(android.widget.AbsListView)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: java.lang.String getPathName()
+androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.appcompat.view.menu.ActionMenuItemView: ActionMenuItemView(android.content.Context,android.util.AttributeSet)
+androidx.preference.SwitchPreferenceCompat: SwitchPreferenceCompat(android.content.Context,android.util.AttributeSet)
+androidx.transition.ViewUtilsApi21$Api29Impl: void transformMatrixToGlobal(android.view.View,android.graphics.Matrix)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.appcompat.widget.SwitchCompat: SwitchCompat(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.DataBinderMapperImpl: DataBinderMapperImpl()
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+com.google.android.material.textfield.TextInputEditText: TextInputEditText(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setPivotY(float)
+com.google.android.material.datepicker.MaterialCalendar$CalendarSelector: com.google.android.material.datepicker.MaterialCalendar$CalendarSelector[] values()
+androidx.recyclerview.widget.RecyclerView: RecyclerView(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
+com.google.android.material.transformation.FabTransformationSheetBehavior: FabTransformationSheetBehavior(android.content.Context,android.util.AttributeSet)
+com.wireguard.config.BadConfigException$Location: com.wireguard.config.BadConfigException$Location valueOf(java.lang.String)
+androidx.biometric.KeyguardUtils$Api16Impl: boolean isKeyguardSecure(android.app.KeyguardManager)
+androidx.core.view.ViewCompat$Api26Impl: int getImportantForAutofill(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+com.google.android.material.datepicker.MaterialTextInputPicker: MaterialTextInputPicker()
+com.wireguard.crypto.KeyFormatException$Type: com.wireguard.crypto.KeyFormatException$Type[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean systemBarVisibilityEquals(int,int)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getRotation()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: float getAlpha()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getFillAlpha()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+androidx.biometric.CryptoObjectUtils$Api28Impl: javax.crypto.Cipher getCipher(android.hardware.biometrics.BiometricPrompt$CryptoObject)
+androidx.appcompat.widget.AppCompatTextClassifierHelper$Api26Impl: android.view.textclassifier.TextClassifier getTextClassifier(android.widget.TextView)
+com.wireguard.android.fragment.TunnelEditorFragment: TunnelEditorFragment()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+androidx.core.widget.NestedScrollView: NestedScrollView(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29: AppCompatTextViewAutoSizeHelper$Impl29()
+com.google.zxing.aztec.decoder.Decoder$Table: com.google.zxing.aztec.decoder.Decoder$Table[] values()
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState$State: com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState$State valueOf(java.lang.String)
+com.wireguard.config.BadConfigException$Section: com.wireguard.config.BadConfigException$Section[] values()
+com.google.zxing.ResultMetadataType: com.google.zxing.ResultMetadataType[] values()
+com.google.zxing.qrcode.decoder.Mode: com.google.zxing.qrcode.decoder.Mode valueOf(java.lang.String)
+androidx.fragment.app.SpecialEffectsController$Operation$State: androidx.fragment.app.SpecialEffectsController$Operation$State valueOf(java.lang.String)
+androidx.appcompat.widget.ButtonBarLayout: ButtonBarLayout(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$BuilderImpl36: WindowInsetsCompat$BuilderImpl36(androidx.core.view.WindowInsetsCompat)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setScaleX(float)
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.appcompat.app.AppCompatDelegate$Api24Impl: android.os.LocaleList localeListForLanguageTags(java.lang.String)
+androidx.appcompat.app.AppCompatDelegateImpl$Api33Impl: android.window.OnBackInvokedCallback registerOnBackPressedCallback(java.lang.Object,androidx.appcompat.app.AppCompatDelegateImpl)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+com.google.android.material.search.SearchView$Behavior: SearchView$Behavior(android.content.Context,android.util.AttributeSet)
+com.journeyapps.barcodescanner.DecoratedBarcodeView: DecoratedBarcodeView(android.content.Context,android.util.AttributeSet)
+androidx.biometric.BiometricManager$Api29Impl: int canAuthenticate(android.hardware.biometrics.BiometricManager)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+androidx.preference.PreferenceDialogFragmentCompat$Api30Impl: void showIme(android.view.Window)
+androidx.transition.FragmentTransitionSupport: FragmentTransitionSupport()
+androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour: androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour valueOf(java.lang.String)
+com.google.android.material.color.utilities.QuantizerWu$Direction: com.google.android.material.color.utilities.QuantizerWu$Direction valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.constraintlayout.core.SolverVariable$Type: androidx.constraintlayout.core.SolverVariable$Type[] values()
+androidx.security.crypto.MasterKey$KeyScheme: androidx.security.crypto.MasterKey$KeyScheme[] values()
+androidx.preference.PreferenceGroup: PreferenceGroup(android.content.Context,android.util.AttributeSet)
+com.google.crypto.tink.proto.KeyData$KeyMaterialType: com.google.crypto.tink.proto.KeyData$KeyMaterialType[] values()
+com.google.android.material.drawable.DrawableUtils$OutlineCompatL: void setConvexPath(android.graphics.Outline,android.graphics.Path)
+com.google.android.material.color.utilities.Variant: com.google.android.material.color.utilities.Variant[] values()
+androidx.core.view.ViewCompat$Api31Impl: androidx.core.view.ContentInfoCompat performReceiveContent(android.view.View,androidx.core.view.ContentInfoCompat)
+androidx.appcompat.app.AppCompatDelegateImpl$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
+com.google.zxing.BarcodeFormat: com.google.zxing.BarcodeFormat[] values()
+com.google.android.material.datepicker.MaterialCalendarGridView: MaterialCalendarGridView(android.content.Context,android.util.AttributeSet)
+androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder valueOf(java.lang.String)
+androidx.appcompat.widget.TooltipCompat$Api26Impl: void setTooltipText(android.view.View,java.lang.CharSequence)
+com.wireguard.android.viewmodel.PeerProxy$AllowedIpsState: com.wireguard.android.viewmodel.PeerProxy$AllowedIpsState[] values()
+com.google.android.material.motion.MaterialBackOrchestrator$Api33BackCallbackDelegate: void startListeningForBackCallbacks(com.google.android.material.motion.MaterialBackHandler,android.view.View,boolean)
+androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType[] values()
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl: boolean isHorizontallyScrollable(android.widget.TextView)
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setTranslateX(float)
+com.google.android.material.snackbar.SnackbarContentLayout: SnackbarContentLayout(android.content.Context,android.util.AttributeSet)
+com.wireguard.crypto.KeyFormatException$Type: com.wireguard.crypto.KeyFormatException$Type valueOf(java.lang.String)
+com.google.crypto.tink.shaded.protobuf.Writer$FieldOrder: com.google.crypto.tink.shaded.protobuf.Writer$FieldOrder valueOf(java.lang.String)
+androidx.appcompat.widget.MenuPopupWindow$Api29Impl: void setTouchModal(android.widget.PopupWindow,boolean)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Api23Impl: android.text.StaticLayout createStaticLayoutForMeasuring(java.lang.CharSequence,android.text.Layout$Alignment,int,int,android.widget.TextView,android.text.TextPaint,androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl)
+androidx.core.view.WindowInsetsCompat$Impl20: void setDisplayShape(androidx.core.view.DisplayShapeCompat)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+androidx.transition.TransitionUtils$Api28Impl: android.graphics.Bitmap createBitmap(android.graphics.Picture)
+androidx.preference.PreferenceDialogFragmentCompat: PreferenceDialogFragmentCompat()
+androidx.core.view.WindowInsetsCompat$Impl20: java.util.List getBoundingRects(android.graphics.Rect[][],int)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+com.google.android.material.color.utilities.TonePolarity: com.google.android.material.color.utilities.TonePolarity valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.appcompat.widget.Toolbar$Api33Impl: void tryUnregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+com.wireguard.android.backend.GoBackend$VpnService: GoBackend$VpnService()
+androidx.security.crypto.MasterKey$Builder$Api23Impl: java.lang.String getKeystoreAlias(android.security.keystore.KeyGenParameterSpec)
+androidx.preference.DropDownPreference: DropDownPreference(android.content.Context,android.util.AttributeSet)
+com.google.android.material.carousel.CarouselLayoutManager: CarouselLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+com.wireguard.android.preference.KernelModuleEnablerPreference$State: com.wireguard.android.preference.KernelModuleEnablerPreference$State[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: void setPathData(androidx.core.graphics.PathParser$PathDataNode[])
+androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase[] values()
+com.google.android.material.transformation.FabTransformationSheetBehavior: FabTransformationSheetBehavior()
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType valueOf(java.lang.String)
+androidx.coordinatorlayout.widget.CoordinatorLayout: CoordinatorLayout(android.content.Context,android.util.AttributeSet)
+com.google.android.material.appbar.AppBarLayout$Behavior: AppBarLayout$Behavior(android.content.Context,android.util.AttributeSet)
+androidx.preference.MultiSelectListPreferenceDialogFragmentCompat: MultiSelectListPreferenceDialogFragmentCompat()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType[] values()
+androidx.databinding.MergedDataBinderMapper: MergedDataBinderMapper()
+androidx.appcompat.widget.ActionBarContextView: ActionBarContextView(android.content.Context,android.util.AttributeSet)
+com.google.android.material.sidesheet.SideSheetBehavior: SideSheetBehavior(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
+androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
+androidx.biometric.BiometricFragment$Api28Impl: void setDescription(android.hardware.biometrics.BiometricPrompt$Builder,java.lang.CharSequence)
+androidx.databinding.DataBinderMapperImpl: DataBinderMapperImpl()
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel: com.google.zxing.qrcode.decoder.ErrorCorrectionLevel[] values()
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat computeSystemWindowInsets(android.view.View,androidx.core.view.WindowInsetsCompat,android.graphics.Rect)
+androidx.appcompat.widget.ActionBarOverlayLayout: ActionBarOverlayLayout(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.core.widgets.ConstraintAnchor$Type: androidx.constraintlayout.core.widgets.ConstraintAnchor$Type[] values()
+androidx.preference.PreferenceFragmentCompat: PreferenceFragmentCompat()
+androidx.startup.InitializationProvider: InitializationProvider()
+com.wireguard.android.preference.QuickTilePreference: QuickTilePreference(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api30Impl: androidx.core.view.WindowInsetsControllerCompat getWindowInsetsController(android.view.View)
+androidx.appcompat.app.AlertController$RecycleListView: AlertController$RecycleListView(android.content.Context,android.util.AttributeSet)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: void setRootAlpha(int)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.view.DisplayShapeCompat createDisplayShape(android.view.View)
+androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection valueOf(java.lang.String)
+androidx.transition.ViewUtilsApi23$Api29Impl: void setTransitionVisibility(android.view.View,int)
+androidx.biometric.BiometricFragment$Api28Impl: void authenticate(android.hardware.biometrics.BiometricPrompt,android.hardware.biometrics.BiometricPrompt$CryptoObject,android.os.CancellationSignal,java.util.concurrent.Executor,android.hardware.biometrics.BiometricPrompt$AuthenticationCallback)
+androidx.recyclerview.widget.StaggeredGridLayoutManager: StaggeredGridLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+androidx.core.view.WindowInsetsCompat$Impl: void setDisplayShape(androidx.core.view.DisplayShapeCompat)
+androidx.appcompat.widget.ActionMenuView: ActionMenuView(android.content.Context,android.util.AttributeSet)
+com.google.crypto.tink.shaded.protobuf.Writer$FieldOrder: com.google.crypto.tink.shaded.protobuf.Writer$FieldOrder[] values()
+com.wireguard.android.activity.SettingsActivity$SettingsFragment: SettingsActivity$SettingsFragment()
+androidx.fragment.app.FragmentContainerView: FragmentContainerView(android.content.Context,android.util.AttributeSet)
+com.google.crypto.tink.shaded.protobuf.ProtoSyntax: com.google.crypto.tink.shaded.protobuf.ProtoSyntax valueOf(java.lang.String)
+com.journeyapps.barcodescanner.camera.CameraSettings$FocusMode: com.journeyapps.barcodescanner.camera.CameraSettings$FocusMode valueOf(java.lang.String)
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+com.wireguard.android.preference.ToolsInstallerPreference$State: com.wireguard.android.preference.ToolsInstallerPreference$State valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl35: WindowInsetsCompat$Impl35(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+com.journeyapps.barcodescanner.camera.CameraSettings$FocusMode: com.journeyapps.barcodescanner.camera.CameraSettings$FocusMode[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+com.google.crypto.tink.shaded.protobuf.WireFormat$FieldType: com.google.crypto.tink.shaded.protobuf.WireFormat$FieldType[] values()
+com.wireguard.config.BadConfigException$Location: com.wireguard.config.BadConfigException$Location[] values()
+com.google.android.material.transformation.FabTransformationBehavior: FabTransformationBehavior(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.fragment.BaseFragment: BaseFragment()
+androidx.transition.ViewGroupUtils$Api29Impl: int getChildDrawingOrder(android.view.ViewGroup,int)
+com.google.android.material.color.utilities.QuantizerWu$Direction: com.google.android.material.color.utilities.QuantizerWu$Direction[] values()
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableDelegateState: int getChangingConfigurations()
+com.google.zxing.qrcode.decoder.Mode: com.google.zxing.qrcode.decoder.Mode[] values()
+com.google.android.material.behavior.HideViewOnScrollBehavior: HideViewOnScrollBehavior()
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
+androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection[] values()
+androidx.appcompat.widget.DialogTitle: DialogTitle(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setTranslateY(float)
+androidx.biometric.BiometricPrompt$ResetCallbackObserver: void resetCallback()
+com.wireguard.android.preference.VersionPreference: VersionPreference(android.content.Context,android.util.AttributeSet)
+androidx.preference.UnPressableLinearLayout: UnPressableLinearLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl35: void initTypeBoundingRects(androidx.core.view.WindowInsetsCompat)
+com.google.zxing.DecodeHintType: com.google.zxing.DecodeHintType valueOf(java.lang.String)
+com.wireguard.android.fragment.ConfigNamingDialogFragment: ConfigNamingDialogFragment()
+com.google.android.material.timepicker.TimePickerView: TimePickerView(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.activity.TunnelToggleActivity: TunnelToggleActivity()
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl$1: void onAuthenticationError(int,java.lang.CharSequence)
+com.google.android.material.divider.MaterialDivider: MaterialDivider(android.content.Context,android.util.AttributeSet)
+androidx.biometric.CryptoObjectUtils$Api23Impl: void setBlockModeCBC(android.security.keystore.KeyGenParameterSpec$Builder)
+com.google.android.material.appbar.AppBarLayout$BaseBehavior: AppBarLayout$BaseBehavior(android.content.Context,android.util.AttributeSet)
+com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior: AppBarLayout$ScrollingViewBehavior()
+androidx.preference.ListPreferenceDialogFragmentCompat: ListPreferenceDialogFragmentCompat()
+androidx.biometric.BiometricFragment$Api28Impl: android.hardware.biometrics.BiometricPrompt buildPrompt(android.hardware.biometrics.BiometricPrompt$Builder)
+androidx.core.view.ViewCompat$Api29Impl: void saveAttributeDataForStyleable(android.view.View,android.content.Context,int[],android.util.AttributeSet,android.content.res.TypedArray,int,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29: void computeAndSetTextDirection(android.text.StaticLayout$Builder,android.widget.TextView)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.biometric.BiometricManager$Api29Impl: android.hardware.biometrics.BiometricManager create(android.content.Context)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.appcompat.widget.Toolbar$Api33Impl: void tryRegisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+androidx.preference.EditTextPreference: EditTextPreference(android.content.Context,android.util.AttributeSet)
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
+androidx.appcompat.widget.AppCompatTextHelper$Api24Impl: void setTextLocales(android.widget.TextView,android.os.LocaleList)
+androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+androidx.appcompat.widget.AppCompatReceiveContentHelper$OnDropApi24Impl: boolean onDropForView(android.view.DragEvent,android.view.View,android.app.Activity)
+androidx.appcompat.widget.ViewStubCompat: ViewStubCompat(android.content.Context,android.util.AttributeSet)
+com.google.android.material.carousel.CarouselLayoutManager: CarouselLayoutManager()
+com.wireguard.android.preference.ToolsInstallerPreference$State: com.wireguard.android.preference.ToolsInstallerPreference$State[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
+com.google.android.material.internal.NavigationMenuItemView: NavigationMenuItemView(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getTranslateX()
+androidx.constraintlayout.widget.ConstraintAttribute$AttributeType: androidx.constraintlayout.widget.ConstraintAttribute$AttributeType valueOf(java.lang.String)
+androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType valueOf(java.lang.String)
+com.google.android.material.internal.TouchObserverFrameLayout: TouchObserverFrameLayout(android.content.Context,android.util.AttributeSet)
+androidx.biometric.CancellationSignalProvider$Api16Impl: android.os.CancellationSignal create()
+androidx.core.widget.EdgeEffectCompat$Api31Impl: float onPullDistance(android.widget.EdgeEffect,float,float)
+com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior: FloatingActionButton$BaseBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: void initDisplayShape(android.view.View)
+com.wireguard.android.util.RootShell$RootShellException$Reason: com.wireguard.android.util.RootShell$RootShellException$Reason[] values()
+com.google.crypto.tink.shaded.protobuf.WireFormat$JavaType: com.google.crypto.tink.shaded.protobuf.WireFormat$JavaType[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void setSystemUiVisibility(int)
+androidx.appcompat.widget.AppCompatTextHelper$Api26Impl: boolean setFontVariationSettings(android.widget.TextView,java.lang.String)
+androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact: androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact valueOf(java.lang.String)
+androidx.appcompat.widget.ListPopupWindow$Api24Impl: int getMaxAvailableHeight(android.widget.PopupWindow,android.view.View,int,boolean)
+androidx.appcompat.widget.AppCompatImageView: AppCompatImageView(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+com.wireguard.android.BootShutdownReceiver: BootShutdownReceiver()
+com.google.android.material.carousel.CarouselStrategy$StrategyType: com.google.android.material.carousel.CarouselStrategy$StrategyType valueOf(java.lang.String)
+androidx.biometric.AuthenticationCallbackProvider$Api30Impl: int getAuthenticationType(android.hardware.biometrics.BiometricPrompt$AuthenticationResult)
+com.wireguard.android.activity.MainActivity: MainActivity()
+androidx.appcompat.widget.AppCompatTextHelper$Api21Impl: java.util.Locale forLanguageTag(java.lang.String)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+com.google.android.material.button.MaterialButtonToggleGroup: MaterialButtonToggleGroup(android.content.Context,android.util.AttributeSet)
+androidx.biometric.CryptoObjectUtils$Api30Impl: android.hardware.biometrics.BiometricPrompt$CryptoObject create(android.security.identity.IdentityCredential)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
+com.google.crypto.tink.shaded.protobuf.WireFormat$JavaType: com.google.crypto.tink.shaded.protobuf.WireFormat$JavaType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+com.google.android.material.color.utilities.Variant: com.google.android.material.color.utilities.Variant valueOf(java.lang.String)
+androidx.biometric.BiometricFragment$Api29Impl: void setConfirmationRequired(android.hardware.biometrics.BiometricPrompt$Builder,boolean)
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+androidx.core.view.WindowInsetsCompat$BuilderImpl35: WindowInsetsCompat$BuilderImpl35()
+com.wireguard.android.activity.LogViewerActivity$ExportedLogContentProvider: LogViewerActivity$ExportedLogContentProvider()
+com.wireguard.android.backend.GoBackend: int wgTurnOn(java.lang.String,int,java.lang.String)
+androidx.appcompat.resources.Compatibility$Api21Impl: android.graphics.drawable.Drawable createFromXmlInner(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+androidx.core.widget.EdgeEffectCompat$Api31Impl: float getDistance(android.widget.EdgeEffect)
+com.google.crypto.tink.shaded.protobuf.WireFormat$FieldType: com.google.crypto.tink.shaded.protobuf.WireFormat$FieldType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: void initDisplayShape(android.view.View)
+androidx.security.crypto.MasterKey$Builder$Api23Impl$Api28Impl: void setIsStrongBoxBacked(android.security.keystore.KeyGenParameterSpec$Builder)
+androidx.core.view.WindowInsetsCompat$TypeImpl34: int toPlatformType(int)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.appcompat.widget.AppCompatTextHelper$Api28Impl: android.graphics.Typeface create(android.graphics.Typeface,int,boolean)
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy: androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+com.google.android.material.timepicker.ChipTextInputComboView: ChipTextInputComboView(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.ContentFrameLayout: ContentFrameLayout(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.app.AppCompatDialogFragment: AppCompatDialogFragment()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getPivotX()
+com.google.android.material.transformation.ExpandableBehavior: ExpandableBehavior(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.AlertDialogLayout: AlertDialogLayout(android.content.Context,android.util.AttributeSet)
+com.google.android.material.internal.BaselineLayout: BaselineLayout(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.QuickTileService: QuickTileService()
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeAlpha(float)
+com.google.android.material.sidesheet.SideSheetBehavior: SideSheetBehavior()
+androidx.core.view.WindowInsetsCompat$BuilderImpl35: WindowInsetsCompat$BuilderImpl35(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.security.crypto.EncryptedFile$FileEncryptionScheme: androidx.security.crypto.EncryptedFile$FileEncryptionScheme[] values()
+com.google.android.material.bottomsheet.BottomSheetBehavior: BottomSheetBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.widget.EdgeEffectCompat$Api31Impl: android.widget.EdgeEffect create(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
+androidx.core.view.ViewCompat$Api30Impl: android.view.WindowInsets dispatchApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeWidth(float)
+com.wireguard.android.widget.TvCardView: TvCardView(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.view.WindowCallbackWrapper$Api23Impl: boolean onSearchRequested(android.view.Window$Callback,android.view.SearchEvent)
+androidx.core.view.ViewCompat$Api28Impl: void setScreenReaderFocusable(android.view.View,boolean)
+androidx.preference.PreferenceCategory: PreferenceCategory(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setScaleY(float)
+androidx.biometric.FingerprintDialogFragment$Api26Impl: int getColorErrorAttr()
+androidx.preference.MultiSelectListPreference: MultiSelectListPreference(android.content.Context,android.util.AttributeSet)
+com.google.android.material.appbar.AppBarLayout$BaseBehavior: AppBarLayout$BaseBehavior()
+androidx.appcompat.view.menu.ListMenuItemView: ListMenuItemView(android.content.Context,android.util.AttributeSet)
+androidx.security.crypto.EncryptedFile$FileEncryptionScheme: androidx.security.crypto.EncryptedFile$FileEncryptionScheme valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+androidx.biometric.PackageUtils$Api23Impl: boolean hasSystemFeatureFingerprint(android.content.pm.PackageManager)
+androidx.security.crypto.MasterKey$Builder$Api23Impl$Api30Impl: void setUserAuthenticationParameters(android.security.keystore.KeyGenParameterSpec$Builder,int,int)
+androidx.constraintlayout.widget.ConstraintLayout: ConstraintLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableCompatState: int getChangingConfigurations()
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl$1: AuthenticationCallbackProvider$Api28Impl$1(androidx.biometric.AuthenticationCallbackProvider$Listener)
+androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType[] values()
+com.google.android.material.behavior.HideBottomViewOnScrollBehavior: HideBottomViewOnScrollBehavior()
+com.google.zxing.BarcodeFormat: com.google.zxing.BarcodeFormat valueOf(java.lang.String)
+androidx.transition.ViewUtilsApi21$Api29Impl: void transformMatrixToLocal(android.view.View,android.graphics.Matrix)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.WindowInsetsCompat$Impl: void initTypeBoundingRectsMaps()
+com.google.android.material.bottomsheet.BottomSheetBehavior: BottomSheetBehavior()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: android.graphics.Matrix getLocalMatrix()
+com.google.android.material.behavior.SwipeDismissBehavior: SwipeDismissBehavior()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$BuilderImpl31: WindowInsetsCompat$BuilderImpl31()
+androidx.core.view.WindowInsetsCompat$Impl31: WindowInsetsCompat$Impl31(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl31)
+com.wireguard.android.preference.KernelModuleEnablerPreference$State: com.wireguard.android.preference.KernelModuleEnablerPreference$State valueOf(java.lang.String)
+androidx.fragment.app.strictmode.FragmentStrictMode$Flag: androidx.fragment.app.strictmode.FragmentStrictMode$Flag[] values()
+com.wireguard.android.preference.ZipExporterPreference: ZipExporterPreference(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.appcompat.app.AppCompatDelegate$Api33Impl: void localeManagerSetApplicationLocales(java.lang.Object,android.os.LocaleList)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$Impl20: void setTypeBoundingRectsMap(android.graphics.Rect[][])
+androidx.appcompat.widget.AppCompatTextHelper$Api24Impl: android.os.LocaleList forLanguageTags(java.lang.String)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+com.google.zxing.common.CharacterSetECI: com.google.zxing.common.CharacterSetECI valueOf(java.lang.String)
+androidx.fragment.app.DefaultSpecialEffectsController$Api26Impl: void setCurrentPlayTime(android.animation.AnimatorSet,long)
+androidx.transition.ViewUtilsApi21$Api29Impl: void setAnimationMatrix(android.view.View,android.graphics.Matrix)
+androidx.loader.app.LoaderManagerImpl$LoaderViewModel: LoaderManagerImpl$LoaderViewModel()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeColor(int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl36: WindowInsetsCompat$BuilderImpl36()
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+com.google.crypto.tink.proto.HashType: com.google.crypto.tink.proto.HashType[] values()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+com.google.android.material.transformation.FabTransformationBehavior: FabTransformationBehavior()
+androidx.appcompat.app.AppCompatDelegateImpl$Api24Impl: androidx.core.os.LocaleListCompat getLocales(android.content.res.Configuration)
+androidx.core.view.WindowInsetsCompat$Impl34: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.constraintlayout.widget.Barrier: Barrier(android.content.Context,android.util.AttributeSet)
+androidx.preference.EditTextPreferenceDialogFragmentCompat: EditTextPreferenceDialogFragmentCompat()
+com.wireguard.android.backend.BackendException$Reason: com.wireguard.android.backend.BackendException$Reason[] values()
+com.google.android.material.ripple.RippleUtils$RippleUtilsLollipop: android.graphics.drawable.Drawable createOvalRipple(android.content.Context,int)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: androidx.core.graphics.PathParser$PathDataNode[] getPathData()
+com.google.android.material.datepicker.MaterialCalendar$CalendarSelector: com.google.android.material.datepicker.MaterialCalendar$CalendarSelector valueOf(java.lang.String)
+androidx.appcompat.view.menu.ExpandedMenuView: ExpandedMenuView(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl20: void setTypeMaxBoundingRectsMap(android.graphics.Rect[][])
+com.google.zxing.aztec.decoder.Decoder$Table: com.google.zxing.aztec.decoder.Decoder$Table valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl35: WindowInsetsCompat$Impl35(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl35)
+androidx.appcompat.app.AppCompatDelegateImpl$Api24Impl: void generateConfigDelta_locale(android.content.res.Configuration,android.content.res.Configuration,android.content.res.Configuration)
+com.wireguard.android.activity.TvMainActivity: TvMainActivity()
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+androidx.appcompat.view.WindowCallbackWrapper$Api24Impl: void onProvideKeyboardShortcuts(android.view.Window$Callback,java.util.List,android.view.Menu,int)
+com.wireguard.android.fragment.AppListDialogFragment: AppListDialogFragment()
+androidx.fragment.app.strictmode.FragmentStrictMode$Flag: androidx.fragment.app.strictmode.FragmentStrictMode$Flag valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl34: void initDisplayShape(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+com.google.android.material.search.SearchBar$ScrollingViewBehavior: SearchBar$ScrollingViewBehavior(android.content.Context,android.util.AttributeSet)
+androidx.preference.Preference: Preference(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+com.wireguard.config.BadConfigException$Reason: com.wireguard.config.BadConfigException$Reason[] values()
+com.journeyapps.barcodescanner.ViewfinderView: ViewfinderView(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.appcompat.app.AppLocalesMetadataHolderService$Api24Impl: int getDisabledComponentFlag()
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser$Mode: com.google.zxing.datamatrix.decoder.DecodedBitStreamParser$Mode[] values()
+com.wireguard.android.backend.Tunnel$State: com.wireguard.android.backend.Tunnel$State valueOf(java.lang.String)
+androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatTextHelper$Api26Impl: int getAutoSizeStepGranularity(android.widget.TextView)
+androidx.core.view.WindowInsetsCompat$Impl34: androidx.core.graphics.Insets getInsets(int)
+com.wireguard.android.preference.ToolsInstallerPreference: ToolsInstallerPreference(android.content.Context,android.util.AttributeSet)
+androidx.biometric.CryptoObjectUtils$Api23Impl: android.security.keystore.KeyGenParameterSpec$Builder createKeyGenParameterSpecBuilder(java.lang.String,int)
+com.journeyapps.barcodescanner.BarcodeView$DecodeMode: com.journeyapps.barcodescanner.BarcodeView$DecodeMode[] values()
+com.google.android.material.behavior.HideBottomViewOnScrollBehavior: HideBottomViewOnScrollBehavior(android.content.Context,android.util.AttributeSet)
+com.google.android.material.appbar.MaterialToolbar: MaterialToolbar(android.content.Context,android.util.AttributeSet)
+com.google.android.material.behavior.HideViewOnScrollBehavior: HideViewOnScrollBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.fragment.app.DefaultSpecialEffectsController$Api26Impl: void reverse(android.animation.AnimatorSet)
+androidx.preference.SwitchPreference: SwitchPreference(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.viewmodel.PeerProxy$AllowedIpsState: com.wireguard.android.viewmodel.PeerProxy$AllowedIpsState valueOf(java.lang.String)
+com.google.android.material.appbar.AppBarLayout$Behavior: AppBarLayout$Behavior()
+androidx.biometric.CryptoObjectUtils$Api23Impl: void setEncryptionPaddingPKCS7(android.security.keystore.KeyGenParameterSpec$Builder)
+androidx.core.view.WindowInsetsCompat$Impl34: WindowInsetsCompat$Impl34(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.constraintlayout.helper.widget.Flow: Flow(android.content.Context,android.util.AttributeSet)
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
+androidx.security.crypto.MasterKey$KeyScheme: androidx.security.crypto.MasterKey$KeyScheme valueOf(java.lang.String)
+com.google.android.material.datepicker.MaterialDatePicker: MaterialDatePicker()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setFillColor(int)
+androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType valueOf(java.lang.String)
+com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$MethodToInvoke: com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$MethodToInvoke[] values()
+com.google.crypto.tink.shaded.protobuf.JavaType: com.google.crypto.tink.shaded.protobuf.JavaType valueOf(java.lang.String)
+androidx.appcompat.widget.DrawableUtils$Api29Impl: android.graphics.Insets getOpticalInsets(android.graphics.drawable.Drawable)
+androidx.transition.ViewUtilsApi19$Api29Impl: void setTransitionAlpha(android.view.View,float)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23: AppCompatTextViewAutoSizeHelper$Impl23()
+androidx.appcompat.widget.Toolbar$Api33Impl: android.window.OnBackInvokedDispatcher findOnBackInvokedDispatcher(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getStrokeWidth()
+androidx.core.view.WindowInsetsCompat$Impl: void setTypeBoundingRectsMap(android.graphics.Rect[][])
+com.google.android.material.internal.ClippableRoundedCornerLayout: ClippableRoundedCornerLayout(android.content.Context,android.util.AttributeSet)
+androidx.biometric.BiometricFragment$Api21Impl: android.content.Intent createConfirmDeviceCredentialIntent(android.app.KeyguardManager,java.lang.CharSequence,java.lang.CharSequence)
+androidx.appcompat.widget.DropDownListView$Api21Impl: void drawableHotspotChanged(android.view.View,float,float)
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl$1: void onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt$AuthenticationResult)
+com.wireguard.android.backend.GoBackend: void wgTurnOff(int)
+com.google.crypto.tink.config.internal.TinkFipsUtil$AlgorithmFipsCompatibility: com.google.crypto.tink.config.internal.TinkFipsUtil$AlgorithmFipsCompatibility valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathStart()
+androidx.biometric.BiometricFragment$Api28Impl: void setNegativeButton(android.hardware.biometrics.BiometricPrompt$Builder,java.lang.CharSequence,java.util.concurrent.Executor,android.content.DialogInterface$OnClickListener)
+com.google.android.material.transformation.FabTransformationScrimBehavior: FabTransformationScrimBehavior()
+androidx.appcompat.view.WindowCallbackWrapper$Api26Impl: void onPointerCaptureChanged(android.view.Window$Callback,boolean)
+androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType: androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: int getFillColor()
+androidx.appcompat.widget.ActionBarContainer: ActionBarContainer(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: java.lang.String getGroupName()
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl: android.hardware.biometrics.BiometricPrompt$AuthenticationCallback createCallback(androidx.biometric.AuthenticationCallbackProvider$Listener)
+androidx.appcompat.widget.AppCompatSpinner$Api23Impl: void setDropDownViewTheme(android.widget.ThemedSpinnerAdapter,android.content.res.Resources$Theme)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setFillAlpha(float)
+com.wireguard.android.backend.Tunnel$State: com.wireguard.android.backend.Tunnel$State[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl34: WindowInsetsCompat$BuilderImpl34(androidx.core.view.WindowInsetsCompat)
+androidx.biometric.FingerprintDialogFragment: FingerprintDialogFragment()
+com.google.android.material.transformation.FabTransformationScrimBehavior: FabTransformationScrimBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase valueOf(java.lang.String)
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+com.google.android.material.floatingactionbutton.FloatingActionButton: FloatingActionButton(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.core.SolverVariable$Type: androidx.constraintlayout.core.SolverVariable$Type valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: java.util.List getBoundingRects(int)
+com.wireguard.android.activity.SettingsActivity: SettingsActivity()
+androidx.appcompat.widget.MenuPopupWindow$Api23Impl: void setEnterTransition(android.widget.PopupWindow,android.transition.Transition)
+androidx.appcompat.resources.Compatibility$Api21Impl: void inflate(android.graphics.drawable.Drawable,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.recyclerview.widget.RecyclerView: void suppressLayout(boolean)
+com.google.crypto.tink.config.internal.TinkFipsUtil$AlgorithmFipsCompatibility: com.google.crypto.tink.config.internal.TinkFipsUtil$AlgorithmFipsCompatibility[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+com.wireguard.android.backend.GoBackend: java.lang.String wgVersion()
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+com.google.android.material.datepicker.MaterialCalendar: MaterialCalendar()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathOffset(float)
+com.wireguard.android.fragment.AddTunnelsSheet: AddTunnelsSheet()
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+com.google.android.material.timepicker.ClockFaceView: ClockFaceView(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.backend.GoBackend: int wgGetSocketV6(int)
+com.journeyapps.barcodescanner.CaptureActivity: CaptureActivity()
+com.google.android.material.internal.NavigationMenuView: NavigationMenuView(android.content.Context,android.util.AttributeSet)
+androidx.recyclerview.widget.RecyclerView: boolean isLayoutSuppressed()
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+androidx.preference.SeekBarPreference: SeekBarPreference(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$Impl: java.util.List getBoundingRectsIgnoringVisibility(int)
+com.google.android.material.snackbar.BaseTransientBottomBar$Behavior: BaseTransientBottomBar$Behavior()
+androidx.core.view.WindowInsetsCompat$Impl20: java.util.List getBoundingRects(int)
+com.google.android.material.tabs.TabLayout: TabLayout(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+com.wireguard.android.activity.TunnelCreatorActivity: TunnelCreatorActivity()
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+com.google.crypto.tink.KeyTemplate$OutputPrefixType: com.google.crypto.tink.KeyTemplate$OutputPrefixType valueOf(java.lang.String)
+com.wireguard.android.backend.GoBackend: java.lang.String wgGetConfig(int)
+com.wireguard.android.fragment.TunnelDetailFragment: TunnelDetailFragment()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getScaleY()
+com.google.android.material.timepicker.ClockHandView: ClockHandView(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.FitWindowsLinearLayout: FitWindowsLinearLayout(android.content.Context,android.util.AttributeSet)
+com.google.android.material.internal.CheckableImageButton: CheckableImageButton(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void initTypeBoundingRects(androidx.core.view.WindowInsetsCompat)
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+com.google.android.material.search.SearchView$Behavior: SearchView$Behavior()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathEnd()
+com.wireguard.android.Application: Application()
+com.google.android.material.bottomappbar.BottomAppBar$Behavior: BottomAppBar$Behavior(android.content.Context,android.util.AttributeSet)
+com.journeyapps.barcodescanner.BarcodeView$DecodeMode: com.journeyapps.barcodescanner.BarcodeView$DecodeMode valueOf(java.lang.String)
+androidx.appcompat.app.AppCompatDelegateImpl$Api24Impl: void setDefaultLocales(androidx.core.os.LocaleListCompat)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getTranslateY()
+androidx.core.view.WindowInsetsCompat$Impl35: java.util.List getBoundingRects(int)
+com.google.android.material.textview.MaterialTextView: MaterialTextView(android.content.Context,android.util.AttributeSet)
+androidx.fragment.app.SpecialEffectsController$Operation$State: androidx.fragment.app.SpecialEffectsController$Operation$State[] values()
+com.google.android.material.transformation.ExpandableTransformationBehavior: ExpandableTransformationBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: int getRootAlpha()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: int getStrokeColor()
+androidx.transition.Transition$Impl26: long getTotalDuration(android.animation.Animator)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+androidx.core.view.WindowInsetsCompat$Impl20: void initTypeBoundingRectsMaps()
+androidx.preference.TwoStatePreference: TwoStatePreference(android.content.Context,android.util.AttributeSet)
+androidx.transition.ObjectAnimatorUtils$Api21Impl: android.animation.ObjectAnimator ofObject(java.lang.Object,android.util.Property,android.graphics.Path)
+androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type: androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setPivotX(float)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+androidx.appcompat.app.AppCompatDelegateImpl$Api21Impl: java.lang.String toLanguageTag(java.util.Locale)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser$Mode: com.google.zxing.datamatrix.decoder.DecodedBitStreamParser$Mode valueOf(java.lang.String)
+androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact: androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact[] values()
+androidx.transition.ViewGroupUtils$Api29Impl: void suppressLayout(android.view.ViewGroup,boolean)
+androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type: androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type[] values()
+androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy: androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy[] values()
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
+androidx.biometric.BiometricFragment$Api30Impl: void setAllowedAuthenticators(android.hardware.biometrics.BiometricPrompt$Builder,int)
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.constraintlayout.core.widgets.ConstraintAnchor$Type: androidx.constraintlayout.core.widgets.ConstraintAnchor$Type valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatTextHelper$Api26Impl: void setAutoSizeTextTypeUniformWithConfiguration(android.widget.TextView,int,int,int,int)
+androidx.appcompat.widget.Toolbar: Toolbar(android.content.Context,android.util.AttributeSet)
+com.google.crypto.tink.proto.KeyStatusType: com.google.crypto.tink.proto.KeyStatusType valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getScaleX()
+com.google.android.material.button.MaterialButton: MaterialButton(android.content.Context,android.util.AttributeSet)
+androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax[] values()
+androidx.tracing.TraceApi29Impl: boolean isEnabled()
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour: androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour[] values()
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.WindowInsetsCompat$Impl20: void setSystemUiVisibility(int)
+androidx.appcompat.view.WindowCallbackWrapper$Api23Impl: android.view.ActionMode onWindowStartingActionMode(android.view.Window$Callback,android.view.ActionMode$Callback,int)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl$1: void onAuthenticationFailed()
+com.google.android.material.bottomsheet.BottomSheetDialogFragment: BottomSheetDialogFragment()
+androidx.biometric.KeyguardUtils$Api23Impl: android.app.KeyguardManager getKeyguardManager(android.content.Context)
+androidx.core.view.WindowInsetsCompat$Impl35: java.util.List getBoundingRectsIgnoringVisibility(int)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.appcompat.widget.AppCompatReceiveContentHelper$OnDropApi24Impl: boolean onDropForTextView(android.view.DragEvent,android.widget.TextView,android.app.Activity)
+androidx.appcompat.widget.FitWindowsFrameLayout: FitWindowsFrameLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+com.google.crypto.tink.shaded.protobuf.ProtoSyntax: com.google.crypto.tink.shaded.protobuf.ProtoSyntax[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.recyclerview.widget.LinearLayoutManager: LinearLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+com.google.android.material.drawable.DrawableUtils$OutlineCompatR: void setPath(android.graphics.Outline,android.graphics.Path)
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+com.wireguard.android.backend.BackendException$Reason: com.wireguard.android.backend.BackendException$Reason valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29: boolean isHorizontallyScrollable(android.widget.TextView)
+com.google.android.material.motion.MaterialBackOrchestrator$Api33BackCallbackDelegate: void stopListeningForBackCallbacks(android.view.View)
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser$Mode: com.google.zxing.pdf417.decoder.DecodedBitStreamParser$Mode valueOf(java.lang.String)
+com.journeyapps.barcodescanner.BarcodeView: BarcodeView(android.content.Context,android.util.AttributeSet)
+com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior: FloatingActionButton$BaseBehavior()
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets dispatchApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.biometric.KeyguardUtils$Api23Impl: boolean isDeviceSecure(android.app.KeyguardManager)
+androidx.preference.CheckBoxPreference: CheckBoxPreference(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.appcompat.widget.ActivityChooserView$InnerLayout: ActivityChooserView$InnerLayout(android.content.Context,android.util.AttributeSet)
+com.wireguard.android.activity.LogViewerActivity: LogViewerActivity()
+androidx.biometric.CancellationSignalProvider$Api16Impl: void cancel(android.os.CancellationSignal)
+androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke[] values()
+com.wireguard.android.widget.ToggleSwitch: ToggleSwitch(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.DropDownListView$Api33Impl: void setSelectedChildViewEnabled(android.widget.AbsListView,boolean)
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState$State: com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState$State[] values()
+androidx.biometric.BiometricFragment$Api28Impl: void authenticate(android.hardware.biometrics.BiometricPrompt,android.os.CancellationSignal,java.util.concurrent.Executor,android.hardware.biometrics.BiometricPrompt$AuthenticationCallback)
+androidx.core.view.WindowInsetsCompat$Impl20: android.graphics.Rect[] getBoundingRectsFromInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior: ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior()
+androidx.lifecycle.ReportFragment: ReportFragment()
+com.google.android.material.transformation.ExpandableBehavior: ExpandableBehavior()
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
+androidx.biometric.CryptoObjectUtils$Api28Impl: android.hardware.biometrics.BiometricPrompt$CryptoObject create(java.security.Signature)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.appcompat.widget.ListPopupWindow$Api29Impl: void setEpicenterBounds(android.widget.PopupWindow,android.graphics.Rect)

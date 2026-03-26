@@ -1,0 +1,1 @@
+/home/user/wireguard-android-hardened/tunnel/build/intermediates/cxx/Debug/g6u6g3i5/obj/arm64-v8a

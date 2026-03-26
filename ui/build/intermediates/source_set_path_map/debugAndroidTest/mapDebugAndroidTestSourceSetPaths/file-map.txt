@@ -1,0 +1,5 @@
+com.wireguard.android.test.ui-androidTest-0 /home/user/wireguard-android-hardened/ui/build/generated/res/resValues/androidTest/debug
+com.wireguard.android.test.ui-updated_navigation_xml-1 /home/user/wireguard-android-hardened/ui/build/generated/updated_navigation_xml/debugAndroidTest
+com.wireguard.android.test.ui-mergeDebugAndroidTestResources-2 /home/user/wireguard-android-hardened/ui/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.wireguard.android.test.ui-mergeDebugAndroidTestResources-3 /home/user/wireguard-android-hardened/ui/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.wireguard.android.test.ui-debugAndroidTest-4 /home/user/wireguard-android-hardened/ui/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

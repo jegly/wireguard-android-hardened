@@ -1,0 +1,26 @@
+# ninja log v5
+0	1401	0	CMakeFiles/elf-cleaner	396206c07c542503
+0	1401	0	/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/elf-cleaner	396206c07c542503
+1403	1418	1774482645209044688	CMakeFiles/libwg.so.dir/ndk-compat/compat.c.o	87fd5d7664638a2
+1402	1424	1774482645211044688	CMakeFiles/libwg-quick.so.dir/ndk-compat/compat.c.o	ad7535e06e51fe5
+0	1458	0	CMakeFiles/libwg-go.so	9f838d561b764073
+0	1458	0	/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg-go.so	9f838d561b764073
+1458	1563	1774482645350044694	CMakeFiles/libwg.so.dir/wireguard-tools/src/genkey.c.o	d429bd7927b0d1db
+1424	1568	1774482645358406289	CMakeFiles/libwg.so.dir/wireguard-tools/src/setconf.c.o	c72c3f62a78ad127
+1419	1570	1774482645357044695	CMakeFiles/libwg.so.dir/wireguard-tools/src/encoding.c.o	1df865a719a5f49c
+1568	1642	1774482645426044698	CMakeFiles/libwg.so.dir/wireguard-tools/src/pubkey.c.o	b870be11c7e2fc13
+1570	1649	1774482645434044698	CMakeFiles/libwg.so.dir/wireguard-tools/src/set.c.o	c0d30ace619cfdf8
+1401	1663	1774482645448044699	CMakeFiles/libwg.so.dir/wireguard-tools/src/curve25519.c.o	6ee3b80805fd651c
+1402	1726	1774482645512044702	CMakeFiles/libwg-quick.so.dir/wireguard-tools/src/wg-quick/android.c.o	f47689bf6160272a
+1403	1744	1774482645530044703	CMakeFiles/libwg.so.dir/wireguard-tools/src/config.c.o	de6ca58d664c9710
+1642	1746	1774482645531420411	CMakeFiles/libwg.so.dir/wireguard-tools/src/showconf.c.o	ea22ba1c0a96b7ab
+1664	1746	1774482645535044703	CMakeFiles/libwg.so.dir/wireguard-tools/src/terminal.c.o	c47aa3b5e101f761
+1744	1831	1774482645569044705	CMakeFiles/libwg.so.dir/wireguard-tools/src/wg.c.o	a663100214353be0
+1649	1831	1774482645617044707	CMakeFiles/libwg.so.dir/wireguard-tools/src/show.c.o	e75cb198556c0c43
+1726	1893	1774482645555044704	/home/user/wireguard-android-hardened/tunnel/build/intermediates/cxx/RelWithDebInfo/1s67715s/obj/armeabi-v7a/libwg-quick.so	45536974ea172ac8
+1563	2058	1774482645846044718	CMakeFiles/libwg.so.dir/wireguard-tools/src/ipc.c.o	1ebe3fe4a4577054
+2058	2181	1774482645870044719	/home/user/wireguard-android-hardened/tunnel/build/intermediates/cxx/RelWithDebInfo/1s67715s/obj/armeabi-v7a/libwg.so	3d238c37afa63cfb
+1	5	0	CMakeFiles/libwg-go.so	9f838d561b764073
+1	5	0	/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg-go.so	9f838d561b764073
+1	1350	0	CMakeFiles/elf-cleaner	396206c07c542503
+1	1350	0	/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/elf-cleaner	396206c07c542503

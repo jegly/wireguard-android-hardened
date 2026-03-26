@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="delete_error">
+        <item quantity="one">Não foi possível apagar %d túnel: %s</item>
+        <item quantity="other">Não foi possível apagar %d túneis: %s</item>
+    </plurals>
+    <plurals name="delete_success">
+        <item quantity="one">%d túnel apagado com sucesso</item>
+        <item quantity="other">%d túneis apagados com sucesso</item>
+    </plurals>
+    <plurals name="delete_title">
+        <item quantity="one">%d túnel selecionado</item>
+        <item quantity="other">%d túneis selecionados</item>
+    </plurals>
+    <plurals name="exclude_n_applications">
+        <item quantity="one">Excluir %d Aplicação</item>
+        <item quantity="other">Exluir %d Aplicações</item>
+    </plurals>
+    <plurals name="import_partial_success">
+        <item quantity="one">Importado %1$d de %2$d túneis</item>
+        <item quantity="other">Importados %1$d de %2$d túneis</item>
+    </plurals>
+    <plurals name="import_total_success">
+        <item quantity="one">%d túnel importado</item>
+        <item quantity="other">%d túneis importados</item>
+    </plurals>
+    <plurals name="include_n_applications">
+        <item quantity="one">Incluir %d Aplicação</item>
+        <item quantity="other">Incluir %d Aplicações</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nova notificação</item>
+    <item quantity="other">%d novas notificações</item>
+  </plurals>
+    <plurals name="n_excluded_applications">
+        <item quantity="one">%d Excluída</item>
+        <item quantity="other">%d Excluídas</item>
+    </plurals>
+    <plurals name="n_included_applications">
+        <item quantity="one">%d Incluída</item>
+        <item quantity="other">%d Incluídas</item>
+    </plurals>
+    <plurals name="persistent_keepalive_seconds_suffix">
+        <item quantity="one">segundo</item>
+        <item quantity="other">segundos</item>
+    </plurals>
+    <plurals name="persistent_keepalive_seconds_unit">
+        <item quantity="one">a cada %d segundo</item>
+        <item quantity="other">a cada %d segundos</item>
+    </plurals>
+    <plurals name="set_excluded_applications">
+        <item quantity="one">%d Aplicação Excluída</item>
+        <item quantity="other">%d Aplicações Excluídas</item>
+    </plurals>
+    <plurals name="set_included_applications">
+        <item quantity="one">%d Aplicação Incluída</item>
+        <item quantity="other">%d Aplicações incluídas</item>
+    </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navegar para casa"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Escolher uma app"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DESATIVADO"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ATIVADO"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"eliminar"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Função +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"espaço"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Pesquisar…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Partilhar com"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Partilhar com a app <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Reduzir"</string>
+    <string name="add_peer">Adicionar nó</string>
+    <string name="addresses">Endereços</string>
+    <string name="all_applications">Todas as Aplicações</string>
+    <string name="allow_remote_control_intents_summary_off">Aplicações externas não podem controlar túneis (recomendado)</string>
+    <string name="allow_remote_control_intents_summary_on">Aplicações externas podem controlar túneis (avançado)</string>
+    <string name="allow_remote_control_intents_title">Permitir controlo remoto por outras aplicações</string>
+    <string name="allowed_ips">IPs permitidos</string>
+    <string name="applications">Aplicações</string>
+    <string name="bad_config_context">%2$s de %1$s</string>
+    <string name="bad_config_context_top_level">%s</string>
+    <string name="bad_config_error">%1$s em %2$s</string>
+    <string name="bad_config_explanation_pka">: Tem que ser positivo e não mais do que 65535</string>
+    <string name="bad_config_explanation_positive_number">: tem que ser positivo</string>
+    <string name="bad_config_explanation_udp_port">: Tem que ser um número de porta UDP válido</string>
+    <string name="bad_config_reason_invalid_key">Chave inválida</string>
+    <string name="bad_config_reason_invalid_number">Número inválido</string>
+    <string name="bad_config_reason_invalid_value">Valor inválido</string>
+    <string name="bad_config_reason_missing_attribute">Atributo em falta</string>
+    <string name="bad_config_reason_missing_section">Secção em falta</string>
+    <string name="bad_config_reason_syntax_error">Erro de sintaxe</string>
+    <string name="bad_config_reason_unknown_attribute">Atributo desconhecido</string>
+    <string name="bad_config_reason_unknown_section">Secção desconhecida</string>
+    <string name="bad_config_reason_value_out_of_range">Valor fora do intervalo</string>
+    <string name="bad_extension_error">O ficheiro tem que ser do tipo .conf ou .zip</string>
+    <string name="biometric_auth_error">Falha de autenticação</string>
+    <string name="biometric_auth_error_reason">Falha de autenticação: %s</string>
+    <string name="biometric_prompt_private_key_title">Autenticar para ver a chave privada</string>
+    <string name="biometric_prompt_zip_exporter_title">Autenticar para exportar túneis</string>
+    <string name="bottomsheet_action_collapse">Reduza a secção inferior</string>
+    <string name="bottomsheet_action_expand">Expanda a secção inferior</string>
+    <string name="bottomsheet_action_expand_halfway">Expandir até metade</string>
+    <string name="bottomsheet_drag_handle_content_description">Indicador para arrastar</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Atender"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Vídeo"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Recusar"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Desligar"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Chamada recebida"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Chamada em curso"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"A filtrar uma chamada recebida…"</string>
+    <string name="cancel">Cancelar</string>
+    <string name="character_counter_content_description">Carateres introduzidos: %1$d de %2$d</string>
+    <string name="character_counter_overflowed_content_description">Limite de carateres excedido: %1$d de %2$d</string>
+    <string name="clear_text_end_icon_content_description">Limpar texto</string>
+    <string name="config_delete_error">Não é possível apagar arquivo de configuração %s</string>
+    <string name="config_exists_error">A configuração para \"%s\" já existe</string>
+    <string name="config_file_exists_error">O ficheiro de configuração \"%s\" já existe</string>
+    <string name="config_not_found_error">O ficheiro de configuração \"%s\" não foi encontrado</string>
+    <string name="config_rename_error">Não foi possível renomear o ficheiro de configuração “%s\"</string>
+    <string name="config_save_error">Não foi possível guardar a configuração para “%1$s”: %2$s</string>
+    <string name="config_save_success">A configuração para \"%s\" foi guardada com sucesso</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Utilizar palavra-passe"</string>
+    <string name="copied_to_clipboard">%s copiado para a área de transferências</string>
+    <string msgid="6083905920877235314" name="copy">"Copiar"</string>
+    <string name="create_activity_title">Criar túnel WireGuard</string>
+    <string name="create_bin_dir_error">Não foi possível criar diretoria de binários local</string>
+    <string name="create_downloads_file_error">Não foi possível criar diretoria de downloads local</string>
+    <string name="create_empty">Criar do zero</string>
+    <string name="create_from_file">Importar de ficheiro ou arquivo</string>
+    <string name="create_from_qr_code">Digitalizar a partir de código QR</string>
+    <string name="create_output_dir_error">Não foi possível criar diretoria de saída</string>
+    <string name="create_temp_dir_error">Não foi possível criar diretoria local temporária</string>
+    <string name="create_tunnel">Criar túnel</string>
+    <string name="dark_theme_summary_off">Atualmente a usar tema claro (dia)</string>
+    <string name="dark_theme_summary_on">Atualmente a usar tema escuro (noite)</string>
+    <string name="dark_theme_title">Usar tema escuro</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"Erro desconhecido."</string>
+    <string name="delete">Eliminar</string>
+    <string name="disable_config_export_description">Desativar a exportação de configuração torna as chaves privadas menos acessíveis</string>
+    <string name="disable_config_export_title">Desativar exportação de configuração</string>
+    <string name="dns_servers">Servidores de DNS</string>
+    <string name="edit">Editar</string>
+    <string name="endpoint">Endpoint</string>
+    <string name="error_a11y_label">Erro: inválida</string>
+    <string name="error_down">Erro ao fechar túnel: %s</string>
+    <string name="error_fetching_apps">Erro ao obter lista de aplicações: %s</string>
+    <string name="error_icon_content_description">Erro</string>
+    <string name="error_no_qr_found">Código QR não encontrado na imagem</string>
+    <string name="error_root">Por favor, obtenha acesso root e tente novamente</string>
+    <string name="error_up">Erro ao abrir túnel: %s</string>
+    <string name="exclude_from_tunnel">Excluir</string>
+    <string name="exclude_private_ips">Excluir IPs privados</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Avançadas"</string>
+    <string name="exposed_dropdown_menu_content_description">Mostrar menu pendente</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Toque no sensor de impressões digitais"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"Hardware de impressão digital não disponível."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"Este dispositivo não tem sensor de impressões digitais."</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Demasiadas tentativas. Tente novamente mais tarde."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"Nenhuma impressão digital registada."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"Operação de impressão digital cancelada pelo utilizador."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"Não reconhecida."</string>
+    <string name="generate_new_private_key">Gerar nova chave privada</string>
+    <string name="generic_error">Erro desconhecido “%s”</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"Nenhum PIN, padrão ou palavra-passe definidos."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"Este dispositivo não suporta o PIN, o padrão ou a palavra-passe."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"Autenticação cancelada pelo utilizador."</string>
+    <string name="hint_automatic">(automático)</string>
+    <string name="hint_generated">(gerado)</string>
+    <string name="hint_optional">(opcional)</string>
+    <string name="hint_optional_discouraged">(opcional, não recomendado)</string>
+    <string name="hint_random">(aleatório)</string>
+    <string name="icon_content_description">Ícone de caixa de diálogo</string>
+    <string name="illegal_filename_error">Nome de arquivo inválido “%s”</string>
+    <string name="import_error">Não foi possível importar túnel: %s</string>
+    <string name="import_from_qr_code">Importar Túnel a partir de Código QR</string>
+    <string name="import_success">“%s” Importado</string>
+    <string name="include_in_tunnel">Apenas aplicações incluídas</string>
+    <string name="interface_title">Interface</string>
+    <string name="item_view_role_description">Separador</string>
+    <string name="key_contents_error">Caracteres inválidos na chave</string>
+    <string name="key_length_error">Tamanho de chave incorreto</string>
+    <string name="key_length_explanation_base64">: Chaves base64 do WireGuard têm que ter 44 caracteres (32 bytes)</string>
+    <string name="key_length_explanation_binary">: Chaves de WireGuard têm que ter 32 bytes</string>
+    <string name="key_length_explanation_hex">: Chaves hexadecimais do WireGuard têm que ter 64 caracteres (32 bytes)</string>
+    <string name="listen_port">Porta de escuta</string>
+    <string name="log_export_error">Não foi possível exportar o log: %s</string>
+    <string name="log_export_subject">Arquivo de log do WireGuard Android</string>
+    <string name="log_export_success">Guardado em “%s”</string>
+    <string name="log_export_title">Exportar ficheiro de log</string>
+    <string name="log_saver_activity_label">Guardar log</string>
+    <string name="log_viewer_pref_summary">Logs podem ajudar na depuração</string>
+    <string name="log_viewer_pref_title">Ver log da aplicação</string>
+    <string name="log_viewer_title">Log</string>
+    <string name="logcat_error">Não foi possível executar o logcat: </string>
+    <string name="m3_loading_indicator_content_description">A carregar</string>
+    <string name="material_clock_toggle_content_description">Selecionar AM ou PM</string>
+    <string name="material_hour_24h_suffix">%1$s horas</string>
+    <string name="material_hour_selection">Selecionar hora</string>
+    <string name="material_hour_suffix">%1$s hora(s)</string>
+    <string name="material_minute_selection">Selecionar minutos</string>
+    <string name="material_minute_suffix">%1$s minutos</string>
+    <string name="material_slider_range_end">Fim do intervalo</string>
+    <string name="material_slider_range_start">Início do intervalo</string>
+    <string name="material_slider_value">Valor</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Mude para o modo de relógio para a introdução da hora.</string>
+    <string name="material_timepicker_hour">Hora</string>
+    <string name="material_timepicker_minute">Minuto</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Selecionar hora</string>
+    <string name="material_timepicker_text_input_mode_description">Mude para o modo de introdução de texto para a introdução da hora.</string>
+    <string name="module_enabler_disabled_summary">O módulo experimental de kernel pode melhorar o desempenho</string>
+    <string name="module_enabler_disabled_title">Habilitar módulo backend do kernel</string>
+    <string name="module_enabler_enabled_summary">O backend do userspace mais lento pode aumentar a estabilidade</string>
+    <string name="module_enabler_enabled_title">Desabilitar módulo backend do kernel</string>
+    <string name="module_installer_error">Ocorreu um erro. Por favor, tente novamente</string>
+    <string name="module_installer_initial">O módulo experimental do kernel pode melhorar o desempenho</string>
+    <string name="module_installer_not_found">Não há módulos disponíveis para o seu dispositivo</string>
+    <string name="module_installer_title">Transferir e instalar módulo de kernel</string>
+    <string name="module_installer_working">A transferir e instalar…</string>
+    <string name="module_version_error">Não foi possível determinar a versão do módulo de kernel</string>
+    <string name="mtrl_badge_numberless_content_description">Nova notificação</string>
+    <string name="mtrl_checkbox_state_description_checked">Selecionada</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Parcialmente selecionada</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Não selecionada</string>
+    <string name="mtrl_chip_close_icon_content_description">Remover %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Mais de %1$d notificações novas</string>
+    <string name="mtrl_picker_a11y_next_month">Mudar para o mês seguinte</string>
+    <string name="mtrl_picker_a11y_prev_month">Mudar para o mês anterior</string>
+    <string name="mtrl_picker_announce_current_range_selection">Seleção da data de início: %1$s – Seleção da data de conclusão: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Seleção atual: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">nenhuma</string>
+    <string name="mtrl_picker_cancel">Cancelar</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selecione a data</string>
+    <string name="mtrl_picker_date_header_unselected">Data selecionada</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">Data de fim: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Formato inválido.</string>
+    <string name="mtrl_picker_invalid_format_example">Exemplo: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Intervalo inválido.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Navegar para o ano atual %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navegue para o ano %1$d</string>
+    <string name="mtrl_picker_out_of_range">Fora do intervalo: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Data de início – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Data de fim</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selecione o intervalo</string>
+    <string name="mtrl_picker_range_header_unselected">Data de início – Data de fim</string>
+    <string name="mtrl_picker_save">Guardar</string>
+    <string name="mtrl_picker_start_date_description">Data de início: %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Data</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Data de fim</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Data de início</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_today_description">Hoje %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Mudar para o modo de introdução de calendário</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Mudar para a vista do Calendário</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Mudar para o modo de introdução de texto</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Mudar para a vista de ano</string>
+    <string name="mtrl_picker_toggled_to_day_selection">Mudou para a vista do Calendário</string>
+    <string name="mtrl_picker_toggled_to_year_selection">Mudou para a vista de ano</string>
+    <string name="mtrl_timepicker_cancel">Cancelar</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="mtu">MTU</string>
+    <string name="multiple_tunnels_summary_off">Ativar um túnel irá desativar todos os outros</string>
+    <string name="multiple_tunnels_summary_on">Vários túneis podem ser ativados simultaneamente</string>
+    <string name="multiple_tunnels_title">Permitir vários túneis em simultâneo</string>
+    <string name="name">Nome</string>
+    <string name="no_config_error">A tentar abrir um túnel sem configuração</string>
+    <string name="no_configs_error">Nenhuma configuração encontrada</string>
+    <string name="no_tunnels_error">Não existem túneis</string>
+    <string msgid="6573031135582639649" name="not_set">"Não definido"</string>
+    <string name="parse_error_generic">texto</string>
+    <string name="parse_error_inet_address">Endereço IP</string>
+    <string name="parse_error_inet_endpoint">endpoint</string>
+    <string name="parse_error_inet_network">Rede de IP</string>
+    <string name="parse_error_integer">número</string>
+    <string name="parse_error_reason">Não foi possível analisar %1$s “%2$s”</string>
+    <string name="password_toggle_content_description">Mostrar palavra-passe</string>
+    <string name="peer">Nó</string>
+    <string name="permission_description">controlar túneis WireGuard, ativando e desativando túneis a vontade, potencialmente desviando o tráfego na Internet</string>
+    <string name="permission_label">controlar túneis WireGuard</string>
+    <string name="persistent_keepalive">Keepalive persistente</string>
+    <string name="pre_shared_key">Chave pré-partilhada</string>
+    <string name="pre_shared_key_enabled">ativo</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" copiado para a área de transferência."</string>
+    <string name="private_key">Chave privada</string>
+    <string name="public_key">Chave Pública</string>
+    <string name="qr_code_hint">Dica: gerar com `qrencode -t ansiutf8 &lt; tunnel.conf`.</string>
+    <string name="restore_on_boot_summary_off">Não abrirá túneis ativos durante o arranque</string>
+    <string name="restore_on_boot_summary_on">Abrirá túneis ativos durante o arranque</string>
+    <string name="restore_on_boot_title">Restaurar no arranque</string>
+    <string name="save">Guardar</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
+    <string name="searchview_clear_text_content_description">Limpar texto</string>
+    <string name="searchview_navigation_content_description">Anterior</string>
+    <string name="select_all">Selecionar tudo</string>
+    <string name="settings">Definições</string>
+    <string name="shell_exit_status_read_error">A shell não pôde ler o estado de saída</string>
+    <string name="shell_marker_count_error">A shell esperava 4 marcadores, recebeu %d</string>
+    <string name="shell_start_error">A shell falhou ao iniciar: %d</string>
+    <string name="side_sheet_accessibility_pane_title">Página lateral</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="success_application_will_restart">Sucesso. A aplicação irá reiniciar…</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="toggle_all">Ativar/Desativar todos</string>
+    <string name="toggle_error">Erro ao alterar o túnel WireGuard: %s</string>
+    <string name="tools_installer_already">wg e wg-quick já estão instalados</string>
+    <string name="tools_installer_failure">Não foi possível instalar as ferramentas de linha de comando (sem root?)</string>
+    <string name="tools_installer_initial">Instalar ferramentas opcionais para scripting</string>
+    <string name="tools_installer_initial_magisk">Instalar ferramentas opcionais para scripting como módulo Magisk</string>
+    <string name="tools_installer_initial_system">Instalar ferramentas opcionais para scripting na partição de sistema</string>
+    <string name="tools_installer_success_magisk">wg e wg-quick instalados como módulo Magisk (requer reinicialização)</string>
+    <string name="tools_installer_success_system">wg e wg-quick instalados na partição do sistema</string>
+    <string name="tools_installer_title">Instalar ferramentas de linha de comando</string>
+    <string name="tools_installer_working">A instalar wg e wg-quick</string>
+    <string name="tools_unavailable_error">Ferramentas necessárias não disponíveis</string>
+    <string name="transfer">Transferência</string>
+    <string name="transfer_bytes">%d B</string>
+    <string name="transfer_gibibytes">%.2f GiB</string>
+    <string name="transfer_kibibytes">%.2f KiB</string>
+    <string name="transfer_mibibytes">%.2f MiB</string>
+    <string name="transfer_rx_tx">rx: %1$s, tx: %2$s</string>
+    <string name="transfer_tibibytes">%.2f TiB</string>
+    <string name="tun_create_error">Não foi possível criar dispositivo tun</string>
+    <string name="tunnel_config_error">Não foi possível configurar o túnel (wg-quick retornou %d)</string>
+    <string name="tunnel_create_error">Não foi possível criar o túnel: %s</string>
+    <string name="tunnel_create_success">Túnel criado com sucesso “%s”</string>
+    <string name="tunnel_error_already_exists">O túnel “%s” já existe</string>
+    <string name="tunnel_error_invalid_name">Nome inválido</string>
+    <string name="tunnel_name">Nome do túnel</string>
+    <string name="tunnel_on_error">Não foi possível ligar o túnel (wgTurnOn retornou %d)</string>
+    <string name="tunnel_rename_error">Não foi possível renomear o túnel: %s</string>
+    <string name="tunnel_rename_success">Túnel renomeado com sucesso para “%s”</string>
+    <string name="tv_add_tunnel_get_started">Adicionar um túnel para começar</string>
+    <string name="tv_delete">Selecione o túnel para apagar</string>
+    <string name="tv_no_file_picker">Por favor, instale um utilitário de gestão de ficheiros para procurar arquivos</string>
+    <string name="tv_select_a_storage_drive">Selecione uma unidade de armazenamento</string>
+    <string name="type_name_go_userspace">Go userspace</string>
+    <string name="type_name_kernel_module">Módulo de kernel</string>
+    <string name="unknown_error">Erro desconhecido</string>
+    <string name="use_all_applications">Usar todas as aplicações</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"DESATIVADO"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ATIVADO"</string>
+    <string name="version_summary_checking">A verificar versão de backend %s</string>
+    <string name="version_summary_unknown">Versão %s desconhecida</string>
+    <string name="version_title">WireGuard para Android v%s</string>
+    <string name="vpn_not_authorized_error">Serviço VPN não foi autorizado pelo utilizador</string>
+    <string name="vpn_start_error">Não foi possível iniciar o serviço de VPN do Android</string>
+    <string name="zip_export_error">Não foi possível exportar túneis: %s</string>
+    <string name="zip_export_success">Guardado em “%s”</string>
+    <string name="zip_export_summary">O arquivo Zip será guardado na pasta de downloads</string>
+    <string name="zip_export_title">Exportar túneis para arquivo zip</string>
+</resources>

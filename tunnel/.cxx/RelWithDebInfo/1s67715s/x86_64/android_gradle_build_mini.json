@@ -1,0 +1,43 @@
+{
+  "buildFiles": [
+    "/home/user/wireguard-android-hardened/tunnel/tools/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/user/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/user/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "libwg-go.so::@6890427a1f51a3e7e1df": {
+      "artifactName": "libwg-go.so",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "libwg-quick.so::@6890427a1f51a3e7e1df": {
+      "artifactName": "libwg-quick.so",
+      "abi": "x86_64",
+      "output": "/home/user/wireguard-android-hardened/tunnel/build/intermediates/cxx/RelWithDebInfo/1s67715s/obj/x86_64/libwg-quick.so",
+      "runtimeFiles": []
+    },
+    "libwg.so::@6890427a1f51a3e7e1df": {
+      "artifactName": "libwg.so",
+      "abi": "x86_64",
+      "output": "/home/user/wireguard-android-hardened/tunnel/build/intermediates/cxx/RelWithDebInfo/1s67715s/obj/x86_64/libwg.so",
+      "runtimeFiles": []
+    },
+    "elf-cleaner::@6890427a1f51a3e7e1df": {
+      "artifactName": "elf-cleaner",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    }
+  }
+}

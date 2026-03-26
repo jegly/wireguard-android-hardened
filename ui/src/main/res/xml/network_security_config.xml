@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Network security configuration.
+  ~ - Cleartext (HTTP) traffic is forbidden for all connections.
+  ~ - Only system CA certificates are trusted (no user-installed CAs).
+  ~ This prevents MITM attacks via user-installed certificates and accidental
+  ~ plaintext connections on API < 28.
+  -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

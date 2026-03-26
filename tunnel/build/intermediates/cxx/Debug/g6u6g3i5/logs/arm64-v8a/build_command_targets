@@ -1,0 +1,6 @@
+/home/user/Android/Sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /home/user/wireguard-android-hardened/tunnel/.cxx/Debug/g6u6g3i5/arm64-v8a \
+  libwg-go.so \
+  libwg-quick.so \
+  libwg.so

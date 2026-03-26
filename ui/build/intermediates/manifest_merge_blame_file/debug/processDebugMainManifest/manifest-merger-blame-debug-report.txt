@@ -1,0 +1,407 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright © 2017-2025 WireGuard LLC. All Rights Reserved.
+4  ~ SPDX-License-Identifier: Apache-2.0
+5-->
+6<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+7    package="com.wireguard.android.debug"
+8    android:installLocation="internalOnly"
+9    android:versionCode="519"
+10    android:versionName="1.0.20260315-debug" >
+11
+12    <uses-sdk
+13        android:minSdkVersion="24"
+14        android:targetSdkVersion="24" />
+15
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:9:5-65
+16-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:9:22-62
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:10:5-67
+17-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:10:22-64
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:11:5-81
+18-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:11:22-78
+19    <uses-permission
+19-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:12:5-15:40
+20        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+20-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:13:9-65
+21        android:maxSdkVersion="28" />
+21-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:14:9-35
+22
+23    <uses-feature
+23-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:17:5-19:36
+24        android:name="android.hardware.touchscreen"
+24-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:18:9-52
+25        android:required="false" />
+25-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:19:9-33
+26    <uses-feature
+26-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:20:5-22:36
+27        android:name="android.software.leanback"
+27-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:21:9-49
+28        android:required="false" />
+28-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:22:9-33
+29    <uses-feature
+29-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:23:5-25:36
+30        android:name="android.hardware.camera.any"
+30-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:24:9-51
+31        android:required="false" />
+31-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:25:9-33
+32    <uses-feature
+32-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:26:5-28:36
+33        android:name="android.hardware.camera"
+33-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:27:9-47
+34        android:required="false" />
+34-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:28:9-33
+35
+36    <queries>
+36-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:134:5-139:15
+37        <intent>
+37-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:135:9-138:18
+38            <action android:name="android.intent.action.MAIN" />
+38-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:17-69
+38-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:25-66
+39
+40            <category android:name="android.intent.category.LAUNCHER" />
+40-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:52:17-77
+40-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:52:27-74
+41        </intent>
+42    </queries>
+43
+44    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+44-->[androidx.biometric:biometric:1.1.0] /home/user/.gradle/caches/8.13/transforms/06f21badc561c81bffdb429a81e00345/transformed/biometric-1.1.0/AndroidManifest.xml:24:5-72
+44-->[androidx.biometric:biometric:1.1.0] /home/user/.gradle/caches/8.13/transforms/06f21badc561c81bffdb429a81e00345/transformed/biometric-1.1.0/AndroidManifest.xml:24:22-69
+45    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+45-->[androidx.biometric:biometric:1.1.0] /home/user/.gradle/caches/8.13/transforms/06f21badc561c81bffdb429a81e00345/transformed/biometric-1.1.0/AndroidManifest.xml:27:5-74
+45-->[androidx.biometric:biometric:1.1.0] /home/user/.gradle/caches/8.13/transforms/06f21badc561c81bffdb429a81e00345/transformed/biometric-1.1.0/AndroidManifest.xml:27:22-71
+46
+47    <permission
+47-->[androidx.core:core:1.18.0] /home/user/.gradle/caches/8.13/transforms/ecf096a9ee475b2689026619adf6c6df/transformed/core-1.18.0/AndroidManifest.xml:22:5-24:47
+48        android:name="com.wireguard.android.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.18.0] /home/user/.gradle/caches/8.13/transforms/ecf096a9ee475b2689026619adf6c6df/transformed/core-1.18.0/AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.18.0] /home/user/.gradle/caches/8.13/transforms/ecf096a9ee475b2689026619adf6c6df/transformed/core-1.18.0/AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.wireguard.android.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.18.0] /home/user/.gradle/caches/8.13/transforms/ecf096a9ee475b2689026619adf6c6df/transformed/core-1.18.0/AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.18.0] /home/user/.gradle/caches/8.13/transforms/ecf096a9ee475b2689026619adf6c6df/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
+52
+53    <uses-feature
+53-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+54        android:name="android.hardware.camera.front"
+54-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+55        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+55-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+56    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+57    <uses-feature
+57-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+58        android:name="android.hardware.camera.autofocus"
+58-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+59        android:required="false" />
+59-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+60    <uses-feature
+60-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+61        android:name="android.hardware.camera.flash"
+61-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+62        android:required="false" />
+62-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+63    <uses-feature
+63-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+64        android:name="android.hardware.screen.landscape"
+64-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+65        android:required="false" />
+65-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+66    <uses-feature
+66-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+67        android:name="android.hardware.wifi"
+67-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+68        android:required="false" />
+68-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+69
+70    <application
+70-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:30:5-132:19
+71        android:name="com.wireguard.android.Application"
+71-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:31:9-36
+72        android:allowBackup="false"
+72-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:32:9-36
+73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+73-->[androidx.core:core:1.18.0] /home/user/.gradle/caches/8.13/transforms/ecf096a9ee475b2689026619adf6c6df/transformed/core-1.18.0/AndroidManifest.xml:28:18-86
+74        android:banner="@mipmap/banner"
+74-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:33:9-40
+75        android:debuggable="true"
+76        android:enableOnBackInvokedCallback="true"
+76-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:34:9-51
+77        android:extractNativeLibs="false"
+78        android:icon="@mipmap/ic_launcher"
+78-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:35:9-43
+79        android:label="@string/app_name"
+79-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:36:9-41
+80        android:localeConfig="@xml/_generated_res_locale_config"
+81        android:networkSecurityConfig="@xml/network_security_config"
+81-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:37:9-69
+82        android:roundIcon="@mipmap/ic_launcher_round"
+82-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:38:9-54
+83        android:supportsRtl="true"
+83-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:39:9-35
+84        android:theme="@style/AppTheme" >
+84-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:40:9-40
+85        <activity
+85-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:42:9-45:56
+86            android:name="com.wireguard.android.activity.TunnelToggleActivity"
+86-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:43:13-58
+87            android:excludeFromRecents="true"
+87-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:44:13-46
+88            android:theme="@style/NoBackgroundTheme" />
+88-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:45:13-53
+89        <activity
+89-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:47:9-58:20
+90            android:name="com.wireguard.android.activity.MainActivity"
+90-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:48:13-50
+91            android:exported="true" >
+91-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:49:13-36
+92            <intent-filter>
+92-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:50:13-53:29
+93                <action android:name="android.intent.action.MAIN" />
+93-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:17-69
+93-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:25-66
+94
+95                <category android:name="android.intent.category.LAUNCHER" />
+95-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:52:17-77
+95-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:52:27-74
+96            </intent-filter>
+97            <intent-filter>
+97-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:55:13-57:29
+98                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+98-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:56:17-99
+98-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:56:25-96
+99            </intent-filter>
+100        </activity>
+101        <activity
+101-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:60:9-68:20
+102            android:name="com.wireguard.android.activity.TvMainActivity"
+102-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:61:13-52
+103            android:exported="true"
+103-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:62:13-36
+104            android:theme="@style/TvTheme" >
+104-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:63:13-43
+105            <intent-filter>
+105-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:64:13-67:29
+106                <action android:name="android.intent.action.MAIN" />
+106-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:17-69
+106-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:25-66
+107
+108                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+108-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:66:17-86
+108-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:66:27-83
+109            </intent-filter>
+110        </activity>
+111        <activity
+111-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:70:9-73:67
+112            android:name="com.wireguard.android.activity.SettingsActivity"
+112-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:71:13-54
+113            android:label="@string/settings"
+113-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:72:13-45
+114            android:parentActivityName="com.wireguard.android.activity.MainActivity" />
+114-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:73:13-64
+115        <activity
+115-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:75:9-78:67
+116            android:name="com.wireguard.android.activity.TunnelCreatorActivity"
+116-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:76:13-59
+117            android:label="@string/create_activity_title"
+117-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:77:13-58
+118            android:parentActivityName="com.wireguard.android.activity.MainActivity" />
+118-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:78:13-64
+119        <activity
+119-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:80:9-83:49
+120            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+120-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:81:13-74
+121            android:clearTaskOnLaunch="true"
+121-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+122            android:screenOrientation="fullSensor"
+122-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:82:13-51
+123            android:stateNotNeeded="true"
+123-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+124            android:theme="@style/zxing_CaptureTheme"
+124-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+125            android:windowSoftInputMode="stateAlwaysHidden" />
+125-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/8.13/transforms/dce439a11597dab7b4b2eaf4ff89ebdf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+126        <activity
+126-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:85:9-92:20
+127            android:name="com.wireguard.android.activity.LogViewerActivity"
+127-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:86:13-55
+128            android:exported="false"
+128-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:87:13-37
+129            android:label="@string/log_viewer_title" >
+129-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:88:13-53
+130            <intent-filter>
+130-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:89:13-91:29
+131                <action android:name="android.intent.action.MAIN" />
+131-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:17-69
+131-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:51:25-66
+132            </intent-filter>
+133        </activity>
+134
+135        <provider
+136            android:name="com.wireguard.android.activity.LogViewerActivity$ExportedLogContentProvider"
+136-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:95:13-82
+137            android:authorities="com.wireguard.android.debug.exported-log"
+137-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:96:13-64
+138            android:exported="false"
+138-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:97:13-37
+139            android:grantUriPermissions="true" />
+139-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:98:13-47
+140
+141        <receiver
+141-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:100:9-108:20
+142            android:name="com.wireguard.android.BootShutdownReceiver"
+142-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:101:13-49
+143            android:exported="true"
+143-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:102:13-36
+144            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+144-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:103:13-75
+145            <intent-filter>
+145-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:104:13-107:29
+146                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+146-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:105:17-80
+146-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:105:25-77
+147                <action android:name="android.intent.action.BOOT_COMPLETED" />
+147-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:106:17-79
+147-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:106:25-76
+148            </intent-filter>
+149        </receiver>
+150
+151        <service
+151-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:110:9-127:19
+152            android:name="com.wireguard.android.QuickTileService"
+152-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:111:13-45
+153            android:exported="true"
+153-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:112:13-36
+154            android:icon="@drawable/ic_tile"
+154-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:113:13-45
+155            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
+155-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:114:13-77
+156            <intent-filter>
+156-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:116:13-118:29
+157                <action android:name="android.service.quicksettings.action.QS_TILE" />
+157-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:117:17-87
+157-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:117:25-84
+158            </intent-filter>
+159
+160            <meta-data
+160-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:120:13-122:41
+161                android:name="android.service.quicksettings.ACTIVE_TILE"
+161-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:121:17-73
+162                android:value="false" />
+162-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:122:17-38
+163            <meta-data
+163-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:124:13-126:40
+164                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+164-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:125:17-77
+165                android:value="true" />
+165-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:126:17-37
+166        </service>
+167
+168        <meta-data
+168-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:129:9-131:56
+169            android:name="android.content.APP_RESTRICTIONS"
+169-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:130:13-60
+170            android:resource="@xml/app_restrictions" />
+170-->/home/user/wireguard-android-hardened/ui/src/main/AndroidManifest.xml:131:13-53
+171
+172        <provider
+172-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+173            android:name="androidx.startup.InitializationProvider"
+173-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+174            android:authorities="com.wireguard.android.debug.androidx-startup"
+174-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+175            android:exported="false" >
+175-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+176            <meta-data
+176-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+177                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+177-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+178                android:value="androidx.startup" />
+178-->[androidx.emoji2:emoji2:1.3.0] /home/user/.gradle/caches/8.13/transforms/72e3ccdfa734ff205e68630055458ca3/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+179            <meta-data
+179-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/user/.gradle/caches/8.13/transforms/284b6bbe79253fd7c34977d02b46606a/transformed/jetified-lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+180                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+180-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/user/.gradle/caches/8.13/transforms/284b6bbe79253fd7c34977d02b46606a/transformed/jetified-lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+181                android:value="androidx.startup" />
+181-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/user/.gradle/caches/8.13/transforms/284b6bbe79253fd7c34977d02b46606a/transformed/jetified-lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+182            <meta-data
+182-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+183                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+183-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+184                android:value="androidx.startup" />
+184-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+185        </provider>
+186
+187        <uses-library
+187-->[androidx.window:window:1.0.0] /home/user/.gradle/caches/8.13/transforms/7892b52e175410223e67da957b1143d0/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+188            android:name="androidx.window.extensions"
+188-->[androidx.window:window:1.0.0] /home/user/.gradle/caches/8.13/transforms/7892b52e175410223e67da957b1143d0/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+189            android:required="false" />
+189-->[androidx.window:window:1.0.0] /home/user/.gradle/caches/8.13/transforms/7892b52e175410223e67da957b1143d0/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+190        <uses-library
+190-->[androidx.window:window:1.0.0] /home/user/.gradle/caches/8.13/transforms/7892b52e175410223e67da957b1143d0/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+191            android:name="androidx.window.sidecar"
+191-->[androidx.window:window:1.0.0] /home/user/.gradle/caches/8.13/transforms/7892b52e175410223e67da957b1143d0/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+192            android:required="false" />
+192-->[androidx.window:window:1.0.0] /home/user/.gradle/caches/8.13/transforms/7892b52e175410223e67da957b1143d0/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+193
+194        <service
+194-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:9-19:19
+195            android:name="com.wireguard.android.backend.GoBackend$VpnService"
+195-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-78
+196            android:exported="false"
+196-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-37
+197            android:permission="android.permission.BIND_VPN_SERVICE" >
+197-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-69
+198            <intent-filter>
+198-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-18:29
+199                <action android:name="android.net.VpnService" />
+199-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:17-65
+199-->[:tunnel] /home/user/wireguard-android-hardened/tunnel/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:25-62
+200            </intent-filter>
+201        </service>
+202
+203        <receiver
+203-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+204            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+204-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+205            android:directBootAware="false"
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+206            android:enabled="true"
+206-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+207            android:exported="true"
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+208            android:permission="android.permission.DUMP" >
+208-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+209            <intent-filter>
+209-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+210                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+211            </intent-filter>
+212            <intent-filter>
+212-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+213                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+214            </intent-filter>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+216                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+217            </intent-filter>
+218            <intent-filter>
+218-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+219                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+219-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+219-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/user/.gradle/caches/8.13/transforms/96e61572355e760fc9cb69385ada8db3/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+220            </intent-filter>
+221        </receiver>
+222    </application>
+223
+224</manifest>

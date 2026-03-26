@@ -1,0 +1,6 @@
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg-quick.so.dir
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg.so.dir
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg-go.so.dir
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/elf-cleaner.dir
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/elf-cleaner
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/elf-cleaner.rule
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg-go.so
+/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/armeabi-v7a/CMakeFiles/libwg-go.so.rule
