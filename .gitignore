@@ -8,3 +8,4 @@ build/
 tunnel/build/
 ui/build/
 *.apk
+*.apk
