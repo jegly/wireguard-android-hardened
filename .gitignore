@@ -7,3 +7,4 @@ local.properties
 build/
 tunnel/build/
 ui/build/
+*.apk
