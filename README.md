@@ -14,7 +14,8 @@ A privacy-focused, hardened fork of the official [WireGuard Android](https://git
 | Biometric auth | `BIOMETRIC_WEAK` (face unlock, no attestation) | `BIOMETRIC_STRONG` with hardware-attested `CryptoObject` |
 | Self-updater | Present, phones home with device fingerprint | Completely stripped |
 | Device identifiers sent over network | SDK, ABI, board, manufacturer, model, fingerprint, package name | None |
-| Screen protection | Only when private key is revealed | Entire tunnel editor from the moment it opens |
+| Screen protection | Only when private key is revealed | Tunnel editor, TV interface, and log viewer all protected |
+| Log viewer | No authentication required | Biometric/PIN gate + FLAG_SECURE |
 | Clipboard | No sensitivity flag | Marked `EXTRA_IS_SENSITIVE` on API 33+ |
 | Remote control intents | Exported receiver, `dangerous` permission | Completely removed |
 | ProGuard obfuscation | Disabled (`-dontobfuscate`) | Enabled |
@@ -22,6 +23,9 @@ A privacy-focused, hardened fork of the official [WireGuard Android](https://git
 | `golang.org/x/crypto` | `0.38.0` (2 unpatched CVEs) | `0.45.0` (patched) |
 | Target SDK | 35 | 36 (no install warning on Android 16+) |
 | Settings | Version, Donate, Remote control shown | Cleaned up — identifier leaks removed |
+| App icon | Red background | Dark charcoal |
+
+---
 
 ## What makes this different
 
@@ -45,12 +49,19 @@ None of that leaves this app. Ever. The following files are deleted:
 ### Biometric authentication hardened
 Upgraded from `BIOMETRIC_WEAK` (face unlock counts, no hardware attestation) to `BIOMETRIC_STRONG` with a hardware-attested `CryptoObject`. The biometric check is now cryptographically bound to a Keystore key operation — not just a UI gate that can be bypassed with a photo.
 
-Biometric is required to:
+Biometric (or PIN/pattern/password) is required to:
 - View a tunnel's private key
 - Export tunnels to a zip file
+- Open the log viewer
 
 ### Screen protection
-`FLAG_SECURE` now covers the **entire tunnel editor screen** from the moment it opens — not just after the private key field is tapped. This prevents your configs from appearing in the Android recents thumbnail or being screenshotted.
+`FLAG_SECURE` covers the following screens — preventing screenshots, screen recording, and recents thumbnails:
+- Entire tunnel editor from the moment it opens
+- Android TV interface
+- Log viewer
+
+### Log viewer hardened
+Previously the log viewer was accessible to anyone with an unlocked device. It now requires biometric or device credential authentication before opening, and `FLAG_SECURE` prevents the log content from being captured.
 
 ### Clipboard privacy
 All clipboard writes are marked `EXTRA_IS_SENSITIVE` on Android 13+. Copied keys and config values are excluded from clipboard history and cannot be read by other apps via clipboard notifications.
@@ -80,6 +91,9 @@ The upstream zip exporter silently proceeded when biometric hardware was unavail
 
 ### Log export token fixed
 The upstream app used a freshly generated WireGuard `KeyPair().privateKey.toHex()` as a content URI access token — a confusing abuse of the crypto API. Replaced with `UUID.randomUUID()`.
+
+### Dead code removed
+`FileConfigStore.kt` (plaintext config store) and `VersionPreference.kt` have been deleted entirely from the codebase — not just disabled, gone.
 
 ---
 
@@ -142,12 +156,14 @@ APK output: `ui/build/outputs/apk/debug/ui-debug.apk`
 |---|---|
 | Rooted device reading config files | AES-256-GCM encryption via Android Keystore |
 | ADB backup extracting configs | Keystore key not included in backup |
-| Screenshot / recents thumbnail leaking keys | FLAG_SECURE on entire editor screen |
+| Screenshot / recents thumbnail leaking keys | FLAG_SECURE on tunnel editor, TV interface, and log viewer |
+| Log viewer exposing tunnel metadata | Biometric/PIN gate + FLAG_SECURE |
 | Clipboard history exposing copied keys | EXTRA_IS_SENSITIVE on all clipboard writes |
 | Other apps controlling tunnels via intents | Receiver and permission removed entirely |
 | Reverse engineering the APK | R8 obfuscation enabled on release builds |
 | Updater phoning home with device info | Updater stripped — no network calls except tunnel traffic |
 | MITM via user-installed CA certificates | Network security config rejects user CAs |
+| Unpatched crypto CVEs | golang.org/x/crypto patched to 0.45.0 (ahead of upstream) |
 
 ---
 
