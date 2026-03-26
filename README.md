@@ -82,7 +82,8 @@ This app requests only what it needs:
 ## Installing
 
 Download the latest APK from the [Releases](https://github.com/jegly/wireguard-android-hardened/releases) page.
-sha256:98aee2823e4a5e08f4b285ac72e0a02f8c48e102dcb7721bfd8819a0709e792a
+
+sha256:d1ada40549546b148604ec003d9ad562b7a89d2ce4daa64b7dc0e28a1e90b5d2
 
 1. On your Android device go to **Settings → Apps → Special app access → Install unknown apps**
 2. Enable installs for your browser or file manager
