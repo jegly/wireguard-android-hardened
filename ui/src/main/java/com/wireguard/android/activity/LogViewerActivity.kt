@@ -21,6 +21,7 @@ import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.WindowManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -94,6 +95,8 @@ class LogViewerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Prevent screenshots and screen recording of log content
+        window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
         binding = LogViewerActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

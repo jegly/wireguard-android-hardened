@@ -22,6 +22,7 @@ import com.wireguard.android.R
 import com.wireguard.android.backend.WgQuickBackend
 import com.wireguard.android.preference.PreferencesPreferenceDataStore
 import com.wireguard.android.util.AdminKnobs
+import com.wireguard.android.util.BiometricAuthenticator
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -91,7 +92,16 @@ class SettingsActivity : AppCompatActivity() {
                 }
             }
             preferenceManager.findPreference<Preference>("log_viewer")?.setOnPreferenceClickListener {
-                startActivity(Intent(requireContext(), LogViewerActivity::class.java))
+                BiometricAuthenticator.authenticate(R.string.biometric_prompt_log_viewer_title, this) {
+                    when (it) {
+                        is BiometricAuthenticator.Result.Success,
+                        is BiometricAuthenticator.Result.HardwareUnavailableOrDisabled -> {
+                            startActivity(Intent(requireContext(), LogViewerActivity::class.java))
+                        }
+                        is BiometricAuthenticator.Result.Failure -> {}
+                        is BiometricAuthenticator.Result.Cancelled -> {}
+                    }
+                }
                 true
             }
             val kernelModuleEnabler = preferenceManager.findPreference<Preference>("kernel_module_enabler")
