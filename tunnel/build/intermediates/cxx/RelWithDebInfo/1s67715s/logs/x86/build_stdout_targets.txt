@@ -1,4 +1,0 @@
-ninja: Entering directory `/home/user/wireguard-android-hardened/tunnel/.cxx/RelWithDebInfo/1s67715s/x86'
-[1/2] Building wireguard-go
-make: Nothing to be done for 'default'.
-[2/2] Building elf-cleaner

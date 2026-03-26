@@ -1,7 +1,0 @@
-#Thu Mar 26 10:55:43 AEDT 2026
-base.0=/home/user/wireguard-android-hardened/ui/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-base.1=/home/user/wireguard-android-hardened/ui/build/intermediates/desugar_lib_dex/release/l8DexDesugarLibRelease/classes1000.dex
-path.0=classes.dex
-path.1=classes1000.dex
-renamed.0=classes.dex
-renamed.1=classes2.dex
