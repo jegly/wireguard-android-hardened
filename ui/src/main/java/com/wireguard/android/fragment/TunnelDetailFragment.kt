@@ -11,6 +11,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.core.view.MenuProvider
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Lifecycle
@@ -52,10 +53,13 @@ class TunnelDetailFragment : BaseFragment(), MenuProvider {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // Prevent screenshots of tunnel metadata (addresses, endpoints, DNS, public key)
+        activity?.window?.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
         requireActivity().addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 
     override fun onDestroyView() {
+        activity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
         binding = null
         super.onDestroyView()
     }
