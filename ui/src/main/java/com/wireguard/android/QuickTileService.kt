@@ -12,7 +12,6 @@ import android.graphics.drawable.Icon
 import android.net.Uri
 import android.os.Build
 import android.os.IBinder
-import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import android.util.Log
@@ -77,20 +76,8 @@ class QuickTileService : TileService() {
                                 updateTile()
                             } catch (e: Throwable) {
                                 Log.d(TAG, "Failed to set state, so falling back", e)
-                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE && !Settings.canDrawOverlays(this@QuickTileService)) {
-                                    Log.d(TAG, "Need overlay permissions")
-                                    val permissionIntent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:$packageName"))
-                                    permissionIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                    startActivityAndCollapse(
-                                        PendingIntent.getActivity(
-                                            this@QuickTileService,
-                                            0,
-                                            permissionIntent,
-                                            PendingIntent.FLAG_IMMUTABLE
-                                        )
-                                    )
-                                    return@launch
-                                }
+                                // SYSTEM_ALERT_WINDOW permission removed — overlay permission
+                                // request omitted. Fall through to TunnelToggleActivity directly.
                                 val toggleIntent = Intent(this@QuickTileService, TunnelToggleActivity::class.java)
                                 toggleIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                                 startActivity(toggleIntent)

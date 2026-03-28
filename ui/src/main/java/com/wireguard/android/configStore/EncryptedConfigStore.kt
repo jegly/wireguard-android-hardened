@@ -19,17 +19,16 @@ import java.nio.charset.StandardCharsets
 /**
  * Configuration store that encrypts each tunnel config file at rest using AES-256-GCM
  * via Jetpack EncryptedFile, backed by a hardware-attested Android Keystore key.
- * Requires biometric/device-credential authentication within the last 30 seconds to decrypt.
+ * The device lock screen is the authentication gate — configs are inaccessible when locked.
  */
 class EncryptedConfigStore(private val context: Context) : ConfigStore {
 
     private fun masterKey(): MasterKey =
         MasterKey.Builder(context)
             .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-            // timeout = -1 means auth is valid for the entire unlocked session (since last boot/unlock)
-            // This is the correct setting for a VPN app — the device lock screen IS the auth gate
-            // timeout = 0 would require biometric before every single key operation (unusable for batch imports)
-            // timeout = 30 caused import failures because the token expired mid-batch
+            // setUserAuthenticationRequired(false) — encryption is tied to device unlock state.
+            // The device lock screen IS the auth gate. Setting true with a timeout caused
+            // batch import failures (token expired mid-batch). false is correct for a VPN app.
             .setUserAuthenticationRequired(false)
             .build()
 
@@ -42,6 +41,8 @@ class EncryptedConfigStore(private val context: Context) : ConfigStore {
         ).build()
 
     private fun fileFor(name: String): File = File(context.filesDir, "$name.conf")
+
+    private fun tempFileFor(name: String): File = File(context.filesDir, "$name.conf.tmp")
 
     @Throws(IOException::class)
     override fun create(name: String, config: Config): Config {
@@ -92,11 +93,34 @@ class EncryptedConfigStore(private val context: Context) : ConfigStore {
         Log.d(TAG, "Saving encrypted configuration for tunnel $name")
         if (!fileFor(name).exists())
             throw FileNotFoundException(context.getString(R.string.config_not_found_error, fileFor(name).name))
-        // EncryptedFile cannot overwrite — delete then recreate
-        fileFor(name).delete()
-        encryptedFileFor(name).openFileOutput().use { stream ->
-            stream.write(config.toWgQuickString().toByteArray(StandardCharsets.UTF_8))
+
+        // EncryptedFile cannot overwrite in-place. To avoid data loss if the app is killed
+        // between delete and recreate (TOCTOU), we write to a temp file first, then
+        // atomically swap: delete original, rename temp into place.
+        val tempFile = tempFileFor(name)
+        tempFile.delete() // clean up any previous failed attempt
+
+        try {
+            // Write new encrypted content to temp file
+            EncryptedFile.Builder(
+                context,
+                tempFile,
+                masterKey(),
+                EncryptedFile.FileEncryptionScheme.AES256_GCM_HKDF_4KB
+            ).build().openFileOutput().use { stream ->
+                stream.write(config.toWgQuickString().toByteArray(StandardCharsets.UTF_8))
+            }
+            // Temp file written successfully — now atomically replace
+            fileFor(name).delete()
+            if (!tempFile.renameTo(fileFor(name))) {
+                throw IOException("Failed to rename temp config file for $name")
+            }
+        } catch (e: IOException) {
+            // Clean up temp file if anything went wrong
+            tempFile.delete()
+            throw e
         }
+
         return config
     }
 
