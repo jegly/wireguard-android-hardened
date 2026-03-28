@@ -1,184 +1,270 @@
-# WireGuard Android — Hardened
+```
+██╗    ██╗██╗██████╗ ███████╗ ██████╗ ██╗   ██╗ █████╗ ██████╗ ██████╗
+██║    ██║██║██╔══██╗██╔════╝██╔════╝ ██║   ██║██╔══██╗██╔══██╗██╔══██╗
+██║ █╗ ██║██║██████╔╝█████╗  ██║  ███╗██║   ██║███████║██████╔╝██║  ██║
+██║███╗██║██║██╔══██╗██╔══╝  ██║   ██║██║   ██║██╔══██║██╔══██╗██║  ██║
+╚███╔███╔╝██║██║  ██║███████╗╚██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝
+ ╚══╝╚══╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝
+                        ANDROID  //  HARDENED
+```
 
-A privacy-focused, hardened fork of the official [WireGuard Android](https://git.zx2c4.com/wireguard-android) client. Built for personal use — no telemetry, no updater, encrypted config storage, and a tightened security posture throughout.
-
-> Based on upstream WireGuard Android v1.0.20260315
-
----
-
-## At a glance — vs upstream WireGuard Android
-
-| Feature | Upstream | This fork |
-|---|---|---|
-| Config storage | Plaintext `.conf` files | AES-256-GCM encrypted via Android Keystore |
-| Biometric auth | `BIOMETRIC_WEAK` (face unlock, no attestation) | `BIOMETRIC_STRONG` with hardware-attested `CryptoObject` |
-| Self-updater | Present, phones home with device fingerprint | Completely stripped |
-| Device identifiers sent over network | SDK, ABI, board, manufacturer, model, fingerprint, package name | None |
-| Screen protection | Only when private key is revealed | Tunnel editor, TV interface, and log viewer all protected |
-| Log viewer | No authentication required | Biometric/PIN gate + FLAG_SECURE |
-| Clipboard | No sensitivity flag | Marked `EXTRA_IS_SENSITIVE` on API 33+ |
-| Remote control intents | Exported receiver, `dangerous` permission | Completely removed |
-| ProGuard obfuscation | Disabled (`-dontobfuscate`) | Enabled |
-| Network security | No config (cleartext permitted on API <28) | Cleartext forbidden, user CAs rejected |
-| `golang.org/x/crypto` | `0.38.0` (2 unpatched CVEs) | `0.45.0` (patched) |
-| Target SDK | 35 | 36 (no install warning on Android 16+) |
-| Settings | Version, Donate, Remote control shown | Cleaned up — identifier leaks removed |
-| App icon | Red background | Dark charcoal |
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  A privacy-focused, hardened fork of the official WireGuard Android     │
+│  client. No telemetry. No updater. Encrypted config storage.            │
+│  Tightened security posture throughout.                                 │
+│                                                                         │
+│  Based on upstream WireGuard Android v1.0.20260315                      │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## What makes this different
+## AT A GLANCE
 
-The upstream WireGuard Android app is well-written but makes deliberate usability tradeoffs that reduce security. This fork addresses every one of them.
-
-### Config encryption
-Tunnel configurations — including private keys — are stored encrypted at rest using **AES-256-GCM** via the Android Keystore. The upstream app writes them as plaintext `.conf` files that are trivially readable on a rooted device or via ADB backup. Here, a rooted device cannot extract your keys without your device credentials.
-
-### Updater stripped entirely
-The self-updater has been completely removed. It was the single largest privacy risk in the upstream app — on every update check it sent a `User-Agent` string containing your:
-- Android SDK version
-- CPU ABI
-- Board identifier
-- Device manufacturer and model
-- Build fingerprint
-- Package name
-
-None of that leaves this app. Ever. The following files are deleted:
-`Updater.kt` · `Ed25519.java` · `SnackbarUpdateShower.kt`
-
-### Biometric authentication hardened
-Upgraded from `BIOMETRIC_WEAK` (face unlock counts, no hardware attestation) to `BIOMETRIC_STRONG` with a hardware-attested `CryptoObject`. The biometric check is now cryptographically bound to a Keystore key operation — not just a UI gate that can be bypassed with a photo.
-
-Biometric (or PIN/pattern/password) is required to:
-- View a tunnel's private key
-- Export tunnels to a zip file
-- Open the log viewer
-
-### Screen protection
-`FLAG_SECURE` covers the following screens — preventing screenshots, screen recording, and recents thumbnails:
-- Entire tunnel editor from the moment it opens
-- Android TV interface
-- Log viewer
-
-### Log viewer hardened
-Previously the log viewer was accessible to anyone with an unlocked device. It now requires biometric or device credential authentication before opening, and `FLAG_SECURE` prevents the log content from being captured.
-
-### Clipboard privacy
-All clipboard writes are marked `EXTRA_IS_SENSITIVE` on Android 13+. Copied keys and config values are excluded from clipboard history and cannot be read by other apps via clipboard notifications.
-
-### Manifest lockdown
-Compared to upstream, the following has been removed or tightened:
-
-| Change | Detail |
-|---|---|
-| `REQUEST_INSTALL_PACKAGES` removed | Was used only by the updater |
-| `SYSTEM_ALERT_WINDOW` removed | Was used only by the updater overlay |
-| Remote control intents removed | `TunnelManager$IntentReceiver`, `CONTROL_TUNNELS` permission, and the Settings toggle all gone |
-| `BootShutdownReceiver` permission added | Only the OS can trigger it — other apps cannot send crafted intents |
-| Network security config added | Cleartext traffic forbidden, user-installed CAs not trusted |
-
-### Obfuscation re-enabled
-The upstream ProGuard config explicitly disables obfuscation with `-dontobfuscate`. This flag has been removed. Release builds are now fully minified and obfuscated, raising the bar for reverse engineering.
-
-### Settings cleaned up
-Removed from the Settings UI:
-- **Allow remote control intents** — feature removed entirely
-- **Version preference** — was leaking the package name and version
-- **Donate preference** — called into the updater code
-
-### Zip export bypass blocked
-The upstream zip exporter silently proceeded when biometric hardware was unavailable, exporting all private keys as plaintext with no warning. This fork shows an explicit confirmation dialog in that case.
-
-### Log export token fixed
-The upstream app used a freshly generated WireGuard `KeyPair().privateKey.toHex()` as a content URI access token — a confusing abuse of the crypto API. Replaced with `UUID.randomUUID()`.
-
-### Dead code removed
-`FileConfigStore.kt` (plaintext config store) and `VersionPreference.kt` have been deleted entirely from the codebase — not just disabled, gone.
+```
+┌──────────────────────────────────┬─────────────────────────┬────────────────────────────────────────┐
+│  FEATURE                         │  UPSTREAM               │  THIS FORK                             │
+├──────────────────────────────────┼─────────────────────────┼────────────────────────────────────────┤
+│  Config storage                  │  Plaintext .conf files  │  AES-256-GCM via Android Keystore      │
+│  Biometric auth                  │  BIOMETRIC_WEAK         │  BIOMETRIC_STRONG + CryptoObject       │
+│  Self-updater                    │  Present, phones home   │  Completely stripped                   │
+│  Device identifiers on network   │  SDK/ABI/model/fp/pkg   │  None                                  │
+│  Screen protection               │  Private key only       │  Editor + Detail + TV + Log viewer     │
+│  Log viewer access               │  No auth required       │  Biometric/PIN gate + FLAG_SECURE      │
+│  Tunnel detail view              │  No protection          │  FLAG_SECURE                           │
+│  Clipboard                       │  No sensitivity flag    │  EXTRA_IS_SENSITIVE on API 33+         │
+│  Remote control intents          │  Exported + dangerous   │  Completely removed                    │
+│  ProGuard obfuscation            │  Disabled               │  Enabled                               │
+│  Network security config         │  None                   │  Cleartext forbidden, user CAs out     │
+│  golang.org/x/crypto             │  0.38.0 (2 CVEs)        │  0.45.0 (patched, ahead of upstream)  │
+│  Target SDK                      │  35                     │  36 (no install warning on Android 16) │
+│  Config save safety              │  TOCTOU race condition  │  Atomic write via temp file            │
+│  Settings                        │  Version/Donate/Remote  │  Cleaned — identifier leaks removed   │
+│  App icon                        │  Red                    │  Dark charcoal                         │
+└──────────────────────────────────┴─────────────────────────┴────────────────────────────────────────┘
+```
 
 ---
 
-## Permissions
+## WHAT MAKES THIS DIFFERENT
 
-This app requests only what it needs:
+### Config Encryption
 
-| Permission | Why |
-|---|---|
-| `CAMERA` | QR code scanning for tunnel import |
-| `INTERNET` | VPN tunnel traffic |
-| `RECEIVE_BOOT_COMPLETED` | Restore tunnels on boot (if enabled) |
-| `WRITE_EXTERNAL_STORAGE` | Zip export on Android ≤ 8 only |
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Upstream: /data/data/com.wireguard.android/files/tunnel.conf           │
+│  [Interface]                                                            │
+│  PrivateKey = <YOUR PRIVATE KEY IN PLAINTEXT>                           │
+│                                                                         │
+│  This fork: AES-256-GCM encrypted via Android Keystore                 │
+│  Unreadable without device credentials — even on a rooted device       │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+Tunnel configurations — including private keys — are stored encrypted at rest. The upstream app writes them as plaintext `.conf` files readable by any root-capable tool. Here, a rooted device cannot extract your keys without your device credentials.
+
+### Updater Stripped Entirely
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  UPSTREAM USER-AGENT (sent on every update check):                      │
+│                                                                         │
+│  WireGuard/<version> (Android <sdk>; <abi>; <board>;                   │
+│  <manufacturer> <model>; <fingerprint>; <packageId>)                   │
+│                                                                         │
+│  FILES DELETED IN THIS FORK:                                            │
+│    Updater.kt  Ed25519.java  SnackbarUpdateShower.kt                   │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+The self-updater was the single largest privacy risk in the upstream app. None of that device fingerprint data leaves this app. Ever.
+
+### Biometric Authentication
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  UPSTREAM    BIOMETRIC_WEAK  ──  face unlock accepted, no attestation  │
+│  THIS FORK   BIOMETRIC_STRONG ── hardware-attested CryptoObject        │
+│                                                                         │
+│  Biometric / PIN / pattern / password required for:                    │
+│    - View private key                                                   │
+│    - Export tunnels to zip                                              │
+│    - Open log viewer                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+The biometric check is cryptographically bound to a Keystore key operation — not just a UI gate bypassable with a photo.
+
+### Screen Protection
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  FLAG_SECURE active on:                                                 │
+│    - Tunnel editor     (entire screen from moment it opens)             │
+│    - Tunnel detail     (addresses, endpoints, DNS, public key)          │
+│    - Log viewer        (tunnel event metadata)                          │
+│    - TV interface      (tunnel list on Android TV / foldables)          │
+│                                                                         │
+│  Prevents: screenshots, screen recording, recents thumbnails           │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### Manifest Lockdown
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  REMOVED                                                                │
+│    REQUEST_INSTALL_PACKAGES     was used only by the updater            │
+│    SYSTEM_ALERT_WINDOW          was used only by the updater overlay    │
+│    TunnelManager$IntentReceiver remote control receiver deleted         │
+│    CONTROL_TUNNELS permission   deleted entirely                        │
+│                                                                         │
+│  ADDED / TIGHTENED                                                      │
+│    BootShutdownReceiver         OS-only trigger, no spoofing            │
+│    Network security config      cleartext forbidden, user CAs rejected  │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### Atomic Config Save
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  UPSTREAM (TOCTOU race):                                                │
+│    1. delete(tunnel.conf)           <- app killed here = DATA LOSS      │
+│    2. write(tunnel.conf)                                                │
+│                                                                         │
+│  THIS FORK (atomic):                                                    │
+│    1. write(tunnel.conf.tmp)        <- crash safe                       │
+│    2. delete(tunnel.conf)                                               │
+│    3. rename(tmp -> tunnel.conf)    <- atomic swap                      │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### Additional Hardening
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Clipboard       EXTRA_IS_SENSITIVE on all copies (API 33+)            │
+│  Obfuscation     -dontobfuscate removed, R8 fully enabled               │
+│  Log token       UUID.randomUUID() replaces KeyPair().privateKey.toHex()│
+│  Dead code       FileConfigStore.kt + VersionPreference.kt deleted      │
+│  Zip export      Biometric bypass blocked, explicit warning shown       │
+│  Crypto          golang.org/x/crypto 0.45.0, ahead of upstream         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Installing
+## PERMISSIONS
 
-Download the latest APK from the [Releases](https://github.com/jegly/wireguard-android-hardened/releases) page.
-
-sha256:3e0e2298378b2b73e48adb4486019334ec06974de8767f844b3b58d542fb61f9
-
-1. On your Android device go to **Settings → Apps → Special app access → Install unknown apps**
-2. Enable installs for your browser or file manager
-3. Open the downloaded APK and install
-
-Requires **Android 8.0 (API 24) or higher**.
-
-> **Note:** Because this is not distributed through the Play Store, Android will warn you about installing from an unknown source. This is expected.
+```
+┌───────────────────────────────────┬────────────────────────────────────┐
+│  PERMISSION                       │  REASON                            │
+├───────────────────────────────────┼────────────────────────────────────┤
+│  CAMERA                           │  QR code scanning for import       │
+│  INTERNET                         │  VPN tunnel traffic                │
+│  RECEIVE_BOOT_COMPLETED           │  Restore tunnels on boot           │
+│  WRITE_EXTERNAL_STORAGE           │  Zip export on Android <= 8 only   │
+└───────────────────────────────────┴────────────────────────────────────┘
+```
 
 ---
 
-## Building from source
+## INSTALLING
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Download the latest APK from the Releases page                         │
+│                                                                         │
+│  sha256: 3e0e2298378b2b73e48adb4486019334ec06974de8767f844b3b58d542fb61f9│
+│                                                                         │
+│  1. Settings -> Apps -> Special app access -> Install unknown apps      │
+│  2. Enable installs for your browser or file manager                    │
+│  3. Open the APK and install                                            │
+│                                                                         │
+│  Requires Android 8.0 (API 24) or higher                               │
+│                                                                         │
+│  Note: Android will warn about installing from an unknown source.       │
+│  This is expected — the app is not distributed through the Play Store.  │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## BUILDING FROM SOURCE
 
 ```bash
 # Clone with submodules
 git clone --recurse-submodules https://github.com/jegly/wireguard-android-hardened.git
 cd wireguard-android-hardened
 
-# If you cloned without --recurse-submodules
+# Without --recurse-submodules
 git submodule update --init --recursive
 
 # Build debug APK
 ./gradlew assembleDebug
 ```
 
-**Requirements:**
-- JDK 21
-- Android SDK with API 36
-- NDK 26.x or 27.x
-- CMake 3.22+
-
-APK output: `ui/build/outputs/apk/debug/ui-debug.apk`
-
----
-
-## Security model
-
-| Threat | Protection |
-|---|---|
-| Rooted device reading config files | AES-256-GCM encryption via Android Keystore |
-| ADB backup extracting configs | Keystore key not included in backup |
-| Screenshot / recents thumbnail leaking keys | FLAG_SECURE on tunnel editor, TV interface, and log viewer |
-| Log viewer exposing tunnel metadata | Biometric/PIN gate + FLAG_SECURE |
-| Clipboard history exposing copied keys | EXTRA_IS_SENSITIVE on all clipboard writes |
-| Other apps controlling tunnels via intents | Receiver and permission removed entirely |
-| Reverse engineering the APK | R8 obfuscation enabled on release builds |
-| Updater phoning home with device info | Updater stripped — no network calls except tunnel traffic |
-| MITM via user-installed CA certificates | Network security config rejects user CAs |
-| Unpatched crypto CVEs | golang.org/x/crypto patched to 0.45.0 (ahead of upstream) |
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  REQUIREMENTS                                                           │
+│    JDK 21                                                               │
+│    Android SDK with API 36                                              │
+│    NDK 26.x or 27.x                                                     │
+│    CMake 3.22+                                                          │
+│                                                                         │
+│  OUTPUT                                                                 │
+│    ui/build/outputs/apk/debug/ui-debug.apk                             │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## What this fork does NOT change
+## SECURITY MODEL
 
-- The WireGuard protocol itself — cryptography is unchanged
-- The Go tunnel implementation (`libwg-go.so`)
-- Core tunnel management logic
-- Any functional behaviour of the VPN
+```
+┌─────────────────────────────────────────────────────┬───────────────────────────────────────────────┐
+│  THREAT                                             │  PROTECTION                                   │
+├─────────────────────────────────────────────────────┼───────────────────────────────────────────────┤
+│  Rooted device reading config files                 │  AES-256-GCM via Android Keystore             │
+│  ADB backup extracting configs                      │  Keystore key excluded from backup            │
+│  Screenshot leaking keys or metadata                │  FLAG_SECURE on editor/detail/TV/log          │
+│  Log viewer exposing tunnel metadata                │  Biometric/PIN gate + FLAG_SECURE             │
+│  Clipboard history exposing copied keys             │  EXTRA_IS_SENSITIVE on all clipboard writes   │
+│  Other apps controlling tunnels via intents         │  Receiver and permission removed entirely     │
+│  Reverse engineering the APK                        │  R8 obfuscation enabled on release builds     │
+│  Updater phoning home with device fingerprint       │  Updater stripped — zero outbound calls       │
+│  MITM via user-installed CA certificates            │  Network security config rejects user CAs     │
+│  Unpatched crypto CVEs                              │  golang.org/x/crypto 0.45.0, ahead of upstream│
+│  Config data loss on crash during save              │  Atomic write via temp file + rename          │
+└─────────────────────────────────────────────────────┴───────────────────────────────────────────────┘
+```
 
 ---
 
-## Credits
+## WHAT THIS FORK DOES NOT CHANGE
 
-Built on top of [WireGuard Android](https://git.zx2c4.com/wireguard-android) by [WireGuard LLC](https://www.wireguard.com/).  
-Licensed under [Apache 2.0](COPYING).
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  The WireGuard protocol itself — cryptography is unchanged              │
+│  The Go tunnel implementation (libwg-go.so)                            │
+│  Core tunnel management logic                                           │
+│  Any functional behaviour of the VPN                                   │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-This project is not affiliated with or endorsed by WireGuard LLC.
+---
+
+## CREDITS
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Built on top of WireGuard Android by WireGuard LLC                    │
+│  https://git.zx2c4.com/wireguard-android                               │
+│                                                                         │
+│  Licensed under Apache 2.0 — see COPYING                               │
+│                                                                         │
+│  This project is not affiliated with or endorsed by WireGuard LLC      │
+└─────────────────────────────────────────────────────────────────────────┘
+```
