@@ -220,7 +220,7 @@ The biometric check is cryptographically bound to a Keystore key operation — n
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  Download the latest APK from the Releases page                         │
 │                                                                         │
-│  sha256: 3e0e2298378b2b73e48adb4486019334ec06974de8767f844b3b58d542fb61f9│
+│ sha256:b24b6f55639f25af5b8d63860a8a1fb64cf449203f20048ec371ceb59fbb7274                                                                     │
 │                                                                         │
 │  1. Settings -> Apps -> Special app access -> Install unknown apps      │
 │  2. Enable installs for your browser or file manager                    │
