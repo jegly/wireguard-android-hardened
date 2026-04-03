@@ -1,0 +1,3 @@
+[submodule "tunnel/tools/elf-cleaner"]
+	path = tunnel/tools/elf-cleaner
+	url = https://github.com/termux/termux-elf-cleaner
