@@ -42,8 +42,6 @@ class EncryptedConfigStore(private val context: Context) : ConfigStore {
 
     private fun fileFor(name: String): File = File(context.filesDir, "$name.conf")
 
-    private fun tempFileFor(name: String): File = File(context.filesDir, "$name.conf.tmp")
-
     @Throws(IOException::class)
     override fun create(name: String, config: Config): Config {
         Log.d(TAG, "Creating encrypted configuration for tunnel $name")
@@ -65,8 +63,10 @@ class EncryptedConfigStore(private val context: Context) : ConfigStore {
     }
 
     override fun enumerate(): Set<String> {
+        // Exclude any stale .conf.tmp leftovers — they are half-written saves and
+        // cannot be decrypted under the canonical tunnel name.
         return context.fileList()
-            .filter { it.endsWith(".conf") }
+            .filter { it.endsWith(".conf") && !it.endsWith(".conf.tmp") }
             .map { it.substring(0, it.length - ".conf".length) }
             .toSet()
     }
@@ -91,33 +91,30 @@ class EncryptedConfigStore(private val context: Context) : ConfigStore {
     @Throws(IOException::class)
     override fun save(name: String, config: Config): Config {
         Log.d(TAG, "Saving encrypted configuration for tunnel $name")
-        if (!fileFor(name).exists())
-            throw FileNotFoundException(context.getString(R.string.config_not_found_error, fileFor(name).name))
+        val file = fileFor(name)
+        if (!file.exists())
+            throw FileNotFoundException(context.getString(R.string.config_not_found_error, file.name))
 
-        // EncryptedFile cannot overwrite in-place. To avoid data loss if the app is killed
-        // between delete and recreate (TOCTOU), we write to a temp file first, then
-        // atomically swap: delete original, rename temp into place.
-        val tempFile = tempFileFor(name)
-        tempFile.delete() // clean up any previous failed attempt
-
+        // EncryptedFile cannot overwrite in-place — the file must be deleted first.
+        //
+        // IMPORTANT: do NOT use a temp-file-then-rename approach here. Tink (used by
+        // EncryptedFile internally) derives the key stream using the *file path* as
+        // associated data (AAD). A ciphertext written to "foo.conf.tmp" will fail to
+        // decrypt when read back via an EncryptedFile opened against "foo.conf" with
+        // the error: "no matching key found for ciphertext stream". This was the root
+        // cause of export failures on Android 14 and blank configs on Android 16.
+        //
+        // We delete first and write directly to the canonical path. If the app is killed
+        // between delete and write the tunnel simply won't enumerate on next launch —
+        // which is recoverable — rather than producing an undecryptable ciphertext.
+        file.delete()
         try {
-            // Write new encrypted content to temp file
-            EncryptedFile.Builder(
-                context,
-                tempFile,
-                masterKey(),
-                EncryptedFile.FileEncryptionScheme.AES256_GCM_HKDF_4KB
-            ).build().openFileOutput().use { stream ->
+            encryptedFileFor(name).openFileOutput().use { stream ->
                 stream.write(config.toWgQuickString().toByteArray(StandardCharsets.UTF_8))
             }
-            // Temp file written successfully — now atomically replace
-            fileFor(name).delete()
-            if (!tempFile.renameTo(fileFor(name))) {
-                throw IOException("Failed to rename temp config file for $name")
-            }
         } catch (e: IOException) {
-            // Clean up temp file if anything went wrong
-            tempFile.delete()
+            // Ensure no partial/empty file is left behind that would enumerate but fail to load
+            file.delete()
             throw e
         }
 

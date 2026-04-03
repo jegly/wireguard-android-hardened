@@ -36,3 +36,15 @@
 # Suppress missing annotation warnings from Tink (used by security-crypto)
 -dontwarn javax.annotation.**
 -dontwarn javax.annotation.concurrent.**
+
+# Keep all Tink classes used by androidx.security.crypto (EncryptedFile / EncryptedSharedPreferences).
+# Without these rules, R8 strips or renames the Tink key-registry and primitive classes,
+# causing EncryptedFile.openFileInput() to silently return an empty stream (blank configs)
+# or throw "no matching key found for ciphertext stream" on export.
+-keep class com.google.crypto.tink.** { *; }
+-keepclassmembers class com.google.crypto.tink.** { *; }
+-dontwarn com.google.crypto.tink.**
+
+# Keep the security-crypto wrappers themselves
+-keep class androidx.security.crypto.** { *; }
+-keepclassmembers class androidx.security.crypto.** { *; }

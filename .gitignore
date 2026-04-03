@@ -9,3 +9,5 @@ tunnel/build/
 ui/build/
 *.apk
 *.apk
+tunnel/.cxx/
+ui/release/
