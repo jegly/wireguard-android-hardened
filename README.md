@@ -169,24 +169,6 @@ The biometric check is cryptographically bound to a Keystore key operation — n
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Config Save Safety
-
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│  UPSTREAM (TOCTOU race):                                                │
-│    1. delete(tunnel.conf)           <- app killed here = DATA LOSS      │
-│    2. write(tunnel.conf)                                                │
-│                                                                         │
-│  THIS FORK:                                                             │
-│    1. delete(tunnel.conf)                                               │
-│    2. write(tunnel.conf)            <- always written to canonical path │
-│                                                                         │
-│  NOTE: a temp-file-then-rename pattern cannot be used with             │
-│  EncryptedFile. Tink binds ciphertext to the file path as AAD.         │
-│  A file encrypted as tunnel.conf.tmp cannot be decrypted when          │
-│  opened as tunnel.conf — this would cause silent data corruption.      │
-└─────────────────────────────────────────────────────────────────────────┘
-```
 
 ### Additional Hardening
 
