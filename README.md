@@ -1,4 +1,3 @@
-```
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :: __      __                                                     __      :: */
@@ -49,9 +48,9 @@
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
                                                                                                                                                                                                 
                                                                                                                                                                                                 
-```
 
-```
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  A privacy-focused, hardened fork of the official WireGuard Android     │
 │  client. No telemetry. No updater. Encrypted config storage.            │
@@ -59,13 +58,13 @@
 │                                                                         │
 │  Based on upstream WireGuard Android v1.0.20260315                      │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
----
 
-## AT A GLANCE
 
-```
+
+AT A GLANCE
+
+
 ┌──────────────────────────────────┬─────────────────────────┬────────────────────────────────────────┐
 │  FEATURE                         │  UPSTREAM               │  THIS FORK                             │
 ├──────────────────────────────────┼─────────────────────────┼────────────────────────────────────────┤
@@ -82,19 +81,20 @@
 │  Network security config         │  None                   │  Cleartext forbidden, user CAs out     │
 │  golang.org/x/crypto             │  0.38.0 (2 CVEs)        │  0.45.0 (patched, ahead of upstream)  │
 │  Target SDK                      │  35                     │  36 (no install warning on Android 16) │
-│  Config save safety              │  TOCTOU race condition  │  Atomic write via temp file            │
+│  Config save safety              │  TOCTOU race condition  │  Delete-then-rewrite to canonical path │
 │  Settings                        │  Version/Donate/Remote  │  Cleaned — identifier leaks removed   │
 │  App icon                        │  Red                    │  Dark charcoal                         │
 └──────────────────────────────────┴─────────────────────────┴────────────────────────────────────────┘
-```
 
----
 
-## WHAT MAKES THIS DIFFERENT
 
-### Config Encryption
 
-```
+WHAT MAKES THIS DIFFERENT
+
+
+Config Encryption
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  Upstream: /data/data/com.wireguard.android/files/tunnel.conf           │
 │  [Interface]                                                            │
@@ -103,13 +103,15 @@
 │  This fork: AES-256-GCM encrypted via Android Keystore                 │
 │  Unreadable without device credentials — even on a rooted device       │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
-Tunnel configurations — including private keys — are stored encrypted at rest. The upstream app writes them as plaintext `.conf` files readable by any root-capable tool. Here, a rooted device cannot extract your keys without your device credentials.
 
-### Updater Stripped Entirely
 
-```
+Tunnel configurations — including private keys — are stored encrypted at rest. The upstream app writes them as plaintext .conf files readable by any root-capable tool. Here, a rooted device cannot extract your keys without your device credentials.
+
+
+Updater Stripped Entirely
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  UPSTREAM USER-AGENT (sent on every update check):                      │
 │                                                                         │
@@ -119,13 +121,15 @@ Tunnel configurations — including private keys — are stored encrypted at res
 │  FILES DELETED IN THIS FORK:                                            │
 │    Updater.kt  Ed25519.java  SnackbarUpdateShower.kt                   │
 └─────────────────────────────────────────────────────────────────────────┘
-```
+
+
 
 The self-updater was the single largest privacy risk in the upstream app. None of that device fingerprint data leaves this app. Ever.
 
-### Biometric Authentication
 
-```
+Biometric Authentication
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  UPSTREAM    BIOMETRIC_WEAK  ──  face unlock accepted, no attestation  │
 │  THIS FORK   BIOMETRIC_STRONG ── hardware-attested CryptoObject        │
@@ -135,13 +139,15 @@ The self-updater was the single largest privacy risk in the upstream app. None o
 │    - Export tunnels to zip                                              │
 │    - Open log viewer                                                    │
 └─────────────────────────────────────────────────────────────────────────┘
-```
+
+
 
 The biometric check is cryptographically bound to a Keystore key operation — not just a UI gate bypassable with a photo.
 
-### Screen Protection
 
-```
+Screen Protection
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  FLAG_SECURE active on:                                                 │
 │    - Tunnel editor     (entire screen from moment it opens)             │
@@ -151,11 +157,12 @@ The biometric check is cryptographically bound to a Keystore key operation — n
 │                                                                         │
 │  Prevents: screenshots, screen recording, recents thumbnails           │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
-### Manifest Lockdown
 
-```
+
+Manifest Lockdown
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  REMOVED                                                                │
 │    REQUEST_INSTALL_PACKAGES     was used only by the updater            │
@@ -167,41 +174,48 @@ The biometric check is cryptographically bound to a Keystore key operation — n
 │    BootShutdownReceiver         OS-only trigger, no spoofing            │
 │    Network security config      cleartext forbidden, user CAs rejected  │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
-### Atomic Config Save
 
-```
+
+Config Save Safety
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  UPSTREAM (TOCTOU race):                                                │
 │    1. delete(tunnel.conf)           <- app killed here = DATA LOSS      │
 │    2. write(tunnel.conf)                                                │
 │                                                                         │
-│  THIS FORK (atomic):                                                    │
-│    1. write(tunnel.conf.tmp)        <- crash safe                       │
-│    2. delete(tunnel.conf)                                               │
-│    3. rename(tmp -> tunnel.conf)    <- atomic swap                      │
+│  THIS FORK:                                                             │
+│    1. delete(tunnel.conf)                                               │
+│    2. write(tunnel.conf)            <- always written to canonical path │
+│                                                                         │
+│  NOTE: a temp-file-then-rename pattern cannot be used with             │
+│  EncryptedFile. Tink binds ciphertext to the file path as AAD.         │
+│  A file encrypted as tunnel.conf.tmp cannot be decrypted when          │
+│  opened as tunnel.conf — this would cause silent data corruption.      │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
-### Additional Hardening
 
-```
+
+Additional Hardening
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  Clipboard       EXTRA_IS_SENSITIVE on all copies (API 33+)            │
 │  Obfuscation     -dontobfuscate removed, R8 fully enabled               │
+│  Tink keep rules R8 keep rules added for Tink + security-crypto        │
 │  Log token       UUID.randomUUID() replaces KeyPair().privateKey.toHex()│
 │  Dead code       FileConfigStore.kt + VersionPreference.kt deleted      │
 │  Zip export      Biometric bypass blocked, explicit warning shown       │
 │  Crypto          golang.org/x/crypto 0.45.0, ahead of upstream         │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
----
 
-## PERMISSIONS
 
-```
+
+PERMISSIONS
+
+
 ┌───────────────────────────────────┬────────────────────────────────────┐
 │  PERMISSION                       │  REASON                            │
 ├───────────────────────────────────┼────────────────────────────────────┤
@@ -210,17 +224,17 @@ The biometric check is cryptographically bound to a Keystore key operation — n
 │  RECEIVE_BOOT_COMPLETED           │  Restore tunnels on boot           │
 │  WRITE_EXTERNAL_STORAGE           │  Zip export on Android <= 8 only   │
 └───────────────────────────────────┴────────────────────────────────────┘
-```
 
----
 
-## INSTALLING
 
-```
+
+INSTALLING
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  Download the latest APK from the Releases page                         │
 │                                                                         │
-│ sha256:b24b6f55639f25af5b8d63860a8a1fb64cf449203f20048ec371ceb59fbb7274                                                                     │
+│  sha256:                          │
 │                                                                         │
 │  1. Settings -> Apps -> Special app access -> Install unknown apps      │
 │  2. Enable installs for your browser or file manager                    │
@@ -231,13 +245,13 @@ The biometric check is cryptographically bound to a Keystore key operation — n
 │  Note: Android will warn about installing from an unknown source.       │
 │  This is expected — the app is not distributed through the Play Store.  │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
----
 
-## BUILDING FROM SOURCE
 
-```bash
+
+BUILDING FROM SOURCE
+
+
 # Clone with submodules
 git clone --recurse-submodules https://github.com/jegly/wireguard-android-hardened.git
 cd wireguard-android-hardened
@@ -247,9 +261,9 @@ git submodule update --init --recursive
 
 # Build debug APK
 ./gradlew assembleDebug
-```
 
-```
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  REQUIREMENTS                                                           │
 │    JDK 21                                                               │
@@ -260,13 +274,13 @@ git submodule update --init --recursive
 │  OUTPUT                                                                 │
 │    ui/build/outputs/apk/debug/ui-debug.apk                             │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
----
 
-## SECURITY MODEL
 
-```
+
+SECURITY MODEL
+
+
 ┌─────────────────────────────────────────────────────┬───────────────────────────────────────────────┐
 │  THREAT                                             │  PROTECTION                                   │
 ├─────────────────────────────────────────────────────┼───────────────────────────────────────────────┤
@@ -280,28 +294,28 @@ git submodule update --init --recursive
 │  Updater phoning home with device fingerprint       │  Updater stripped — zero outbound calls       │
 │  MITM via user-installed CA certificates            │  Network security config rejects user CAs     │
 │  Unpatched crypto CVEs                              │  golang.org/x/crypto 0.45.0, ahead of upstream│
-│  Config data loss on crash during save              │  Atomic write via temp file + rename          │
+│  Config data loss or corruption on save             │  Delete-then-rewrite to canonical path        │
 └─────────────────────────────────────────────────────┴───────────────────────────────────────────────┘
-```
 
----
 
-## WHAT THIS FORK DOES NOT CHANGE
 
-```
+
+WHAT THIS FORK DOES NOT CHANGE
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  The WireGuard protocol itself — cryptography is unchanged              │
 │  The Go tunnel implementation (libwg-go.so)                            │
 │  Core tunnel management logic                                           │
 │  Any functional behaviour of the VPN                                   │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 
----
 
-## CREDITS
 
-```
+
+CREDITS
+
+
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  Built on top of WireGuard Android by WireGuard LLC                    │
 │  https://git.zx2c4.com/wireguard-android                               │
@@ -310,4 +324,4 @@ git submodule update --init --recursive
 │                                                                         │
 │  This project is not affiliated with or endorsed by WireGuard LLC      │
 └─────────────────────────────────────────────────────────────────────────┘
-```
+
