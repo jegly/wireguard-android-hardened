@@ -62,6 +62,7 @@
 ```
 
 ---
+![GitHub all releases](https://img.shields.io/github/downloads/jegly/wireguard-android-hardened/total)
 
 ## AT A GLANCE
 
