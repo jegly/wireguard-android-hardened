@@ -26,7 +26,11 @@
 │  Biometric auth                  │  BIOMETRIC_WEAK         │  BIOMETRIC_STRONG + CryptoObject       │
 │  Self-updater                    │  Present, phones home   │  Completely stripped                   │
 │  Device identifiers on network   │  SDK/ABI/model/fp/pkg   │  None                                  │
-│  Screen protection               │  Private key only       │  Editor + Detail + TV + Log viewer     │
+│  Screen protection               │  Private key only       │  All activities (app-wide FLAG_SECURE) │
+│  App-wide lock                   │  None                   │  Biometric/PIN gate on launch + return │
+│  Idle auto-lock                  │  None                   │  Off / 1 / 5 / 15 min foreground idle  │
+│  APK tamper detection            │  None                   │  SHA-256 signature pin on every launch │
+│  Themes                          │  Light / dark only      │  + Catppuccin Mocha + Dracula          │
 │  Log viewer access               │  No auth required       │  Biometric/PIN gate + FLAG_SECURE      │
 │  Tunnel detail view              │  No protection          │  FLAG_SECURE                           │
 │  Clipboard                       │  No sensitivity flag    │  EXTRA_IS_SENSITIVE on API 33+         │
@@ -34,7 +38,7 @@
 │  ProGuard obfuscation            │  Disabled               │  Enabled                               │
 │  Network security config         │  None                   │  Cleartext forbidden, user CAs out     │
 │  golang.org/x/crypto             │  0.38.0 (2 CVEs)        │  0.45.0 (patched, ahead of upstream)  │
-│  Target SDK                      │  35                     │  36 (no install warning on Android 16) │
+│  Target SDK                      │  35                     │  37 (Android 17, latest security gates)│
 │  Config save safety              │  TOCTOU race condition  │  Delete-then-rewrite to canonical path │
 │  Settings                        │  Version/Donate/Remote  │  Cleaned — identifier leaks removed   │
 │  App icon                        │  Red                    │  Dark charcoal                         │
@@ -87,22 +91,52 @@ The self-updater was the single largest privacy risk in the upstream app. None o
 │    - View private key                                                   │
 │    - Export tunnels to zip                                              │
 │    - Open log viewer                                                    │
+│    - Unlock the app itself (opt-in toggle in Settings)                  │
+│    - Re-unlock after foreground idle timeout (1 / 5 / 15 min)          │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-The biometric check is cryptographically bound to a Keystore key operation — not just a UI gate bypassable with a photo.
+The biometric check is cryptographically bound to a Keystore key operation — not just a UI gate bypassable with a photo. When the app-wide lock is enabled, the gate fires on first launch and any return from background. With the idle-timeout setting, it also fires after N minutes of foreground idle so a phone left on a desk relocks.
 
 ### Screen Protection
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  FLAG_SECURE active on:                                                 │
-│    - Tunnel editor     (entire screen from moment it opens)             │
-│    - Tunnel detail     (addresses, endpoints, DNS, public key)          │
-│    - Log viewer        (tunnel event metadata)                          │
-│    - TV interface      (tunnel list on Android TV / foldables)          │
+│  FLAG_SECURE hardcoded on every activity in the app:                    │
+│    - MainActivity (tunnel list)                                         │
+│    - Tunnel editor / detail                                             │
+│    - Tunnel creator                                                     │
+│    - Settings                                                           │
+│    - Log viewer                                                         │
+│    - TV interface (Android TV / foldables)                              │
 │                                                                         │
-│  Prevents: screenshots, screen recording, recents thumbnails           │
+│  Prevents: screenshots, screen recording, recents thumbnails,          │
+│            accessibility-tool screen reads, casted-display capture     │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### APK Tamper Detection
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Trusted SHA-256 signing certificate pinned into the binary.            │
+│  On every launch, the app verifies its own signing cert against         │
+│  the pinned hash. Repackaged or re-signed builds refuse to start.       │
+│                                                                         │
+│  Skipped in debug builds (BuildConfig.DEBUG is a compiled constant —    │
+│  a repackager cannot flip it).                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### Themes
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  System default   Material You / dynamic colors when available          │
+│  Catppuccin Mocha Always-dark, Mauve accent                             │
+│  Dracula          Always-dark, Purple accent                            │
+│                                                                         │
+│  Static palettes skip Material You so the accent stays consistent.     │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -193,7 +227,7 @@ git submodule update --init --recursive
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  REQUIREMENTS                                                           │
 │    JDK 21                                                               │
-│    Android SDK with API 36                                              │
+│    Android SDK with API 37 (Android 17)                                 │
 │    NDK 26.x or 27.x                                                     │
 │    CMake 3.22+                                                          │
 │                                                                         │
@@ -221,6 +255,8 @@ git submodule update --init --recursive
 │  MITM via user-installed CA certificates            │  Network security config rejects user CAs     │
 │  Unpatched crypto CVEs                              │  golang.org/x/crypto 0.45.0, ahead of upstream│
 │  Config data loss or corruption on save             │  Delete-then-rewrite to canonical path        │
+│  Repackaged or re-signed APK                        │  Pinned SHA-256 signature check on launch     │
+│  Phone left unattended in foreground                │  Idle-timeout re-lock + biometric gate        │
 └─────────────────────────────────────────────────────┴───────────────────────────────────────────────┘
 ```
 

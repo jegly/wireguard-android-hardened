@@ -263,4 +263,43 @@
     <string name="biometric_prompt_log_viewer_title">Authenticate to view logs</string>
     <string name="biometric_auth_error">Authentication failure</string>
     <string name="biometric_auth_error_reason">Authentication failure: %s</string>
+    <string name="app_lock_title">Biometric app lock</string>
+    <string name="app_lock_summary_on">App requires authentication when returning from background</string>
+    <string name="app_lock_summary_off">Unlock app with biometric or device credential</string>
+    <string name="biometric_prompt_app_lock_title">Authenticate to open WireGuard</string>
+    <string name="app_lock_timeout_title">Auto-lock when idle</string>
+    <string-array name="app_lock_timeout_entries">
+        <item>Off</item>
+        <item>After 1 minute</item>
+        <item>After 5 minutes</item>
+        <item>After 15 minutes</item>
+    </string-array>
+    <string-array name="app_lock_timeout_values" translatable="false">
+        <item>off</item>
+        <item>1</item>
+        <item>5</item>
+        <item>15</item>
+    </string-array>
+    <string name="theme_title">Theme</string>
+    <string name="about_title">About</string>
+    <string name="about_app_title">WireGuard Android Hardened</string>
+    <string name="about_github_title">GitHub</string>
+    <string name="about_github_summary" translatable="false">github.com/jegly</string>
+    <string name="about_website_title">Website</string>
+    <string name="about_website_summary" translatable="false">jegly.xyz</string>
+    <string name="about_version_title">Version</string>
+    <string name="about_github_url" translatable="false">https://github.com/jegly</string>
+    <string name="about_website_url" translatable="false">https://www.jegly.xyz</string>
+    <string name="tamper_dialog_title">Unverified App</string>
+    <string name="tamper_dialog_message">This app has been repackaged or re-signed with an unknown key. It may have been tampered with. The app will now exit.</string>
+    <string-array name="theme_entries">
+        <item>System default</item>
+        <item>Catppuccin Mocha</item>
+        <item>Dracula</item>
+    </string-array>
+    <string-array name="theme_entry_values">
+        <item>system</item>
+        <item>catppuccin</item>
+        <item>dracula</item>
+    </string-array>
 </resources>

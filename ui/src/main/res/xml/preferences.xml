@@ -25,11 +25,28 @@
         android:title="@string/log_viewer_pref_title" />
     <CheckBoxPreference
         android:defaultValue="false"
-        android:key="dark_theme"
+        android:key="app_lock"
         android:singleLineTitle="false"
-        android:summaryOff="@string/dark_theme_summary_off"
-        android:summaryOn="@string/dark_theme_summary_on"
-        android:title="@string/dark_theme_title" />
+        android:summaryOff="@string/app_lock_summary_off"
+        android:summaryOn="@string/app_lock_summary_on"
+        android:title="@string/app_lock_title" />
+    <ListPreference
+        android:defaultValue="off"
+        android:dependency="app_lock"
+        android:entries="@array/app_lock_timeout_entries"
+        android:entryValues="@array/app_lock_timeout_values"
+        android:key="app_lock_timeout"
+        android:singleLineTitle="false"
+        android:summary="%s"
+        android:title="@string/app_lock_timeout_title" />
+    <ListPreference
+        android:defaultValue="system"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_entry_values"
+        android:key="theme"
+        android:singleLineTitle="false"
+        android:summary="%s"
+        android:title="@string/theme_title" />
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="multiple_tunnels"
@@ -39,5 +56,26 @@
         android:title="@string/multiple_tunnels_title" />
     <com.wireguard.android.preference.ToolsInstallerPreference android:key="tools_installer" />
     <com.wireguard.android.preference.KernelModuleEnablerPreference android:key="kernel_module_enabler" />
+
+    <Preference
+        android:key="about_header"
+        android:singleLineTitle="false"
+        android:title="@string/about_title"
+        android:summary="@string/about_app_title" />
+    <Preference
+        android:key="about_app"
+        android:singleLineTitle="false"
+        android:title="@string/about_github_title"
+        android:summary="@string/about_github_summary" />
+    <Preference
+        android:key="about_website"
+        android:singleLineTitle="false"
+        android:title="@string/about_website_title"
+        android:summary="@string/about_website_summary" />
+    <Preference
+        android:key="about_version"
+        android:selectable="false"
+        android:singleLineTitle="false"
+        android:title="@string/about_version_title" />
 
 </androidx.preference.PreferenceScreen>

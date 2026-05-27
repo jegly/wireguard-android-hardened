@@ -64,4 +64,74 @@
     <color name="md_theme_dark_surfaceTint">#ADC7FF</color>
     <color name="md_theme_dark_outlineVariant">#44474F</color>
     <color name="md_theme_dark_scrim">#000000</color>
+
+    <!-- ── Catppuccin Mocha palette ─────────────────────────────── -->
+    <!-- Primary accent: Mauve -->
+    <color name="catppuccin_primary">#CBA6F7</color>
+    <color name="catppuccin_on_primary">#11111B</color>
+    <color name="catppuccin_primary_container">#443C5A</color>
+    <color name="catppuccin_on_primary_container">#CBA6F7</color>
+    <!-- Secondary: Blue -->
+    <color name="catppuccin_secondary">#89B4FA</color>
+    <color name="catppuccin_on_secondary">#11111B</color>
+    <color name="catppuccin_secondary_container">#363F5B</color>
+    <color name="catppuccin_on_secondary_container">#89B4FA</color>
+    <!-- Tertiary: Peach -->
+    <color name="catppuccin_tertiary">#FAB387</color>
+    <color name="catppuccin_on_tertiary">#11111B</color>
+    <color name="catppuccin_tertiary_container">#4E3F42</color>
+    <color name="catppuccin_on_tertiary_container">#FAB387</color>
+    <!-- Error: Pink -->
+    <color name="catppuccin_error">#F38BA8</color>
+    <color name="catppuccin_on_error">#11111B</color>
+    <color name="catppuccin_error_container">#4D3649</color>
+    <color name="catppuccin_on_error_container">#F38BA8</color>
+    <!-- Surfaces -->
+    <color name="catppuccin_background">#1E1E2E</color>
+    <color name="catppuccin_on_background">#CDD6F4</color>
+    <color name="catppuccin_surface">#181825</color>
+    <color name="catppuccin_on_surface">#CDD6F4</color>
+    <color name="catppuccin_surface_variant">#313244</color>
+    <color name="catppuccin_on_surface_variant">#A6ADC8</color>
+    <color name="catppuccin_outline">#6C7086</color>
+    <color name="catppuccin_outline_variant">#45475A</color>
+    <color name="catppuccin_scrim">#11111B</color>
+    <color name="catppuccin_inverse_surface">#CDD6F4</color>
+    <color name="catppuccin_inverse_on_surface">#1E1E2E</color>
+    <color name="catppuccin_inverse_primary">#CBAEF6</color>
+
+    <!-- ── Dracula palette ────────────────────────────────────────── -->
+    <!-- Primary accent: Purple -->
+    <color name="dracula_primary">#BD93F9</color>
+    <color name="dracula_on_primary">#282A36</color>
+    <color name="dracula_primary_container">#494161</color>
+    <color name="dracula_on_primary_container">#BD93F9</color>
+    <!-- Secondary: Cyan -->
+    <color name="dracula_secondary">#8BE9FD</color>
+    <color name="dracula_on_secondary">#282A36</color>
+    <color name="dracula_secondary_container">#3E5462</color>
+    <color name="dracula_on_secondary_container">#8BE9FD</color>
+    <!-- Tertiary: Pink -->
+    <color name="dracula_tertiary">#FF79C6</color>
+    <color name="dracula_on_tertiary">#282A36</color>
+    <color name="dracula_tertiary_container">#573B56</color>
+    <color name="dracula_on_tertiary_container">#FF79C6</color>
+    <!-- Error: Red -->
+    <color name="dracula_error">#FF5555</color>
+    <color name="dracula_on_error">#282A36</color>
+    <color name="dracula_error_container">#57333D</color>
+    <color name="dracula_on_error_container">#FF5555</color>
+    <!-- Surfaces -->
+    <color name="dracula_background">#282A36</color>
+    <color name="dracula_on_background">#F8F8F2</color>
+    <color name="dracula_surface">#21222C</color>
+    <color name="dracula_on_surface">#F8F8F2</color>
+    <color name="dracula_surface_variant">#44475A</color>
+    <color name="dracula_on_surface_variant">#6272A4</color>
+    <color name="dracula_outline">#6272A4</color>
+    <color name="dracula_outline_variant">#44475A</color>
+    <color name="dracula_scrim">#191A21</color>
+    <color name="dracula_inverse_surface">#F8F8F2</color>
+    <color name="dracula_inverse_on_surface">#282A36</color>
+    <color name="dracula_inverse_primary">#DBC6F6</color>
 </resources>

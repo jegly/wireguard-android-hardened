@@ -15,6 +15,7 @@ import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricManager.Authenticators
 import androidx.biometric.BiometricPrompt
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import com.wireguard.android.R
 import javax.crypto.Cipher
 import javax.crypto.KeyGenerator
@@ -82,6 +83,63 @@ object BiometricAuthenticator {
         } catch (e: Exception) {
             Log.w(TAG, "Could not build CryptoObject, falling back to non-crypto auth: ${e.message}")
             null
+        }
+    }
+
+    fun authenticate(
+        @StringRes dialogTitleRes: Int,
+        activity: FragmentActivity,
+        callback: (Result) -> Unit
+    ) {
+        val authCallback = object : BiometricPrompt.AuthenticationCallback() {
+            override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
+                super.onAuthenticationError(errorCode, errString)
+                Log.d(TAG, "BiometricAuthentication error: errorCode=$errorCode, msg=$errString")
+                callback(
+                    when (errorCode) {
+                        BiometricPrompt.ERROR_CANCELED, BiometricPrompt.ERROR_USER_CANCELED,
+                        BiometricPrompt.ERROR_NEGATIVE_BUTTON -> Result.Cancelled
+
+                        BiometricPrompt.ERROR_HW_NOT_PRESENT, BiometricPrompt.ERROR_HW_UNAVAILABLE,
+                        BiometricPrompt.ERROR_NO_BIOMETRICS, BiometricPrompt.ERROR_NO_DEVICE_CREDENTIAL -> Result.HardwareUnavailableOrDisabled
+
+                        else -> Result.Failure(errorCode, activity.getString(R.string.biometric_auth_error_reason, errString))
+                    }
+                )
+            }
+
+            override fun onAuthenticationFailed() {
+                super.onAuthenticationFailed()
+                callback(Result.Failure(null, activity.getString(R.string.biometric_auth_error)))
+            }
+
+            override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
+                super.onAuthenticationSucceeded(result)
+                callback(Result.Success(result.cryptoObject))
+            }
+        }
+
+        val biometricPrompt = BiometricPrompt(
+            activity,
+            { Handler(Looper.getMainLooper()).post(it) },
+            authCallback
+        )
+        val promptInfo = BiometricPrompt.PromptInfo.Builder()
+            .setTitle(activity.getString(dialogTitleRes))
+            .setAllowedAuthenticators(allowedAuthenticators)
+            .build()
+
+        val canAuth = BiometricManager.from(activity).canAuthenticate(allowedAuthenticators)
+
+        if (canAuth == BiometricManager.BIOMETRIC_SUCCESS) {
+            val cryptoObject = buildCryptoObject()
+            if (cryptoObject != null) {
+                biometricPrompt.authenticate(promptInfo, cryptoObject)
+            } else {
+                biometricPrompt.authenticate(promptInfo)
+            }
+        } else {
+            callback(Result.HardwareUnavailableOrDisabled)
         }
     }
 

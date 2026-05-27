@@ -12,13 +12,18 @@ import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.commit
+import com.wireguard.android.Application
+import com.wireguard.android.BuildConfig
 import com.wireguard.android.R
 import com.wireguard.android.fragment.TunnelDetailFragment
 import com.wireguard.android.fragment.TunnelEditorFragment
 import com.wireguard.android.model.ObservableTunnel
+import com.wireguard.android.util.BiometricAuthenticator
+import com.wireguard.android.util.SignatureVerifier
 
 /**
  * CRUD interface for WireGuard tunnels. This activity serves as the main entry point to the
@@ -29,6 +34,7 @@ class MainActivity : BaseActivity(), FragmentManager.OnBackStackChangedListener 
     private var actionBar: ActionBar? = null
     private var isTwoPaneLayout = false
     private var backPressedCallback: OnBackPressedCallback? = null
+    private var isLockPromptShowing = false
 
     private fun handleBackPressed() {
         val backStackEntries = supportFragmentManager.backStackEntryCount
@@ -57,12 +63,44 @@ class MainActivity : BaseActivity(), FragmentManager.OnBackStackChangedListener 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (!BuildConfig.DEBUG && !SignatureVerifier.isSignedByTrustedCert(this)) {
+            AlertDialog.Builder(this)
+                .setTitle(R.string.tamper_dialog_title)
+                .setMessage(R.string.tamper_dialog_message)
+                .setCancelable(false)
+                .setPositiveButton(android.R.string.ok) { _, _ -> finish() }
+                .show()
+            return
+        }
         setContentView(R.layout.main_activity)
         actionBar = supportActionBar
         isTwoPaneLayout = findViewById<View?>(R.id.master_detail_wrapper) != null
         supportFragmentManager.addOnBackStackChangedListener(this)
         backPressedCallback = onBackPressedDispatcher.addCallback(this) { handleBackPressed() }
         onBackStackChanged()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (Application.isAppLockEnabled && !Application.isSessionAuthenticated && !isLockPromptShowing) {
+            isLockPromptShowing = true
+            BiometricAuthenticator.authenticate(R.string.biometric_prompt_app_lock_title, this) { result ->
+                when (result) {
+                    is BiometricAuthenticator.Result.Success,
+                    is BiometricAuthenticator.Result.HardwareUnavailableOrDisabled -> {
+                        isLockPromptShowing = false
+                        Application.isSessionAuthenticated = true
+                    }
+                    is BiometricAuthenticator.Result.Cancelled -> {
+                        isLockPromptShowing = false
+                        finish()
+                    }
+                    is BiometricAuthenticator.Result.Failure -> {
+                        // Individual scan failed; BiometricPrompt is still showing
+                    }
+                }
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

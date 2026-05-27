@@ -37,6 +37,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textview.MaterialTextView
+import com.wireguard.android.Application
 import com.wireguard.android.BuildConfig
 import com.wireguard.android.R
 import com.wireguard.android.databinding.LogViewerActivityBinding
@@ -63,6 +64,7 @@ import java.util.regex.Pattern
 
 class LogViewerActivity : AppCompatActivity() {
     private lateinit var binding: LogViewerActivityBinding
+    private var createdWithTheme = ""
     private lateinit var logAdapter: LogEntryAdapter
     private var logLines = CircularArray<LogLine>()
     private var rawLogLines = CircularArray<String>()
@@ -93,7 +95,22 @@ class LogViewerActivity : AppCompatActivity() {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        if (Application.currentThemeMode != createdWithTheme) recreate()
+    }
+
+    override fun onUserInteraction() {
+        super.onUserInteraction()
+        Application.touchUserInteraction()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        createdWithTheme = Application.currentThemeMode
+        when (createdWithTheme) {
+            "catppuccin" -> setTheme(R.style.AppTheme_Catppuccin)
+            "dracula" -> setTheme(R.style.AppTheme_Dracula)
+        }
         super.onCreate(savedInstanceState)
         // Prevent screenshots and screen recording of log content
         window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)

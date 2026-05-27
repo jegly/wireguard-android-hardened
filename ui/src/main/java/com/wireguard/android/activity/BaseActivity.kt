@@ -5,11 +5,13 @@
 package com.wireguard.android.activity
 
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.CallbackRegistry
 import androidx.databinding.CallbackRegistry.NotifierCallback
 import androidx.lifecycle.lifecycleScope
 import com.wireguard.android.Application
+import com.wireguard.android.R
 import com.wireguard.android.model.ObservableTunnel
 import kotlinx.coroutines.launch
 
@@ -19,6 +21,7 @@ import kotlinx.coroutines.launch
 abstract class BaseActivity : AppCompatActivity() {
     private val selectionChangeRegistry = SelectionChangeRegistry()
     private var created = false
+    private var createdWithTheme = ""
     var selectedTunnel: ObservableTunnel? = null
         set(value) {
             val oldTunnel = field
@@ -38,7 +41,14 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        createdWithTheme = Application.currentThemeMode
+        when (createdWithTheme) {
+            "catppuccin" -> setTheme(R.style.AppTheme_Catppuccin)
+            "dracula" -> setTheme(R.style.AppTheme_Dracula)
+        }
         super.onCreate(savedInstanceState)
+        // Block screenshots, screen recording, and recents-thumbnail leaks of private keys / configs.
+        window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
 
         // Restore the saved tunnel if there is one; otherwise grab it from the arguments.
         val savedTunnelName = when {
@@ -57,6 +67,16 @@ abstract class BaseActivity : AppCompatActivity() {
         } else {
             created = true
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (Application.currentThemeMode != createdWithTheme) recreate()
+    }
+
+    override fun onUserInteraction() {
+        super.onUserInteraction()
+        Application.touchUserInteraction()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

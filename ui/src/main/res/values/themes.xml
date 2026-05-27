@@ -3,6 +3,68 @@
   ~ SPDX-License-Identifier: Apache-2.0
   -->
 <resources>
+    <!-- ── Catppuccin Mocha — always dark ── -->
+    <style name="WireGuardTheme.Catppuccin" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/catppuccin_primary</item>
+        <item name="colorOnPrimary">@color/catppuccin_on_primary</item>
+        <item name="colorPrimaryContainer">@color/catppuccin_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/catppuccin_on_primary_container</item>
+        <item name="colorSecondary">@color/catppuccin_secondary</item>
+        <item name="colorOnSecondary">@color/catppuccin_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/catppuccin_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/catppuccin_on_secondary_container</item>
+        <item name="colorTertiary">@color/catppuccin_tertiary</item>
+        <item name="colorOnTertiary">@color/catppuccin_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/catppuccin_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/catppuccin_on_tertiary_container</item>
+        <item name="colorError">@color/catppuccin_error</item>
+        <item name="colorErrorContainer">@color/catppuccin_error_container</item>
+        <item name="colorOnError">@color/catppuccin_on_error</item>
+        <item name="colorOnErrorContainer">@color/catppuccin_on_error_container</item>
+        <item name="android:colorBackground">@color/catppuccin_background</item>
+        <item name="colorOnBackground">@color/catppuccin_on_background</item>
+        <item name="colorSurface">@color/catppuccin_surface</item>
+        <item name="colorOnSurface">@color/catppuccin_on_surface</item>
+        <item name="colorSurfaceVariant">@color/catppuccin_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/catppuccin_on_surface_variant</item>
+        <item name="colorOutline">@color/catppuccin_outline</item>
+        <item name="colorOutlineVariant">@color/catppuccin_outline_variant</item>
+        <item name="colorOnSurfaceInverse">@color/catppuccin_inverse_on_surface</item>
+        <item name="colorSurfaceInverse">@color/catppuccin_inverse_surface</item>
+        <item name="colorPrimaryInverse">@color/catppuccin_inverse_primary</item>
+    </style>
+
+    <!-- ── Dracula — always dark ── -->
+    <style name="WireGuardTheme.Dracula" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/dracula_primary</item>
+        <item name="colorOnPrimary">@color/dracula_on_primary</item>
+        <item name="colorPrimaryContainer">@color/dracula_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/dracula_on_primary_container</item>
+        <item name="colorSecondary">@color/dracula_secondary</item>
+        <item name="colorOnSecondary">@color/dracula_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/dracula_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/dracula_on_secondary_container</item>
+        <item name="colorTertiary">@color/dracula_tertiary</item>
+        <item name="colorOnTertiary">@color/dracula_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/dracula_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/dracula_on_tertiary_container</item>
+        <item name="colorError">@color/dracula_error</item>
+        <item name="colorErrorContainer">@color/dracula_error_container</item>
+        <item name="colorOnError">@color/dracula_on_error</item>
+        <item name="colorOnErrorContainer">@color/dracula_on_error_container</item>
+        <item name="android:colorBackground">@color/dracula_background</item>
+        <item name="colorOnBackground">@color/dracula_on_background</item>
+        <item name="colorSurface">@color/dracula_surface</item>
+        <item name="colorOnSurface">@color/dracula_on_surface</item>
+        <item name="colorSurfaceVariant">@color/dracula_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/dracula_on_surface_variant</item>
+        <item name="colorOutline">@color/dracula_outline</item>
+        <item name="colorOutlineVariant">@color/dracula_outline_variant</item>
+        <item name="colorOnSurfaceInverse">@color/dracula_inverse_on_surface</item>
+        <item name="colorSurfaceInverse">@color/dracula_inverse_surface</item>
+        <item name="colorPrimaryInverse">@color/dracula_inverse_primary</item>
+    </style>
+
     <style name="WireGuardTheme" parent="Theme.Material3.Light">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>

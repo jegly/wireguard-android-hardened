@@ -83,5 +83,24 @@ object UserKnobs {
                 it[RUNNING_TUNNELS] = runningTunnels
         }
     }
+    // Preference key must match the android:key of the theme ListPreference in preferences.xml.
+    private val THEME_MODE = stringPreferencesKey("theme")
+    val themeMode: Flow<String>
+        get() = Application.getPreferencesDataStore().data.map {
+            it[THEME_MODE] ?: "system"
+        }
+
+    private val APP_LOCK_ENABLED = booleanPreferencesKey("app_lock")
+    val appLockEnabled: Flow<Boolean>
+        get() = Application.getPreferencesDataStore().data.map {
+            it[APP_LOCK_ENABLED] ?: false
+        }
+
+    private val APP_LOCK_TIMEOUT = stringPreferencesKey("app_lock_timeout")
+    val appLockTimeout: Flow<String>
+        get() = Application.getPreferencesDataStore().data.map {
+            it[APP_LOCK_TIMEOUT] ?: "off"
+        }
+
     // Updater preference keys removed — updater has been stripped entirely.
 }
