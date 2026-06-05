@@ -1,4 +1,4 @@
-# WireGuard Android (Hardened)
+# WireGuard Android Hardened
 
 <p align="center">
     <img src="wg_banner.png" alt="WireGuard Android Hardened"/>
