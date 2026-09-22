@@ -1,8 +1,8 @@
 // Force patched versions of vulnerable build-tool transitive dependencies.
 // These are pulled in by AGP/Kotlin compiler and do not ship in the APK.
 // Addresses all 28 Dependabot alerts on the upstream repo.
-val nettyVersion = "4.2.17.Final"
-val bouncyCastleVersion = "1.84"
+val nettyVersion = "4.2.18.Final"
+val bouncyCastleVersion = "1.86"
 
 buildscript {
     val nettyVersion = "4.1.135.Final"
