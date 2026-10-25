@@ -5,8 +5,8 @@ val nettyVersion = "4.2.18.Final"
 val bouncyCastleVersion = "1.86"
 
 buildscript {
-    val nettyVersion = "4.1.135.Final"
-    val bouncyCastleVersion = "1.84"
+    val nettyVersion = "4.1.138.Final"
+    val bouncyCastleVersion = "1.86"
     configurations.all {
         resolutionStrategy {
             force(
@@ -23,7 +23,7 @@ buildscript {
                 "org.bouncycastle:bcprov-jdk18on:$bouncyCastleVersion",
                 "org.bouncycastle:bcpkix-jdk18on:$bouncyCastleVersion",
                 "org.jdom:jdom2:2.0.6.1",
-                "org.bitbucket.b_c:jose4j:0.9.6",
+                "org.bitbucket.b_c:jose4j:0.9.7",
                 "org.apache.commons:commons-lang3:3.20.0",
                 "org.apache.httpcomponents:httpclient:4.5.14"
             )
@@ -48,7 +48,7 @@ allprojects {
                 "org.bouncycastle:bcprov-jdk18on:$bouncyCastleVersion",
                 "org.bouncycastle:bcpkix-jdk18on:$bouncyCastleVersion",
                 "org.jdom:jdom2:2.0.6.1",
-                "org.bitbucket.b_c:jose4j:0.9.6",
+                "org.bitbucket.b_c:jose4j:0.9.7",
                 "org.apache.commons:commons-lang3:3.20.0",
                 "org.apache.httpcomponents:httpclient:4.5.14"
             )
@@ -59,6 +59,5 @@ allprojects {
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.android.library) apply false
-    alias(libs.plugins.kotlin.android) apply false
-    alias(libs.plugins.kotlin.kapt) apply false
+    alias(libs.plugins.legacy.kapt) apply false
 }

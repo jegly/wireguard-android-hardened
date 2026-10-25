@@ -4,8 +4,9 @@ val pkg: String = providers.gradleProperty("wireguardPackageName").get()
 
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.kapt)
+    // Kotlin comes from AGP itself (built-in Kotlin); kapt, needed for data binding, via AGP's
+    // compatibility plugin instead of org.jetbrains.kotlin.kapt.
+    alias(libs.plugins.legacy.kapt)
 }
 
 android {
@@ -28,9 +29,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
         isCoreLibraryDesugaringEnabled = true
-    }
-    kotlinOptions {
-        jvmTarget = "17"
     }
     buildTypes {
         release {
@@ -72,7 +70,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.coordinatorlayout)
     implementation(libs.androidx.biometric)
-    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+    implementation("androidx.security:security-crypto:1.1.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.preference.ktx)
