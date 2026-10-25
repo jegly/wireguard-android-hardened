@@ -24,7 +24,7 @@ buildscript {
                 "org.bouncycastle:bcpkix-jdk18on:$bouncyCastleVersion",
                 "org.jdom:jdom2:2.0.6.1",
                 "org.bitbucket.b_c:jose4j:0.9.7",
-                "org.apache.commons:commons-lang3:3.20.0",
+                "org.apache.commons:commons-lang3:3.21.0",
                 "org.apache.httpcomponents:httpclient:4.5.14"
             )
         }
@@ -49,7 +49,7 @@ allprojects {
                 "org.bouncycastle:bcpkix-jdk18on:$bouncyCastleVersion",
                 "org.jdom:jdom2:2.0.6.1",
                 "org.bitbucket.b_c:jose4j:0.9.7",
-                "org.apache.commons:commons-lang3:3.20.0",
+                "org.apache.commons:commons-lang3:3.21.0",
                 "org.apache.httpcomponents:httpclient:4.5.14"
             )
         }

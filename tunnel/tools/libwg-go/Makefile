@@ -23,12 +23,12 @@ export CGO_ENABLED := 1
 # goruntime-boottime-over-monotonic.diff. If go.mod needs a newer Go, fail and bump GO_VERSION.
 export GOTOOLCHAIN := local
 
-GO_VERSION := 1.26.8
+GO_VERSION := 1.26.10
 GO_PLATFORM := $(shell uname -s | tr '[:upper:]' '[:lower:]')-$(NDK_GO_ARCH_MAP_$(shell uname -m))
 GO_TARBALL := go$(GO_VERSION).$(GO_PLATFORM).tar.gz
-GO_HASH_darwin-amd64 := 186be014105aa6542b767d2c6ed5cca10a0214bdff809ef1724022a8c7894150
-GO_HASH_darwin-arm64 := a012b25b571bd0138a03dcd25375ceba866fe5ca822f426d2c66a4de56fd3f4b
-GO_HASH_linux-amd64 := d0f743b33e8d8945e6b1f432edd15785c70507121d6e2a723b21285eddf8b57b
+GO_HASH_darwin-amd64 := e820ab780c273ae4a340b79d0f3c4313b74ee029aa3874792145d44b9f4f91da
+GO_HASH_darwin-arm64 := 0b5183492292ada170f9b561a834863808dd02edba599e4ad0e89899330020b3
+GO_HASH_linux-amd64 := ccfe7ae822d2c2f41f4fe7c956199967a4dac22d0ee0d2b2bfdb440aab3b20c5
 
 default: $(DESTDIR)/libwg-go.so
 
