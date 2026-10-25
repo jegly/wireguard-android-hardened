@@ -21,10 +21,10 @@ A privacy-focused, hardened fork of the official WireGuard Android client. This 
 | **Screen Protection**| Private key only | **App-wide** (`FLAG_SECURE`) |
 | **App-wide Lock** | None | Biometric/PIN gate on launch + return |
 | **Idle Auto-lock** | None | Off / 1 / 5 / 15 min foreground idle |
-| **APK Tamper Check** | None | **SHA-256 signature pin** on launch |
+| **APK Tamper Check** | None | **Signer pin** on launch: ML-DSA-87 key on Android 17+, original key below |
 | **Themes** | Light / Dark | + **Catppuccin Mocha** & **Dracula** |
 | **Target SDK** | 35 | **37** (Android 17) |
-| **Dependencies** | `golang.org/x/crypto` 0.38.0 | **0.45.0** (Patched/Current) |
+| **Dependencies** | `golang.org/x/crypto` 0.38.0 | **0.58.0** (Patched/Current), built with Go 1.26.10 |
 | **Obfuscation** | Disabled | **R8/ProGuard Enabled** |
 
 ---
@@ -62,18 +62,41 @@ The biometric gate is hardware-attested and bound to a Keystore operation (`Cryp
 | **ADB Backup extraction** | Keystore keys are non-exportable/excluded from backup |
 | **Screen capture/logging** | App-wide `FLAG_SECURE` hardcoded |
 | **Unauthorized physical access** | `BIOMETRIC_STRONG` gate + Idle auto-lock |
-| **Malicious APK replacement** | Pinned SHA-256 signature verification on launch |
+| **Malicious APK replacement** | Current-signer SHA-256 pin on launch (ML-DSA-87 key on Android 17+) |
 | **Telemetry/Fingerprinting** | Updater stripped — zero outbound ID leaks |
-| **Unpatched Crypto** | Updated `golang.org/x/crypto` to 0.45.0 |
+| **Unpatched Crypto** | Updated `golang.org/x/crypto` to 0.58.0 and the Go toolchain to 1.26.10 |
 
 ---
 
 ## Installation
 
 1. Download the latest APK from the [Releases](#) page.
-2. **Verify SHA-256:** `d6ce72c17e4ff0a7c427c1be35a198a4a5701804d40c65e665e1d30acda79fbd`
+2. **Verify SHA-256** of `WireGuard-Hardened-PQC-1.0.10-signed.apk`: `23f39c8102d4b1b6b12b37288117ab30e9287897673ce7e0b0cc7b69c2bc2925` (see Release signing below)
 3. Enable "Install Unknown Apps" for your browser/file manager.
 4. *Requires Android 8.0 (API 24) or higher.*
+
+---
+
+## Release signing
+
+Release APKs use hybrid signing (APK Signature Scheme v3.2): the original app key plus an EC P-384 key and an ML-DSA-87 post-quantum key. Android 17 and newer verify the hybrid block, where the ML-DSA-87 key is the signer; earlier Android versions verify the original key as before.
+
+| File | SHA-256 |
+| --- | --- |
+| `WireGuard-Hardened-PQC-1.0.10-signed.apk` | `23f39c8102d4b1b6b12b37288117ab30e9287897673ce7e0b0cc7b69c2bc2925` |
+
+Verify a download:
+
+```bash
+sha256sum WireGuard-Hardened-PQC-1.0.10-signed.apk
+apksigner verify -v --print-certs WireGuard-Hardened-PQC-1.0.10-signed.apk   # build-tools 37.0.0 on JDK 25 shows all three keys
+```
+
+Signing certificate SHA-256:
+
+- ML-DSA-87 (post-quantum): `5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6`
+- EC P-384 (hybrid classical): `fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2`
+- Original key: `98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c`
 
 ---
 
