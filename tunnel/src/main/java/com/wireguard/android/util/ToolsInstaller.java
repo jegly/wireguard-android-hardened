@@ -134,7 +134,8 @@ public final class ToolsInstaller {
 
     @RestrictTo(Scope.LIBRARY_GROUP)
     public int install() throws RootShellException, IOException {
-        if (!context.getPackageName().startsWith("com.wireguard."))
+        final String packageName = context.getPackageName();
+        if (!packageName.startsWith("com.wireguard.") && !packageName.startsWith("com.jegly.hardenedwireguard"))
             throw new SecurityException("The tools may only be installed system-wide from the main WireGuard app.");
         return willInstallAsMagiskModule() ? installMagisk() : installSystem();
     }
