@@ -26,7 +26,9 @@ buildscript {
                 "org.bitbucket.b_c:jose4j:0.9.7",
                 "org.apache.commons:commons-lang3:3.21.0",
                 "org.apache.httpcomponents:httpclient:4.5.14",
-                "com.google.guava:guava:33.7.2-jre"
+                "com.google.guava:guava:33.7.2-jre",
+                // AGP's built-in Kotlin brings 2.2.10 (CVE-2026-53914, fixed in 2.4.20).
+                "org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.21"
             )
         }
     }
