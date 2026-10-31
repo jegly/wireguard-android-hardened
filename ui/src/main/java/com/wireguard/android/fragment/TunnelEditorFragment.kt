@@ -22,6 +22,7 @@ import androidx.core.os.BundleCompat
 import androidx.core.view.MenuProvider
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import com.wireguard.android.Application
 import com.wireguard.android.R
@@ -30,6 +31,7 @@ import com.wireguard.android.databinding.TunnelEditorFragmentBinding
 import com.wireguard.android.model.ObservableTunnel
 import com.wireguard.android.util.AdminKnobs
 import com.wireguard.android.util.BiometricAuthenticator
+import com.wireguard.android.util.DnsProviders
 import com.wireguard.android.util.ErrorMessages
 import com.wireguard.android.viewmodel.ConfigProxy
 import com.wireguard.config.Config
@@ -79,6 +81,7 @@ class TunnelEditorFragment : BaseFragment(), MenuProvider {
         binding?.apply {
             executePendingBindings()
             privateKeyTextLayout.setEndIconOnClickListener { config?.`interface`?.generateKeyPair() }
+            dnsServersLabelLayout.setEndIconOnClickListener { showDnsProviderPicker() }
         }
         return binding?.root
     }
@@ -95,6 +98,18 @@ class TunnelEditorFragment : BaseFragment(), MenuProvider {
         activity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
         binding = null
         super.onDestroyView()
+    }
+
+    private fun showDnsProviderPicker() {
+        val providers = DnsProviders.ALL
+        val items = providers.map { "${it.name}\n${it.dnsServers}" }.toTypedArray<CharSequence>()
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(R.string.choose_dns_provider)
+            .setItems(items) { _, which ->
+                binding?.config?.`interface`?.dnsServers = providers[which].dnsServers
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 
     private fun onFinished() {
